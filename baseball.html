@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Long Island Youth Soccer Leagues, Clubs & Coaches | YouthSportsConnect</title>
+<meta name="description" content="Find Long Island youth baseball leagues, Little Leagues, travel teams, private coaches, and indoor training facilities. Browse 60+ baseball listings across Nassau and Suffolk County.">
+<meta property="og:title" content="Long Island Youth Baseball | YouthSportsConnect">
+<meta property="og:description" content="The most complete directory of youth soccer on Long Island — leagues, clubs, academies, coaches, and summer camps.">
+<meta property="og:url" content="https://youthsportsconnect.co/baseball">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://youthsportsconnect.co/baseball">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Long Island Youth Baseball Directory","description":"Directory of youth soccer leagues, clubs, academies, coaches, and summer camps on Long Island NY","url":"https://youthsportsconnect.co/baseball","about":{"@type":"SportsOrganization","name":"Long Island Youth Soccer"}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --navy:#0a1628;--navy-mid:#112240;--navy-light:#1a3a6e;
+    --gold:#c9a84c;--gold-light:#e8c96d;--gold-pale:#fdf6e3;
+    --sport:#7b2225;--sport-light:#c0392b;--sport-pale:#fce8e8;
+    --white:#fff;--off-white:#f5f7fa;--border:#e2e8f0;
+    --text:#1a202c;--text-mid:#4a5568;--text-muted:#718096;
+  }
+  body{font-family:'Inter',sans-serif;background:var(--off-white);color:var(--text)}
+  a{text-decoration:none;color:inherit}
+
+  /* NAV */
+  .top-bar{background:var(--navy);padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:36px}
+  .top-bar-links{display:flex;gap:20px}
+  .top-bar a{font-size:11px;color:rgba(255,255,255,.55);font-weight:500;letter-spacing:.3px}
+  .top-bar a:hover{color:var(--gold)}
+  nav{background:var(--navy-mid);padding:0 40px;display:flex;align-items:center;height:62px;border-bottom:3px solid var(--gold);position:sticky;top:0;z-index:100;gap:0}
+  .nav-logo{font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:1px;color:var(--white);margin-right:36px;flex-shrink:0}
+  .nav-logo span{color:var(--gold)}
+  .nav-links{display:flex;gap:2px;flex:1}
+  .nav-links a{font-size:12px;font-weight:600;color:rgba(255,255,255,.65);padding:0 14px;height:62px;display:flex;align-items:center;border-bottom:3px solid transparent;transition:all .15s;letter-spacing:.3px;text-transform:uppercase}
+  .nav-links a:hover,.nav-links a.active{color:var(--gold);border-bottom-color:var(--gold)}
+  .nav-search{display:flex;align-items:center;background:rgba(255,255,255,.08);border-radius:5px;overflow:hidden;border:1px solid rgba(255,255,255,.12);margin-left:auto}
+  .nav-search input{background:transparent;border:none;outline:none;padding:7px 12px;font-size:13px;color:var(--white);font-family:'Inter',sans-serif;width:180px}
+  .nav-search input::placeholder{color:rgba(255,255,255,.4)}
+  .nav-search button{background:var(--gold);border:none;padding:7px 14px;color:var(--navy);font-weight:700;font-size:11px;cursor:pointer;font-family:'Inter',sans-serif;text-transform:uppercase;transition:background .15s}
+  .nav-search button:hover{background:var(--gold-light)}
+
+  /* SPORT HERO */
+  .sport-hero{background:linear-gradient(135deg,var(--navy) 0%,#2a0a0a 60%,#4a1010 100%);padding:56px 40px 48px;position:relative;overflow:hidden}
+  .sport-hero::before{content:'⚾';position:absolute;right:-20px;top:-20px;font-size:280px;opacity:.04;line-height:1;pointer-events:none}
+  .sport-hero-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center}
+  .sport-breadcrumb{font-size:12px;color:rgba(255,255,255,.45);margin-bottom:12px;letter-spacing:.3px}
+  .sport-breadcrumb a{color:rgba(255,255,255,.45)}
+  .sport-breadcrumb a:hover{color:var(--gold)}
+  .sport-breadcrumb span{color:rgba(255,255,255,.25);margin:0 6px}
+  .sport-hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(42px,5vw,68px);color:var(--white);line-height:1;letter-spacing:2px;margin-bottom:14px}
+  .sport-hero h1 em{color:var(--gold-light);font-style:normal}
+  .sport-hero p{font-size:15px;color:rgba(255,255,255,.7);line-height:1.7;max-width:540px;margin-bottom:24px}
+  .sport-cta-row{display:flex;gap:10px;flex-wrap:wrap}
+  .btn-primary{background:var(--gold);color:var(--navy);padding:11px 22px;border-radius:6px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;transition:all .15s;display:inline-flex;align-items:center;gap:6px}
+  .btn-primary:hover{background:var(--gold-light)}
+  .btn-outline{background:transparent;color:var(--white);padding:11px 22px;border-radius:6px;font-size:13px;font-weight:600;border:1.5px solid rgba(255,255,255,.3);transition:all .15s;display:inline-flex;align-items:center;gap:6px}
+  .btn-outline:hover{border-color:var(--gold);color:var(--gold)}
+  .hero-stats{display:flex;flex-direction:column;gap:16px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:24px 28px;text-align:center;flex-shrink:0}
+  .hero-stat{color:var(--white)}
+  .hero-stat-num{font-family:'Bebas Neue',sans-serif;font-size:40px;color:var(--gold-light);line-height:1;letter-spacing:1px}
+  .hero-stat-label{font-size:11px;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.5px;margin-top:2px}
+
+  /* QUICK LINKS BAR */
+  .quick-bar{background:var(--sport);padding:0 40px}
+  .quick-bar-inner{max-width:1200px;margin:0 auto;display:flex;gap:0;overflow-x:auto}
+  .quick-link{font-size:12px;font-weight:600;color:rgba(255,255,255,.75);padding:12px 18px;white-space:nowrap;border-bottom:3px solid transparent;transition:all .15s;text-transform:uppercase;letter-spacing:.4px;cursor:pointer}
+  .quick-link:hover,.quick-link.active{color:var(--white);border-bottom-color:rgba(255,255,255,.8)}
+
+  /* MAIN LAYOUT */
+  .main{max-width:1200px;margin:0 auto;padding:32px 40px;display:grid;grid-template-columns:1fr 280px;gap:32px;align-items:start}
+
+  /* INTRO SECTION */
+  .intro-card{background:var(--white);border-radius:10px;border:1px solid var(--border);padding:24px 28px;margin-bottom:24px}
+  .intro-card h2{font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:.8px;color:var(--navy);margin-bottom:10px}
+  .intro-card p{font-size:14px;color:var(--text-mid);line-height:1.8}
+  .intro-card p + p{margin-top:10px}
+  .intro-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+  .intro-item{background:var(--sport-pale);border-radius:8px;padding:14px;border-left:3px solid var(--sport)}
+  .intro-item-num{font-family:'Bebas Neue',sans-serif;font-size:28px;color:var(--sport);line-height:1}
+  .intro-item-label{font-size:11px;color:var(--text-mid);text-transform:uppercase;letter-spacing:.4px;margin-top:2px}
+
+  /* FILTERS */
+  .filter-bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px;align-items:center}
+  .ftab{padding:6px 14px;border-radius:20px;border:1.5px solid var(--border);background:var(--white);font-size:11px;font-weight:700;font-family:'Inter',sans-serif;color:var(--text-mid);cursor:pointer;text-transform:uppercase;letter-spacing:.4px;transition:all .15s}
+  .ftab:hover{border-color:var(--sport);color:var(--sport)}
+  .ftab.active{background:var(--sport);border-color:var(--sport);color:var(--white)}
+  .results-meta{font-size:12px;color:var(--text-muted);margin-left:auto}
+
+  /* LISTINGS TABLE */
+  .listings-card{background:var(--white);border-radius:10px;border:1px solid var(--border);overflow:hidden}
+  .table-head{display:grid;grid-template-columns:1fr 100px 110px 140px;padding:10px 20px;background:var(--navy);font-size:10px;font-weight:700;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.5px}
+  .listing-row{display:grid;grid-template-columns:1fr 100px 110px 140px;padding:15px 20px;border-bottom:1px solid var(--border);align-items:center;transition:background .12s;cursor:pointer;animation:fadeUp .3s ease both}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+  .listing-row:last-child{border-bottom:none}
+  .listing-row:hover{background:#fff8f8}
+  .listing-row.open{background:#fce8e8}
+  .listing-row.featured{border-left:3px solid var(--gold)}
+  .row-name-block{display:flex;align-items:center;gap:12px}
+  .sport-dot{width:36px;height:36px;background:var(--sport-pale);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+  .listing-row.featured .sport-dot{background:var(--gold-pale)}
+  .row-name{font-size:14px;font-weight:600;color:var(--navy)}
+  .row-sub{font-size:11px;color:var(--text-muted);margin-top:2px}
+  .badge{display:inline-block;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;text-transform:uppercase;letter-spacing:.3px}
+  .badge-league{background:#ede9fe;color:#5b21b6}
+  .badge-team{background:#dbeafe;color:#1e40af}
+  .badge-academy{background:#fce7f3;color:#9d174d}
+  .badge-coach{background:#d1fae5;color:#065f46}
+  .badge-facility{background:#fee2e2;color:#991b1b}
+  .badge-summer_camp{background:#fef9c3;color:#854d0e}
+  .level-badge{background:transparent;border:1px solid;font-size:10px;font-weight:600;padding:2px 8px;border-radius:4px;text-transform:capitalize;letter-spacing:.2px}
+  .level-rec{color:#166534;border-color:#166534}
+  .level-travel{color:#1d4ed8;border-color:#1d4ed8}
+  .level-elite{color:#9f1239;border-color:#9f1239}
+  .row-actions{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+  .btn-visit{display:inline-flex;align-items:center;font-size:11px;font-weight:700;color:#fff;background:var(--navy);text-decoration:none;padding:6px 11px;border-radius:5px;transition:all .15s;white-space:nowrap;border:1.5px solid var(--navy)}
+  .btn-visit:hover{background:var(--gold);color:var(--navy);border-color:var(--gold)}
+  .btn-details{display:inline-flex;align-items:center;gap:3px;font-size:11px;font-weight:700;color:var(--navy);background:#fff;padding:6px 11px;border-radius:5px;transition:all .15s;white-space:nowrap;cursor:pointer;border:1.5px solid var(--border);font-family:'Inter',sans-serif}
+  .btn-details:hover{border-color:var(--navy);background:var(--navy);color:#fff}
+  .listing-row.open .btn-details{background:var(--sport);color:#fff;border-color:var(--sport)}
+  .d-arrow{transition:transform .2s;display:inline-block}
+  .listing-row.open .d-arrow{transform:rotate(180deg)}
+
+  /* DROPDOWN */
+  .contact-dropdown{display:none;padding:22px 24px 22px 72px;background:#fdf1f1;border-top:1px solid var(--border);border-bottom:2px solid var(--sport)}
+  .contact-dropdown.open{display:grid;grid-template-columns:1fr 1fr;gap:28px;animation:dropIn .2s ease}
+  @keyframes dropIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
+  .cd-org-header{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+  .ai-tag{display:inline-block;font-size:10px;font-weight:700;background:var(--gold-pale);color:#92400e;padding:2px 8px;border-radius:3px;text-transform:uppercase;letter-spacing:.3px}
+  .cd-summary p{font-size:13px;color:var(--text-mid);line-height:1.75;margin-top:8px}
+  .ci{display:flex;align-items:center;gap:10px;padding:9px 12px;background:#fff;border:1px solid var(--border);border-radius:6px;margin-bottom:6px}
+  .ci-icon{width:28px;height:28px;background:var(--navy);border-radius:5px;display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0;color:#fff}
+  .ci-label{font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:.3px}
+  .ci-val{font-size:13px;font-weight:600;color:var(--navy)}
+  .ci-val a{color:var(--navy);text-decoration:none}
+  .ci-val a:hover{color:var(--sport)}
+  .socials-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+  .social-pill{display:inline-flex;align-items:center;gap:5px;padding:5px 10px;border-radius:5px;font-size:11px;font-weight:700;text-decoration:none;transition:opacity .15s}
+  .social-pill:hover{opacity:.82}
+  .social-ig{background:#e1306c;color:#fff}
+  .social-fb{background:#1877f2;color:#fff}
+  .social-tw{background:#000;color:#fff}
+  .social-yt{background:#ff0000;color:#fff}
+  .social-tt{background:#010101;color:#fff}
+  .cd-cta{display:inline-flex;align-items:center;gap:6px;margin-top:12px;background:var(--sport);color:#fff;padding:9px 18px;border-radius:6px;font-size:12px;font-weight:700;text-decoration:none;text-transform:uppercase;letter-spacing:.4px;transition:all .15s}
+  .cd-cta:hover{background:var(--navy)}
+
+  /* SKEL */
+  .skel-row{display:grid;grid-template-columns:1fr 100px 110px 140px;padding:15px 20px;border-bottom:1px solid var(--border);align-items:center;gap:12px}
+  .skel{background:#e2e8f0;border-radius:4px;animation:pulse 1.4s infinite ease-in-out}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+
+  /* SIDEBAR */
+  .sidebar{display:flex;flex-direction:column;gap:18px}
+  .sidebar-card{background:var(--white);border-radius:10px;border:1px solid var(--border);overflow:hidden}
+  .sidebar-head{background:var(--navy);padding:12px 16px;font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:.8px;color:var(--white)}
+  .sidebar-head span{color:var(--gold)}
+  .sidebar-body{padding:14px 16px}
+  .sidebar-item{display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid var(--border);font-size:13px;color:var(--text-mid);cursor:pointer;transition:color .12s}
+  .sidebar-item:last-child{border-bottom:none}
+  .sidebar-item:hover{color:var(--sport)}
+  .sidebar-item strong{color:var(--navy)}
+  .sidebar-count{font-size:11px;font-weight:700;background:var(--sport-pale);color:var(--sport);padding:2px 8px;border-radius:10px}
+  .affiliate-card{background:linear-gradient(135deg,var(--navy) 0%,#0d2b1a 100%);border-radius:10px;padding:20px;color:#fff;position:relative;overflow:hidden}
+  .affiliate-card::before{content:'⚾';position:absolute;right:-10px;bottom:-10px;font-size:80px;opacity:.08}
+  .affiliate-card h4{font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:.8px;color:var(--gold-light);margin-bottom:6px}
+  .affiliate-card p{font-size:12px;color:rgba(255,255,255,.7);line-height:1.6;margin-bottom:14px}
+  .affiliate-card a{display:block;background:var(--gold);color:var(--navy);text-align:center;padding:9px;border-radius:6px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;transition:background .15s}
+  .affiliate-card a:hover{background:var(--gold-light)}
+  .guide-card{background:var(--sport-pale);border-radius:10px;border:1px solid #b2dfdb;padding:18px}
+  .guide-card h4{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:8px}
+  .guide-list{list-style:none;display:flex;flex-direction:column;gap:6px}
+  .guide-list li{font-size:13px;color:var(--text-mid);padding-left:16px;position:relative;line-height:1.5}
+  .guide-list li::before{content:'→';position:absolute;left:0;color:var(--sport);font-weight:700}
+  .guide-list a{color:var(--sport);font-weight:600}
+  .guide-list a:hover{text-decoration:underline}
+  .submit-card{background:var(--gold-pale);border:1px solid #e8d5a3;border-radius:10px;padding:18px;text-align:center}
+  .submit-card h4{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:6px}
+  .submit-card p{font-size:12px;color:var(--text-mid);margin-bottom:12px;line-height:1.6}
+  .submit-card a{display:block;background:var(--navy);color:#fff;padding:9px;border-radius:6px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;transition:background .15s}
+  .submit-card a:hover{background:var(--sport)}
+
+  /* GUIDE SECTION */
+  .guide-section{background:var(--white);border-radius:10px;border:1px solid var(--border);padding:28px;margin-top:24px}
+  .guide-section h2{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:.8px;color:var(--navy);margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--sport)}
+  .guide-section h3{font-size:15px;font-weight:700;color:var(--navy);margin:18px 0 8px}
+  .guide-section p{font-size:14px;color:var(--text-mid);line-height:1.8;margin-bottom:10px}
+  .guide-cols{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:16px}
+  .info-box{background:var(--sport-pale);border-radius:8px;padding:16px;border-left:3px solid var(--sport)}
+  .info-box h4{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:6px}
+  .info-box p{font-size:12px;color:var(--text-mid);line-height:1.7;margin:0}
+
+  /* FOOTER */
+  footer{background:var(--navy);padding:28px 40px;margin-top:48px;text-align:center}
+  .footer-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+  .footer-logo{font-family:'Bebas Neue',sans-serif;font-size:20px;color:var(--white);letter-spacing:1px}
+  .footer-logo span{color:var(--gold)}
+  .footer-links{display:flex;gap:16px}
+  .footer-links a{font-size:12px;color:rgba(255,255,255,.4);transition:color .15s}
+  .footer-links a:hover{color:var(--gold)}
+  .footer-copy{font-size:11px;color:rgba(255,255,255,.3)}
+  .empty-state{padding:48px 20px;text-align:center;color:var(--text-muted)}
+  .empty-state h3{font-family:'Bebas Neue',sans-serif;font-size:22px;color:var(--navy);letter-spacing:1px;margin-bottom:6px}
+
+  @media(max-width:900px){
+    .main{grid-template-columns:1fr;padding:20px}
+    .sport-hero-inner{grid-template-columns:1fr}
+    .hero-stats{flex-direction:row;justify-content:center}
+    .contact-dropdown.open{grid-template-columns:1fr}
+    .table-head,.listing-row,.skel-row{grid-template-columns:1fr 90px 130px}
+    .table-head>div:nth-child(3),.listing-row>div:nth-child(3),.skel-row>div:nth-child(3){display:none}
+    .guide-cols{grid-template-columns:1fr}
+    .top-bar,.sport-hero,.quick-bar,.footer-inner{padding-left:20px;padding-right:20px}
+  }
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="top-bar-links">
+    <a href="index.html">Home</a>
+    <a href="soccer.html">Soccer</a>
+    <a href="lacrosse.html">Lacrosse</a>
+    <a href="baseball.html">Baseball</a>
+  </div>
+  <div class="top-bar-links">
+    <a href="submit.html">Submit a Listing</a>
+    <a href="about.html">About</a>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">Youth<span>Sports</span>Connect</a>
+  <div class="nav-links">
+    <a href="index.html">All Sports</a>
+    <a href="soccer.html">⚽ Soccer</a>
+    <a href="lacrosse.html">🥍 Lacrosse</a>
+    <a href="baseball.html" class="active">⚾ Baseball</a>
+  </div>
+  <div class="nav-search">
+    <input type="text" id="nav-search" placeholder="Search baseball listings…" oninput="handleSearch(this.value)">
+    <button onclick="handleSearch(document.getElementById('nav-search').value)">Go</button>
+  </div>
+</nav>
+
+<!-- SPORT HERO -->
+<div class="sport-hero">
+  <div class="sport-hero-inner">
+    <div>
+      <div class="sport-breadcrumb">
+        <a href="index.html">Home</a><span>/</span>
+        <a href="#">New York</a><span>/</span>
+        <a href="#">Long Island</a><span>/</span>
+        <span style="color:rgba(255,255,255,.7)">Soccer</span>
+      </div>
+      <h1>Long Island<br><em>Youth Baseball</em></h1>
+      <p>The most complete directory of youth baseball on Long Island — Little Leagues, travel teams, training facilities, private coaches, and Nike Baseball Camps across Nassau and Suffolk County.</p>
+      <div class="sport-cta-row">
+        <a href="submit.html" class="btn-primary">⚾ Submit a Free Listing</a>
+        <a href="#guide" class="btn-outline">Parent's Guide →</a>
+      </div>
+    </div>
+    <div class="hero-stats" id="hero-stats">
+      <div class="hero-stat"><div class="hero-stat-num" id="stat-total">—</div><div class="hero-stat-label">Total Listings</div></div>
+      <div class="hero-stat"><div class="hero-stat-num" id="stat-leagues">—</div><div class="hero-stat-label">Leagues</div></div>
+      <div class="hero-stat"><div class="hero-stat-num" id="stat-clubs">—</div><div class="hero-stat-label">Clubs & Teams</div></div>
+      <div class="hero-stat"><div class="hero-stat-num" id="stat-camps">—</div><div class="hero-stat-label">Summer Camps</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- QUICK FILTER BAR -->
+<div class="quick-bar">
+  <div class="quick-bar-inner">
+    <div class="quick-link active" onclick="setType('all',this)">All</div>
+    <div class="quick-link" onclick="setType('league',this)">Leagues</div>
+    <div class="quick-link" onclick="setType('team',this)">Clubs & Teams</div>
+    <div class="quick-link" onclick="setType('academy',this)">Academies</div>
+    <div class="quick-link" onclick="setType('coach',this)">Coaches</div>
+    <div class="quick-link" onclick="setType('facility',this)">Facilities</div>
+    <div class="quick-link" onclick="setType('summer_camp',this)">Summer Camps</div>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="main">
+  <div>
+
+    <!-- INTRO -->
+    <div class="intro-card">
+      <h2>About Long Island Youth Baseball</h2>
+      <p>Long Island has one of the richest youth baseball traditions in the country. From Little League chapters in every town to elite travel organizations like <strong>LI Elite</strong>, <strong>LI Huskies</strong>, and <strong>HEAT Baseball</strong>, and world-class training facilities like <strong>Lasorda Legacy Park</strong> and <strong>LI Field House</strong>, LI develops top-level talent year-round.</p>
+      <p>Use the filters below to browse by program type — from Little League to Nike Camps. Click any listing to see contact info, socials, and an AI-generated summary.</p>
+      <div class="intro-grid" id="intro-grid">
+        <div class="intro-item"><div class="intro-item-num" id="ig-leagues">—</div><div class="intro-item-label">Leagues</div></div>
+        <div class="intro-item"><div class="intro-item-num" id="ig-teams">—</div><div class="intro-item-label">Clubs & Teams</div></div>
+        <div class="intro-item"><div class="intro-item-num" id="ig-coaches">—</div><div class="intro-item-label">Coaches & Academies</div></div>
+      </div>
+    </div>
+
+    <!-- FILTER BAR -->
+    <div class="filter-bar">
+      <button class="ftab active" onclick="setType('all',this)">All Listings</button>
+      <button class="ftab" onclick="setType('league',this)">Leagues</button>
+      <button class="ftab" onclick="setType('team',this)">Clubs</button>
+      <button class="ftab" onclick="setType('academy',this)">Academies</button>
+      <button class="ftab" onclick="setType('coach',this)">Coaches</button>
+      <button class="ftab" onclick="setType('facility',this)">Facilities</button>
+      <button class="ftab" onclick="setType('summer_camp',this)">Summer Camps</button>
+      <span class="results-meta" id="results-meta"></span>
+    </div>
+
+    <!-- TABLE -->
+    <div class="listings-card">
+      <div class="table-head">
+        <div>Organization</div>
+        <div>Type</div>
+        <div>Level</div>
+        <div>Actions</div>
+      </div>
+      <div id="listings-body">
+        <!-- skeleton -->
+        <div class="skel-row"><div class="skel" style="height:36px;width:80%"></div><div class="skel" style="height:22px;width:70px"></div><div class="skel" style="height:22px;width:80px"></div><div class="skel" style="height:22px;width:110px"></div></div>
+        <div class="skel-row"><div class="skel" style="height:36px;width:65%"></div><div class="skel" style="height:22px;width:60px"></div><div class="skel" style="height:22px;width:70px"></div><div class="skel" style="height:22px;width:110px"></div></div>
+        <div class="skel-row"><div class="skel" style="height:36px;width:75%"></div><div class="skel" style="height:22px;width:75px"></div><div class="skel" style="height:22px;width:85px"></div><div class="skel" style="height:22px;width:110px"></div></div>
+        <div class="skel-row"><div class="skel" style="height:36px;width:55%"></div><div class="skel" style="height:22px;width:65px"></div><div class="skel" style="height:22px;width:75px"></div><div class="skel" style="height:22px;width:110px"></div></div>
+        <div class="skel-row"><div class="skel" style="height:36px;width:70%"></div><div class="skel" style="height:22px;width:70px"></div><div class="skel" style="height:22px;width:80px"></div><div class="skel" style="height:22px;width:110px"></div></div>
+      </div>
+    </div>
+
+    <!-- PARENT GUIDE -->
+    <div class="guide-section" id="guide">
+      <h2>Long Island Youth Baseball — Parent's Guide</h2>
+      <p>New to youth baseball on Long Island? Here's what every parent needs to know before signing up.</p>
+
+      <h3>Little League vs. Travel Baseball</h3>
+      <p>Most families start with <strong>Little League</strong> — town-based, recreational, and affordable at $100–250/season. <strong>Travel baseball</strong> involves tryouts, paid coaches, and tournament schedules against regional competition. Travel is a major time and financial commitment but dramatically accelerates player development and exposure to college scouts.</p>
+
+      <div class="guide-cols">
+        <div class="info-box">
+          <h4>⚽ What is USABL?</h4>
+          <p><strong>USABL (US Amateur Baseball League)</strong> is one of the primary travel baseball sanctioning bodies on Long Island. Most LI travel teams compete in USABL events alongside tournaments like Perfect Game, WWBA, and local showcases.</p>
+        </div>
+        <div class="info-box">
+          <h4>📅 When are tryouts?</h4>
+          <p>Travel baseball tryouts typically happen in <strong>August–September</strong> for the following spring/summer season. Fall tryouts are common. Most organizations post on their social media and websites. Contact teams directly to get on tryout lists.</p>
+        </div>
+        <div class="info-box">
+          <h4>💰 What does travel baseball cost?</h4>
+          <p>Little League runs $100–250/season. Travel baseball ranges $1,500–5,000/year including uniforms, tournaments, coach fees, and training. Equipment (bat, helmet, cleats, catchers gear) can add $300–800 for a fully equipped player.</p>
+        </div>
+        <div class="info-box">
+          <h4>🏟️ Showcases & Recruiting</h4>
+          <p>Long Island players regularly participate in showcases like <strong>Perfect Game</strong>, <strong>WWBA</strong>, and <strong>Cooperstown All Star Village</strong>. Lasorda Legacy Park in Yaphank and the Cage Sports Center host Nike Baseball Camps and elite training events.</p>
+        </div>
+      </div>
+
+      <h3>How to Choose a Club</h3>
+      <p>Start with Little League if your child is new to the sport. When ready for travel, research each organization's coaching staff, tournament schedule, and cost. Visit a practice or game before committing. Ask about playing time policy, training philosophy, and how they handle player development vs. winning.</p>
+    </div>
+
+  </div>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+
+    <div class="sidebar-card">
+      <div class="sidebar-head">Browse by <span>Type</span></div>
+      <div class="sidebar-body" id="type-counts">
+        <div class="sidebar-item" onclick="setType('league',null)"><span>Leagues</span><span class="sidebar-count" id="sc-league">—</span></div>
+        <div class="sidebar-item" onclick="setType('team',null)"><span>Clubs & Teams</span><span class="sidebar-count" id="sc-team">—</span></div>
+        <div class="sidebar-item" onclick="setType('academy',null)"><span>Academies</span><span class="sidebar-count" id="sc-academy">—</span></div>
+        <div class="sidebar-item" onclick="setType('coach',null)"><span>Coaches</span><span class="sidebar-count" id="sc-coach">—</span></div>
+        <div class="sidebar-item" onclick="setType('facility',null)"><span>Facilities</span><span class="sidebar-count" id="sc-facility">—</span></div>
+        <div class="sidebar-item" onclick="setType('summer_camp',null)"><span>Summer Camps</span><span class="sidebar-count" id="sc-camp">—</span></div>
+      </div>
+    </div>
+
+    <div class="affiliate-card">
+      <h4>Soccer Gear & Equipment</h4>
+      <p>Find bats, gloves, helmets, cleats, catcher's gear, and training nets for every age and position.</p>
+      <a href="https://amazon.com/s?k=youth+baseball+gear&tag=youthsportsconnect-20" target="_blank">Shop Baseball Gear on Amazon →</a>
+    </div>
+
+    <div class="guide-card">
+      <h4>📚 Quick Resources</h4>
+      <ul class="guide-list">
+        <li><a href="https://perfectgame.org" target="_blank">Perfect Game Baseball</a></li>
+        <li><a href="https://lasordalegacypark.com" target="_blank">Lasorda Legacy Park LI</a></li>
+        <li><a href="https://usabl.com" target="_blank">USABL Long Island</a></li>
+        <li><a href="https://ncsasports.org" target="_blank">NCSA Baseball Recruiting</a></li>
+        <li><a href="#guide">Parent's Guide to LI Baseball</a></li>
+      </ul>
+    </div>
+
+    <div class="submit-card">
+      <h4>Is Your Club Listed?</h4>
+      <p>Add your league, team, academy, or coaching service to our directory for free.</p>
+      <a href="submit.html">Submit a Free Listing →</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">Youth<span>Sports</span>Connect</div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="soccer.html">Soccer</a>
+      <a href="lacrosse.html">Lacrosse</a>
+      <a href="baseball.html">Baseball</a>
+      <a href="submit.html">Submit Listing</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+    <div class="footer-copy">© 2025 YouthSportsConnect. Long Island, NY.</div>
+  </div>
+</footer>
+
+<script>
+  const SUPABASE_URL = 'https://iognzfpzipwemrbcltcu.supabase.co';
+  const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlvZ256ZnB6aXB3ZW1yYmNsdGN1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQwNjY5NzcsImV4cCI6MjA4OTY0Mjk3N30.or4FEjl3tyVAR7_0t9TH74-0Ds1S4oE2eF6LdYXZO4k';
+
+  let allListings = [], activeType = 'all', searchTerm = '';
+  const typeLabels = {league:'League',team:'Team',academy:'Academy',coach:'Coach',facility:'Facility',summer_camp:'Summer Camp'};
+
+  async function fetchListings() {
+    const res = await fetch(
+      `${SUPABASE_URL}/rest/v1/listings?select=*,sports(name,slug),locations(name,slug)&sports.slug=eq.baseball&status=eq.active&order=featured.desc,name.asc`,
+      {headers:{apikey:SUPABASE_KEY,Authorization:`Bearer ${SUPABASE_KEY}`}}
+    );
+    const data = await res.json();
+    // filter to soccer only client-side as well
+    allListings = data.filter(l => l.sports?.slug === 'baseball');
+    updateStats();
+    render();
+  }
+
+  function updateStats() {
+    const total = allListings.length;
+    const leagues = allListings.filter(l=>l.listing_type==='league').length;
+    const clubs = allListings.filter(l=>l.listing_type==='team').length;
+    const camps = allListings.filter(l=>l.listing_type==='summer_camp').length;
+    const coaches = allListings.filter(l=>l.listing_type==='coach'||l.listing_type==='academy').length;
+    document.getElementById('stat-total').textContent = total;
+    document.getElementById('stat-leagues').textContent = leagues;
+    document.getElementById('stat-clubs').textContent = clubs;
+    document.getElementById('stat-camps').textContent = camps;
+    document.getElementById('ig-leagues').textContent = leagues;
+    document.getElementById('ig-teams').textContent = clubs;
+    document.getElementById('ig-coaches').textContent = coaches;
+    document.getElementById('sc-league').textContent = leagues;
+    document.getElementById('sc-team').textContent = clubs;
+    document.getElementById('sc-academy').textContent = allListings.filter(l=>l.listing_type==='academy').length;
+    document.getElementById('sc-coach').textContent = allListings.filter(l=>l.listing_type==='coach').length;
+    document.getElementById('sc-facility').textContent = allListings.filter(l=>l.listing_type==='facility').length;
+    document.getElementById('sc-camp').textContent = camps;
+  }
+
+  function render() {
+    let filtered = allListings;
+    if (activeType !== 'all') filtered = filtered.filter(l => l.listing_type === activeType);
+    if (searchTerm) {
+      const q = searchTerm.toLowerCase();
+      filtered = filtered.filter(l => l.name.toLowerCase().includes(q) || (l.description||'').toLowerCase().includes(q));
+    }
+    document.getElementById('results-meta').textContent = `${filtered.length} listing${filtered.length!==1?'s':''}`;
+    const body = document.getElementById('listings-body');
+    if (!filtered.length) { body.innerHTML = `<div class="empty-state"><h3>No Results Found</h3><p>Try a different filter or search term.</p></div>`; return; }
+    body.innerHTML = filtered.map((l,i) => rowHTML(l,i)).join('');
+  }
+
+  function aiSummary(l) {
+    const sport = 'baseball', loc = l.locations?.name || 'Long Island';
+    const ages = l.age_groups?.length ? l.age_groups.join(', ') : 'all ages';
+    const lvl = l.competitive_level || '';
+    const desc = l.description ? l.description.split('.')[0] + '.' : '';
+    const t = l.listing_type;
+    if (t==='league') return `${l.name} is a ${lvl} ${sport} league serving ${loc} youth players (${ages}). ${desc||'Contact them for registration dates, schedules, and fees.'}`;
+    if (t==='team') return `${l.name} is a ${lvl} ${sport} club on ${loc} offering programs for players aged ${ages}. ${desc||'Reach out for tryout dates and roster availability.'}`;
+    if (t==='academy') return `${l.name} provides ${sport} training on ${loc} for players aged ${ages}. ${desc||'Contact them for session schedules and pricing.'}`;
+    if (t==='coach') return `${l.name} offers private ${sport} coaching on ${loc} for players aged ${ages}. ${desc||'Reach out to book a session or learn about rates.'}`;
+    if (t==='facility') return `${l.name} is a ${sport} training facility on ${loc}. ${desc||'Contact them for availability, rentals, and scheduling.'}`;
+    if (t==='summer_camp') return `${l.name} is a summer ${sport} camp on ${loc} for players aged ${ages}. ${desc||'Contact them for session dates and registration.'}`;
+    return desc || 'Contact this organization for more information.';
+  }
+
+  function toggleRow(id) {
+    const row = document.getElementById(`row-${id}`);
+    const drop = document.getElementById(`drop-${id}`);
+    if (!row||!drop) return;
+    const isOpen = row.classList.contains('open');
+    document.querySelectorAll('.listing-row.open').forEach(r=>r.classList.remove('open'));
+    document.querySelectorAll('.contact-dropdown.open').forEach(d=>d.classList.remove('open'));
+    if (!isOpen) { row.classList.add('open'); drop.classList.add('open'); }
+  }
+
+  function rowHTML(l,i) {
+    const lvl = (l.competitive_level||'').toLowerCase();
+    const lvlDisplay = l.competitive_level||'';
+    const typeLabel = typeLabels[l.listing_type]||l.listing_type;
+    const summary = aiSummary(l);
+    const emailRow = l.contact_email ? `<div class="ci"><div class="ci-icon">✉</div><div class="ci-info"><div class="ci-label">Email</div><div class="ci-val"><a href="mailto:${l.contact_email}">${l.contact_email}</a></div></div></div>` : '';
+    const phoneRow = l.phone ? `<div class="ci"><div class="ci-icon">📞</div><div class="ci-info"><div class="ci-label">Phone</div><div class="ci-val"><a href="tel:${l.phone}">${l.phone}</a></div></div></div>` : '';
+    const webRow = l.website_url ? `<div class="ci"><div class="ci-icon">🌐</div><div class="ci-info"><div class="ci-label">Website</div><div class="ci-val"><a href="${l.website_url}" target="_blank">${l.website_url.replace(/https?:\/\//,'')}</a></div></div></div>` : '';
+    const noContact = (!l.contact_email&&!l.phone&&!l.website_url) ? '<p style="font-size:12px;color:var(--text-muted);font-style:italic;margin-top:4px">No contact info on file yet.</p>' : '';
+    const igPill = l.instagram_url ? `<a class="social-pill social-ig" href="${l.instagram_url}" target="_blank" onclick="event.stopPropagation()">📷 Instagram</a>` : '';
+    const fbPill = l.facebook_url ? `<a class="social-pill social-fb" href="${l.facebook_url}" target="_blank" onclick="event.stopPropagation()">📘 Facebook</a>` : '';
+    const twPill = l.twitter_url ? `<a class="social-pill social-tw" href="${l.twitter_url}" target="_blank" onclick="event.stopPropagation()">𝕏 Twitter</a>` : '';
+    const ytPill = l.youtube_url ? `<a class="social-pill social-yt" href="${l.youtube_url}" target="_blank" onclick="event.stopPropagation()">▶ YouTube</a>` : '';
+    const socialsRow = (igPill||fbPill||twPill||ytPill) ? `<div class="socials-row">${igPill}${fbPill}${twPill}${ytPill}</div>` : '';
+    return `
+    <div class="listing-row${l.featured?' featured':''}" id="row-${l.id}" style="animation-delay:${i*.03}s" onclick="toggleRow('${l.id}')">
+      <div class="row-name-block">
+        <div class="sport-dot">⚾</div>
+        <div>
+          <div class="row-name">${l.name}</div>
+          <div class="row-sub">${l.locations?.name||'Long Island'}${l.age_groups?.length?' · '+l.age_groups.slice(0,3).join(', '):''}</div>
+        </div>
+      </div>
+      <div><span class="badge badge-${l.listing_type}">${typeLabel}</span></div>
+      <div>${lvlDisplay?`<span class="badge level-badge level-${lvl}">${lvlDisplay}</span>`:'<span style="color:var(--text-muted);font-size:12px">—</span>'}</div>
+      <div class="row-actions">
+        ${l.website_url?`<a class="btn-visit" href="${l.website_url}" target="_blank" onclick="event.stopPropagation()">Visit ↗</a>`:''}
+        <button class="btn-details" onclick="toggleRow('${l.id}');event.stopPropagation()">Info <span class="d-arrow">▾</span></button>
+      </div>
+    </div>
+    <div class="contact-dropdown" id="drop-${l.id}">
+      <div>
+        <div class="cd-org-header">
+          <div class="sport-dot">⚾</div>
+          <div>
+            <div style="font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:.5px;color:var(--navy)">${l.name}</div>
+            <div style="display:flex;gap:6px;margin-top:3px;flex-wrap:wrap">
+              <span class="badge badge-${l.listing_type}">${typeLabel}</span>
+              ${lvlDisplay?`<span class="badge level-badge level-${lvl}">${lvlDisplay}</span>`:''}
+            </div>
+          </div>
+        </div>
+        <span class="ai-tag">✦ AI Summary</span>
+        <p>${summary}</p>
+        ${l.age_groups?.length?`<p style="margin-top:8px;font-size:12px;color:var(--text-muted)"><strong>Age groups:</strong> ${l.age_groups.join(', ')}</p>`:''}
+      </div>
+      <div>
+        <div style="font-family:'Bebas Neue',sans-serif;font-size:15px;letter-spacing:.5px;color:var(--navy);margin-bottom:10px">Contact & Links</div>
+        ${emailRow}${phoneRow}${webRow}${noContact}
+        ${socialsRow}
+        ${l.website_url?`<a class="cd-cta" href="${l.website_url}" target="_blank" onclick="event.stopPropagation()">Visit Website ↗</a>`:''}
+      </div>
+    </div>`;
+  }
+
+  function setType(type, el) {
+    activeType = type;
+    document.querySelectorAll('.ftab').forEach(b=>b.classList.remove('active'));
+    document.querySelectorAll('.quick-link').forEach(b=>b.classList.remove('active'));
+    if (el) el.classList.add('active');
+    render();
+  }
+
+  function handleSearch(val) { searchTerm = val; render(); }
+
+  fetchListings();
+</script>
+</body>
+</html>
