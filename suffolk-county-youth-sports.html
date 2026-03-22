@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Suffolk County Youth Sports — Leagues, Clubs & Coaches | YouthSportsConnect</title>
+<meta name="description" content="Find youth sports leagues, travel clubs, coaches, and summer camps in Suffolk County, NY. Soccer, lacrosse, and baseball programs across Smithtown, Huntington, Commack, West Islip, Patchogue, and more.">
+<link rel="canonical" href="https://youthsportsconnect.co/suffolk-county-youth-sports.html">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Suffolk County Youth Sports Directory","description":"Directory of youth sports leagues, clubs, and coaches in Suffolk County NY","url":"https://youthsportsconnect.co/suffolk-county-youth-sports.html","areaServed":{"@type":"AdministrativeArea","name":"Suffolk County","containedIn":"New York"}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --navy:#0a1628;--navy-mid:#112240;
+    --gold:#c9a84c;--gold-light:#e8c96d;--gold-pale:#fdf6e3;
+    --white:#fff;--off-white:#f5f7fa;--border:#e2e8f0;
+    --text:#1a202c;--text-mid:#4a5568;--text-muted:#718096;
+    --soccer:#1a6b3a;--lacrosse:#1a3a6e;--baseball:#7b2225;
+  }
+  body{font-family:'Inter',sans-serif;background:var(--off-white);color:var(--text)}
+  a{text-decoration:none;color:inherit}
+
+  .top-bar{background:var(--navy);padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:36px}
+  .top-bar a{font-size:11px;color:rgba(255,255,255,.5)}
+  .top-bar a:hover{color:var(--gold)}
+  .top-bar-links{display:flex;gap:20px}
+  nav{background:var(--navy-mid);padding:0 40px;display:flex;align-items:center;height:62px;border-bottom:3px solid var(--gold);position:sticky;top:0;z-index:100}
+  .nav-logo{font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:1px;color:var(--white);margin-right:36px}
+  .nav-logo span{color:var(--gold)}
+  .nav-links{display:flex;gap:2px;flex:1}
+  .nav-links a{font-size:12px;font-weight:600;color:rgba(255,255,255,.65);padding:0 14px;height:62px;display:flex;align-items:center;border-bottom:3px solid transparent;transition:all .15s;text-transform:uppercase;letter-spacing:.3px}
+  .nav-links a:hover{color:var(--gold);border-bottom-color:var(--gold)}
+
+  .hero{background:linear-gradient(135deg,var(--navy) 0%,#0d1f3c 100%);padding:52px 40px 44px;border-bottom:3px solid var(--gold)}
+  .hero-inner{max-width:1100px;margin:0 auto}
+  .breadcrumb{font-size:12px;color:rgba(255,255,255,.4);margin-bottom:14px}
+  .breadcrumb a{color:rgba(255,255,255,.4)}
+  .breadcrumb a:hover{color:var(--gold)}
+  .breadcrumb span{margin:0 7px;color:rgba(255,255,255,.2)}
+  .hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(38px,5vw,62px);color:var(--white);line-height:1;letter-spacing:2px;margin-bottom:12px}
+  .hero h1 span{color:var(--gold-light)}
+  .hero p{font-size:15px;color:rgba(255,255,255,.65);line-height:1.7;max-width:580px;margin-bottom:24px}
+  .hero-towns{display:flex;flex-wrap:wrap;gap:8px}
+  .town-chip{font-size:11px;font-weight:600;background:rgba(255,255,255,.08);color:rgba(255,255,255,.6);padding:4px 12px;border-radius:20px;border:1px solid rgba(255,255,255,.12)}
+
+  .wrap{max-width:1100px;margin:0 auto;padding:36px 40px 80px}
+
+  .sport-section{margin-bottom:40px}
+  .sport-head{display:flex;align-items:center;gap:12px;margin-bottom:18px;padding-bottom:12px;border-bottom:2px solid var(--border)}
+  .sport-head h2{font-family:'Bebas Neue',sans-serif;font-size:24px;letter-spacing:.8px;color:var(--navy)}
+  .sport-icon{width:40px;height:40px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+  .sport-count{font-size:12px;color:var(--text-muted);margin-left:auto}
+  .sport-link{font-size:13px;font-weight:600;color:var(--gold);margin-left:12px}
+  .sport-link:hover{text-decoration:underline}
+
+  .listing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:14px}
+  .listing-chip{background:var(--white);border:1px solid var(--border);border-radius:8px;padding:12px 14px;transition:all .15s;cursor:pointer}
+  .listing-chip:hover{border-color:var(--navy);box-shadow:0 2px 8px rgba(0,0,0,.06)}
+  .lc-name{font-size:13px;font-weight:600;color:var(--navy);margin-bottom:3px}
+  .lc-type{font-size:11px;color:var(--text-muted);text-transform:uppercase;letter-spacing:.3px}
+  .lc-badge{display:inline-block;font-size:10px;font-weight:700;padding:1px 7px;border-radius:3px;text-transform:uppercase;margin-top:5px}
+  .b-travel{background:#dbeafe;color:#1e40af}
+  .b-rec{background:#d1fae5;color:#065f46}
+  .b-elite{background:#fee2e2;color:#991b1b}
+
+  .view-all{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:var(--white);background:var(--navy);padding:10px 20px;border-radius:6px;transition:background .15s}
+  .view-all:hover{background:var(--gold);color:var(--navy)}
+
+  .guide-strip{background:var(--white);border-radius:10px;border:1px solid var(--border);padding:24px 28px;margin-bottom:40px}
+  .guide-strip h2{font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:.7px;color:var(--navy);margin-bottom:14px}
+  .guide-links{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .guide-link-card{background:var(--off-white);border-radius:8px;padding:14px;border:1px solid var(--border);transition:all .15s}
+  .guide-link-card:hover{border-color:var(--navy)}
+  .glc-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;margin-bottom:5px}
+  .glc-title{font-size:13px;font-weight:600;color:var(--navy);line-height:1.4}
+
+  .seo-content{background:var(--white);border-radius:10px;border:1px solid var(--border);padding:28px;margin-top:40px}
+  .seo-content h2{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:.7px;color:var(--navy);margin-bottom:12px;padding-bottom:10px;border-bottom:2px solid var(--gold)}
+  .seo-content h3{font-size:15px;font-weight:700;color:var(--navy);margin:20px 0 8px}
+  .seo-content p{font-size:14px;color:var(--text-mid);line-height:1.85;margin-bottom:10px}
+  .seo-cols{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:16px}
+  .seo-box{background:var(--off-white);border-radius:8px;padding:16px;border-left:3px solid var(--gold)}
+  .seo-box h4{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:5px}
+  .seo-box p{font-size:12px;color:var(--text-muted);margin:0;line-height:1.7}
+
+  footer{background:var(--navy);padding:24px 40px;margin-top:0}
+  .footer-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+  .footer-logo{font-family:'Bebas Neue',sans-serif;font-size:18px;color:var(--white)}
+  .footer-logo span{color:var(--gold)}
+  .footer-links{display:flex;gap:14px}
+  .footer-links a{font-size:11px;color:rgba(255,255,255,.4)}
+  .footer-links a:hover{color:var(--gold)}
+  .footer-copy{font-size:11px;color:rgba(255,255,255,.3)}
+
+  @media(max-width:860px){
+    .wrap,.hero,.top-bar{padding-left:20px;padding-right:20px}
+    nav{padding:0 20px}
+    .listing-grid{grid-template-columns:1fr 1fr}
+    .guide-links{grid-template-columns:1fr}
+    .seo-cols{grid-template-columns:1fr}
+  }
+  @media(max-width:540px){
+    .listing-grid{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+  <div class="top-bar-links"><a href="index.html">← Home</a></div>
+  <div class="top-bar-links">
+    <a href="soccer.html">Soccer</a>
+    <a href="lacrosse.html">Lacrosse</a>
+    <a href="baseball.html">Baseball</a>
+  </div>
+</div>
+
+<nav>
+  <a href="index.html" class="nav-logo">Youth<span>Sports</span>Connect</a>
+  <div class="nav-links">
+    <a href="index.html">All Sports</a>
+    <a href="soccer.html">⚽ Soccer</a>
+    <a href="lacrosse.html">🥍 Lacrosse</a>
+    <a href="baseball.html">⚾ Baseball</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a><span>/</span>
+      <a href="#">New York</a><span>/</span>
+      <span style="color:rgba(255,255,255,.7)">Suffolk County</span>
+    </div>
+    <h1>Suffolk County<br><span>Youth Sports</span></h1>
+    <p>Leagues, travel clubs, academies, coaches, and summer camps for youth athletes across Suffolk County, NY — soccer, lacrosse, and baseball in every town.</p>
+    <div class="hero-towns">
+      <span class="town-chip">Smithtown</span><span class="town-chip">Huntington</span>
+      <span class="town-chip">Commack</span><span class="town-chip">West Islip</span>
+      <span class="town-chip">Patchogue</span><span class="town-chip">Bay Shore</span>
+      <span class="town-chip">Northport</span><span class="town-chip">Hauppauge</span>
+      <span class="town-chip">Centereach</span><span class="town-chip">Sachem</span>
+      <span class="town-chip">Three Village</span><span class="town-chip">Deer Park</span>
+      <span class="town-chip">Brentwood</span><span class="town-chip">Islip</span>
+      <span class="town-chip">Kings Park</span><span class="town-chip">+ More</span>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <!-- GUIDE LINKS -->
+  <div class="guide-strip">
+    <h2>Suffolk County Parent Guides</h2>
+    <div class="guide-links">
+      <a class="guide-link-card" href="how-to-choose-travel-soccer-long-island.html">
+        <div class="glc-label" style="color:var(--soccer)">⚽ Soccer</div>
+        <div class="glc-title">How to Choose a Travel Soccer Team on Long Island</div>
+      </a>
+      <a class="guide-link-card" href="lacrosse-age-groups-long-island.html">
+        <div class="glc-label" style="color:var(--lacrosse)">🥍 Lacrosse</div>
+        <div class="glc-title">Youth Lacrosse Age Groups Explained</div>
+      </a>
+      <a class="guide-link-card" href="long-island-baseball-recruiting-timeline.html">
+        <div class="glc-label" style="color:var(--baseball)">⚾ Baseball</div>
+        <div class="glc-title">Long Island Baseball Recruiting Timeline</div>
+      </a>
+    </div>
+  </div>
+
+  <!-- SOCCER -->
+  <div class="sport-section">
+    <div class="sport-head">
+      <div class="sport-icon" style="background:#e8f5e9">⚽</div>
+      <h2>Suffolk County Youth Soccer</h2>
+      <span class="sport-count">LIJSL member clubs across all Nassau towns</span>
+      <a class="sport-link" href="soccer.html">View all →</a>
+    </div>
+    <div class="listing-grid">
+      <div class="listing-chip" onclick="location.href='listing.html?slug=smithtown-kickers-sc'">
+        <div class="lc-name">Smithtown Kickers SC</div><div class="lc-type">Club / Team</div><div class="lc-badge b-elite">Elite</div>
+      </div>
+      <div class="listing-chip" onclick="location.href='listing.html?slug=commack-sc'">
+        <div class="lc-name">Commack SC</div><div class="lc-type">Club / Team</div><div class="lc-badge b-travel">Travel</div>
+      </div>
+      <div class="listing-chip" onclick="location.href='listing.html?slug=sachem-sc'">
+        <div class="lc-name">Sachem SC</div><div class="lc-type">Club / Team</div><div class="lc-badge b-rec">Rec</div>
+      </div>
+      <div class="listing-chip" onclick="location.href='listing.html?slug=northport-sc'">
+        <div class="lc-name">Northport SC</div><div class="lc-type">Club / Team</div><div class="lc-badge b-travel">Travel</div>
+      </div>
+      <div class="listing-chip" onclick="location.href='listing.html?slug=huntington-sc'">
+        <div class="lc-name">Huntington SC</div><div class="lc-type">Club / Team</div><div class="lc-badge b-travel">Travel</div>
+      </div>
+      <div class="listing-chip" onclick="location.href='listing.html?slug=three-village-sc'">
+        <div class="lc-name">Three Village SC</div><div class="lc-type">Club / Team</div><div class="lc-badge b-travel">Travel</div>
+      </div>
+      <div class="listing-chip" onclick="location.href='listing.html?slug=west-islip-sc'">
+        <div class="lc-name">West Islip SC</div><div class="lc-type">Club / Team</div><div class="lc-badge b-rec">Rec</div>
+      </div>
+      <div class="listing-chip" onclick="location.href='listing.html?slug=long-island-futsal-league'">
+        <div class="lc-name">LI Futsal League</div><div class="lc-type">League</div><div class="lc-badge b-rec">Rec</div>
+      </div>
+      <div class="listing-chip" onclick="location.href='listing.html?slug=long-island-junior-soccer-league'">
+        <div class="lc-name">LIJSL</div><div class="lc-type">League</div><div class="lc-badge b-rec">Rec + Travel</div>
+      </div>
+    </div>
+    <a class="view-all" href="soccer.html">View All Suffolk County Soccer Programs →</a>
+  </div>
+
+  <!-- LACROSSE -->
+  <div class="sport-section">
+    <div class="sport-head">
+      <div class="sport-icon" style="background:#e8eaf6">🥍</div>
+      <h2>Suffolk County Lacrosse</h2>
+      <span class="sport-count">PAL leagues + elite travel clubs</span>
+      <a class="sport-link" href="lacrosse.html">View all →</a>
+    </div>
+    <div class="listing-grid">
+      <div class="listing-chip" onclick="location.href='listing.html?slug=nassau-suffolk-pal-lacrosse'">
+        <div class="lc-name">Nassau/Suffolk PAL Lacrosse</div><div class="lc-type">League</div><div class="lc-badge b-rec">Rec</div>
+      </div>
+      <div class="listing-chip" onclick="location.href='listing.html?slug=team-91-long-island'">
+        <div class="lc-name">Team 91 Long Island</div><div class="lc-type">Travel Club</div><div class="lc-badge b-elite">Elite</div>
+      </div>
+      <div class="listing-chip" onclick="location.href='listing.html?slug=express-lacrosse-club'">
+        <div class="lc-name">Express Lacrosse</div><div class="lc-type">Travel Club</div><div class="lc-badge b-elite">Elite</div>
+      </div>
+      <div class="listing-chip" onclick="location.href='listing.html?slug=li-empire-lacrosse'">
+        <div class="lc-name">LI Empire Lacrosse</div><div class="lc-type">Travel Club</div><div class="lc-badge b-elite">Elite</div>
+      </div>
+      <div class="listing-chip" onclick="location.href='listing.html?slug=northport-lacrosse-club'">
+        <div class="lc-name">Northport Lacrosse</div><div class="lc-type">Travel Club</div><div class="lc-badge b-elite">Elite</div>
+      </div>
+      <div class="listing-chip" onclick="location.href='listing.html?slug=shoreham-wading-river-lacrosse'">
+        <div class="lc-name">SWR Lacrosse</div><div class="lc-type">Travel Club</div><div class="lc-badge b-elite">Elite</div>
+      </div>
+    </div>
+    <a class="view-all" href="lacrosse.html">View All Suffolk County Lacrosse Programs →</a>
+  </div>
+
+  <!-- BASEBALL -->
+  <div class="sport-section">
+    <div class="sport-head">
+      <div class="sport-icon" style="background:#fce8e8">⚾</div>
+      <h2>Suffolk County Baseball</h2>
+      <span class="sport-count">Little Leagues + travel teams across every town</span>
+      <a class="sport-link" href="baseball.html">View all →</a>
+    </div>
+    <div class="listing-grid">
+      <div class="listing-chip" onclick="location.href='listing.html?slug=nassau-county-youth-baseball-league'">
+        <div class="lc-name">Suffolk County Youth Baseball League</div><div class="lc-type">League</div><div class="lc-badge b-rec">Rec</div>
+      </div>
+      <div class="listing-chip" onclick="location.href='listing.html?slug=smithtown-little-league'">
+        <div class="lc-name">Smithtown Little League</div><div class="lc-type">Little League</div><div class="lc-badge b-rec">Rec</div>
+      </div>
+      <div class="listing-chip" onclick="location.href='listing.html?slug=northport-little-league'">
+        <div class="lc-name">Northport Little League</div><div class="lc-type">Little League</div><div class="lc-badge b-rec">Rec</div>
+      </div>
+      <div class="listing-chip" onclick="location.href='listing.html?slug=li-huskies-baseball'">
+        <div class="lc-name">LI Huskies Baseball</div><div class="lc-type">Travel Team</div><div class="lc-badge b-elite">Elite</div>
+      </div>
+      <div class="listing-chip" onclick="location.href='listing.html?slug=heat-baseball-ny'">
+        <div class="lc-name">HEAT Baseball NY</div><div class="lc-type">Travel Team</div><div class="lc-badge b-travel">Travel</div>
+      </div>
+      <div class="listing-chip" onclick="location.href='listing.html?slug=li-field-house-hauppauge'">
+        <div class="lc-name">LI Field House</div><div class="lc-type">Facility</div><div class="lc-badge b-travel">Hauppauge</div>
+      </div>
+    </div>
+    <a class="view-all" href="baseball.html">View All Suffolk County Baseball Programs →</a>
+  </div>
+
+  <!-- SEO CONTENT -->
+  <div class="seo-content">
+    <h2>Youth Sports in Suffolk County, NY</h2>
+    <p>Suffolk County is one of the most active youth sports communities in New York. With dozens of towns from Massapequa to Great Neck, and a dense network of leagues, travel clubs, and training facilities, Suffolk County families have more options — and more decisions to make — than almost anywhere else on Long Island.</p>
+
+    <h3>Suffolk County Youth Soccer</h3>
+    <p>Suffolk County is home to some of Long Island's most competitive LIJSL clubs. Massapequa SC and East Meadow SC consistently rank among the best clubs in the country. The county has strong representation at every level from recreational PAL programs through ECNL and MLS NEXT. LIJSL travel tryouts for Suffolk County clubs typically run May–June.</p>
+
+    <h3>Suffolk County Lacrosse</h3>
+    <p>Suffolk County PAL lacrosse is one of the largest youth lacrosse programs in the country, operating 31 units across 40+ communities. On the travel side, Suffolk County produces more D1 lacrosse commits per capita than almost any region in the US. Programs like Express Lacrosse, Team 91, and Garden City Lacrosse have built national reputations.</p>
+
+    <h3>Suffolk County Baseball</h3>
+    <p>Little League baseball is deeply rooted in Suffolk County communities — from Bellmore to Massapequa Coast to Rockville Centre. Travel baseball organizations like LI Huskies, HEAT Baseball, and Nassau Baseball Club field competitive teams from 8U through 18U competing in USABL, Perfect Game, and showcase events.</p>
+
+    <div class="seo-cols">
+      <div class="seo-box">
+        <h4>Suffolk County Towns Covered</h4>
+        <p>Smithtown · Huntington · Commack · West Islip · Patchogue · Bay Shore · Northport · Hauppauge · Centereach · Sachem · Three Village · Deer Park · Brentwood · Islip · Kings Park · Miller Place · Rocky Point · Lindenhurst · Amityville · Babylon · Port Jefferson · East Northport · Shoreham</p>
+      </div>
+      <div class="seo-box">
+        <h4>Browse by Sport</h4>
+        <p><a href="soccer.html" style="color:var(--soccer);font-weight:600">Suffolk County Youth Soccer →</a><br><br>
+        <a href="lacrosse.html" style="color:var(--lacrosse);font-weight:600">Suffolk County Lacrosse →</a><br><br>
+        <a href="baseball.html" style="color:var(--baseball);font-weight:600">Suffolk County Baseball →</a></p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">Youth<span>Sports</span>Connect</div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="soccer.html">Soccer</a>
+      <a href="lacrosse.html">Lacrosse</a>
+      <a href="baseball.html">Baseball</a>
+      <a href="nassau-county-youth-sports.html">Nassau County</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+    <div class="footer-copy">© 2025 Coastal Directory, LLC · Wyoming</div>
+  </div>
+</footer>
+
+</body>
+</html>
