@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Youth Sports Resources & Guides | Long Island | YouthSportsConnect</title>
+<meta name="description" content="Parent guides, recruiting timelines, age group explainers, and cost breakdowns for Long Island youth soccer, lacrosse, and baseball. Free resources for LI sports families.">
+<link rel="canonical" href="https://youthsportsconnect.co/blog.html">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --navy:#0a1628;--navy-mid:#112240;
+    --gold:#c9a84c;--gold-light:#e8c96d;--gold-pale:#fdf6e3;
+    --white:#fff;--off-white:#f5f7fa;--border:#e2e8f0;
+    --text:#1a202c;--text-mid:#4a5568;--text-muted:#718096;
+    --soccer:#1a6b3a;--lacrosse:#1a3a6e;--baseball:#7b2225;
+  }
+  body{font-family:'Inter',sans-serif;background:var(--off-white);color:var(--text)}
+  a{text-decoration:none;color:inherit}
+
+  .top-bar{background:var(--navy);padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:36px}
+  .top-bar a{font-size:11px;color:rgba(255,255,255,.5);font-weight:500}
+  .top-bar a:hover{color:var(--gold)}
+  .top-bar-links{display:flex;gap:20px}
+  nav{background:var(--navy-mid);padding:0 40px;display:flex;align-items:center;height:62px;border-bottom:3px solid var(--gold);position:sticky;top:0;z-index:100}
+  .nav-logo{font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:1px;color:var(--white);margin-right:36px}
+  .nav-logo span{color:var(--gold)}
+  .nav-links{display:flex;gap:2px;flex:1}
+  .nav-links a{font-size:12px;font-weight:600;color:rgba(255,255,255,.65);padding:0 14px;height:62px;display:flex;align-items:center;border-bottom:3px solid transparent;transition:all .15s;text-transform:uppercase;letter-spacing:.3px}
+  .nav-links a:hover,.nav-links a.active{color:var(--gold);border-bottom-color:var(--gold)}
+
+  .hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 100%);padding:52px 40px 44px;border-bottom:3px solid var(--gold)}
+  .hero-inner{max-width:1000px;margin:0 auto}
+  .hero-label{font-size:11px;font-weight:700;color:var(--gold);text-transform:uppercase;letter-spacing:.8px;margin-bottom:12px}
+  .hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(40px,5vw,60px);color:var(--white);line-height:1;letter-spacing:2px;margin-bottom:12px}
+  .hero h1 span{color:var(--gold-light)}
+  .hero p{font-size:15px;color:rgba(255,255,255,.65);line-height:1.7;max-width:560px}
+
+  .wrap{max-width:1000px;margin:0 auto;padding:40px 40px 80px}
+
+  /* SPORT FILTER TABS */
+  .filter-row{display:flex;gap:8px;margin-bottom:32px;flex-wrap:wrap}
+  .ftab{padding:7px 18px;border-radius:20px;border:1.5px solid var(--border);background:var(--white);font-size:12px;font-weight:700;font-family:'Inter',sans-serif;color:var(--text-mid);cursor:pointer;text-transform:uppercase;letter-spacing:.4px;transition:all .15s}
+  .ftab:hover{border-color:var(--navy);color:var(--navy)}
+  .ftab.active{background:var(--navy);border-color:var(--navy);color:#fff}
+  .ftab-soccer.active{background:var(--soccer);border-color:var(--soccer)}
+  .ftab-lacrosse.active{background:var(--lacrosse);border-color:var(--lacrosse)}
+  .ftab-baseball.active{background:var(--baseball);border-color:var(--baseball)}
+
+  /* FEATURED GUIDE */
+  .featured{background:var(--white);border-radius:12px;border:1px solid var(--border);overflow:hidden;display:grid;grid-template-columns:1fr 1fr;margin-bottom:32px;transition:box-shadow .15s}
+  .featured:hover{box-shadow:0 4px 20px rgba(0,0,0,.08)}
+  .featured-banner{background:linear-gradient(135deg,var(--navy) 0%,#0d2b1a 100%);padding:40px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+  .featured-banner::before{position:absolute;right:-10px;bottom:-10px;font-size:120px;opacity:.07;pointer-events:none}
+  .featured-eyebrow{font-size:11px;font-weight:700;color:var(--gold);text-transform:uppercase;letter-spacing:.6px;margin-bottom:12px}
+  .featured-title{font-family:'Bebas Neue',sans-serif;font-size:30px;letter-spacing:1px;color:var(--white);line-height:1.1;margin-bottom:12px}
+  .featured-desc{font-size:13px;color:rgba(255,255,255,.65);line-height:1.7;margin-bottom:20px}
+  .featured-link{display:inline-block;background:var(--gold);color:var(--navy);padding:10px 20px;border-radius:6px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;transition:background .15s;align-self:flex-start}
+  .featured-link:hover{background:var(--gold-light)}
+  .featured-meta{padding:40px;display:flex;flex-direction:column;justify-content:center;gap:16px}
+  .featured-meta h3{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:8px}
+  .toc-preview{list-style:none;padding:0}
+  .toc-preview li{font-size:13px;color:var(--text-mid);padding:7px 0;border-bottom:1px solid var(--border);display:flex;gap:8px}
+  .toc-preview li:last-child{border-bottom:none}
+  .toc-preview li::before{content:'→';color:var(--soccer);font-weight:700;flex-shrink:0}
+
+  /* GUIDE GRID */
+  .guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .guide-card{background:var(--white);border-radius:10px;border:1px solid var(--border);overflow:hidden;transition:all .15s;display:flex;flex-direction:column}
+  .guide-card:hover{box-shadow:0 4px 16px rgba(0,0,0,.08);transform:translateY(-2px)}
+  .guide-card-banner{height:6px}
+  .guide-card-body{padding:20px;flex:1;display:flex;flex-direction:column}
+  .guide-sport-tag{display:inline-flex;align-items:center;gap:5px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:3px 9px;border-radius:4px;margin-bottom:12px;align-self:flex-start}
+  .tag-soccer{background:#e8f5e9;color:var(--soccer)}
+  .tag-lacrosse{background:#e8eaf6;color:var(--lacrosse)}
+  .tag-baseball{background:#fce8e8;color:var(--baseball)}
+  .tag-general{background:var(--gold-pale);color:#92400e}
+  .guide-title{font-size:15px;font-weight:700;color:var(--navy);line-height:1.4;margin-bottom:8px}
+  .guide-desc{font-size:13px;color:var(--text-mid);line-height:1.7;flex:1;margin-bottom:16px}
+  .guide-footer{display:flex;justify-content:space-between;align-items:center;padding-top:12px;border-top:1px solid var(--border)}
+  .guide-read{font-size:11px;color:var(--text-muted)}
+  .guide-link{font-size:12px;font-weight:700;color:var(--navy);text-transform:uppercase;letter-spacing:.3px;transition:color .12s}
+  .guide-link:hover{color:var(--gold)}
+
+  /* COMING SOON CARD */
+  .coming-soon{background:var(--off-white);border:1.5px dashed var(--border);border-radius:10px;padding:20px;display:flex;flex-direction:column}
+  .coming-soon .guide-title{color:var(--text-muted)}
+  .cs-badge{display:inline-block;font-size:10px;font-weight:700;background:var(--border);color:var(--text-muted);padding:2px 8px;border-radius:4px;text-transform:uppercase;letter-spacing:.4px;margin-bottom:12px;align-self:flex-start}
+
+  /* NEWSLETTER */
+  .newsletter{background:linear-gradient(135deg,var(--navy),#112240);border-radius:12px;padding:36px;text-align:center;margin-top:40px}
+  .newsletter h2{font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:1px;color:var(--white);margin-bottom:8px}
+  .newsletter p{font-size:14px;color:rgba(255,255,255,.65);margin-bottom:20px;max-width:460px;margin-left:auto;margin-right:auto;line-height:1.7}
+  .nl-form{display:flex;gap:0;max-width:400px;margin:0 auto;border-radius:7px;overflow:hidden;border:1.5px solid rgba(255,255,255,.2)}
+  .nl-form input{flex:1;padding:12px 16px;font-size:14px;font-family:'Inter',sans-serif;border:none;outline:none;background:rgba(255,255,255,.08);color:var(--white)}
+  .nl-form input::placeholder{color:rgba(255,255,255,.35)}
+  .nl-form button{background:var(--gold);color:var(--navy);border:none;padding:12px 20px;font-size:12px;font-weight:700;font-family:'Inter',sans-serif;text-transform:uppercase;letter-spacing:.4px;cursor:pointer;transition:background .15s;white-space:nowrap}
+  .nl-form button:hover{background:var(--gold-light)}
+
+  footer{background:var(--navy);padding:24px 40px;margin-top:0}
+  .footer-inner{max-width:1000px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+  .footer-logo{font-family:'Bebas Neue',sans-serif;font-size:18px;color:var(--white)}
+  .footer-logo span{color:var(--gold)}
+  .footer-links{display:flex;gap:14px}
+  .footer-links a{font-size:11px;color:rgba(255,255,255,.4)}
+  .footer-links a:hover{color:var(--gold)}
+  .footer-copy{font-size:11px;color:rgba(255,255,255,.3)}
+
+  @media(max-width:860px){
+    .featured{grid-template-columns:1fr}
+    .featured-meta{padding:20px}
+    .featured-banner{padding:28px}
+    .guide-grid{grid-template-columns:1fr 1fr}
+    .wrap,.hero,.top-bar{padding-left:20px;padding-right:20px}
+    nav{padding:0 20px}
+  }
+  @media(max-width:540px){
+    .guide-grid{grid-template-columns:1fr}
+    .footer-inner{padding:0 20px}
+  }
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+  <div class="top-bar-links"><a href="index.html">← Home</a></div>
+  <div class="top-bar-links">
+    <a href="soccer.html">Soccer</a>
+    <a href="lacrosse.html">Lacrosse</a>
+    <a href="baseball.html">Baseball</a>
+    <a href="submit.html">Submit a Listing</a>
+  </div>
+</div>
+
+<nav>
+  <a href="index.html" class="nav-logo">Youth<span>Sports</span>Connect</a>
+  <div class="nav-links">
+    <a href="index.html">All Sports</a>
+    <a href="soccer.html">⚽ Soccer</a>
+    <a href="lacrosse.html">🥍 Lacrosse</a>
+    <a href="baseball.html">⚾ Baseball</a>
+    <a href="blog.html" class="active">Guides</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-label">Resources & Guides</div>
+    <h1>Long Island Youth Sports<br><span>Parent Guides</span></h1>
+    <p>Recruiting timelines, age group explainers, cost breakdowns, and how-to guides for Long Island soccer, lacrosse, and baseball families. Written by parents, for parents.</p>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <!-- FILTER -->
+  <div class="filter-row">
+    <button class="ftab active" onclick="filter('all',this)">All Guides</button>
+    <button class="ftab ftab-soccer" onclick="filter('soccer',this)">⚽ Soccer</button>
+    <button class="ftab ftab-lacrosse" onclick="filter('lacrosse',this)">🥍 Lacrosse</button>
+    <button class="ftab ftab-baseball" onclick="filter('baseball',this)">⚾ Baseball</button>
+  </div>
+
+  <!-- FEATURED -->
+  <div class="featured" data-sport="baseball">
+    <div class="featured-banner" style="background:linear-gradient(135deg,#0a1628 0%,#2a0a0a 100%)">
+      <div>
+        <div class="featured-eyebrow">⚾ Featured Guide · Baseball</div>
+        <div class="featured-title">Long Island Baseball Recruiting Timeline</div>
+        <div class="featured-desc">Age-by-age breakdown of the college baseball recruiting process for Long Island families. Showcases, Perfect Game, NCSA, measurables coaches look for, and what it really costs.</div>
+        <a href="long-island-baseball-recruiting-timeline.html" class="featured-link">Read the Guide →</a>
+      </div>
+    </div>
+    <div class="featured-meta">
+      <div>
+        <h3>What's covered in this guide:</h3>
+        <ul class="toc-preview">
+          <li>Little League through 18U travel timeline</li>
+          <li>Key showcases — Perfect Game, WWBA, Lasorda Legacy</li>
+          <li>What exit velocity and 60-yard dash D1 coaches expect</li>
+          <li>Perfect Game vs. NCSA recruiting platforms</li>
+          <li>Full cost breakdown: $5,000–$15,000/year reality check</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- GUIDE GRID -->
+  <div class="guide-grid" id="guide-grid">
+
+    <div class="guide-card" data-sport="soccer">
+      <div class="guide-card-banner" style="background:var(--soccer)"></div>
+      <div class="guide-card-body">
+        <span class="guide-sport-tag tag-soccer">⚽ Soccer</span>
+        <div class="guide-title">How to Choose a Travel Soccer Team on Long Island</div>
+        <div class="guide-desc">Rec vs. travel, LIJSL explained, competitive levels, tryout timing, what questions to ask, red flags to avoid, and notable LI clubs compared.</div>
+        <div class="guide-footer">
+          <span class="guide-read">10 min read</span>
+          <a class="guide-link" href="how-to-choose-travel-soccer-long-island.html">Read →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="guide-card" data-sport="lacrosse">
+      <div class="guide-card-banner" style="background:var(--lacrosse)"></div>
+      <div class="guide-card-body">
+        <span class="guide-sport-tag tag-lacrosse">🥍 Lacrosse</span>
+        <div class="guide-title">Youth Lacrosse Age Groups Explained — Long Island</div>
+        <div class="guide-desc">PAL vs. travel, U-format vs. graduation year, boys vs. girls differences, when to start travel lacrosse, and the college recruiting timeline for LI players.</div>
+        <div class="guide-footer">
+          <span class="guide-read">8 min read</span>
+          <a class="guide-link" href="lacrosse-age-groups-long-island.html">Read →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="guide-card" data-sport="baseball">
+      <div class="guide-card-banner" style="background:var(--baseball)"></div>
+      <div class="guide-card-body">
+        <span class="guide-sport-tag tag-baseball">⚾ Baseball</span>
+        <div class="guide-title">Long Island Baseball Recruiting Timeline</div>
+        <div class="guide-desc">The complete recruiting roadmap from Little League to college commitment — showcases, Perfect Game, NCSA, what coaches measure, and realistic cost breakdowns.</div>
+        <div class="guide-footer">
+          <span class="guide-read">12 min read</span>
+          <a class="guide-link" href="long-island-baseball-recruiting-timeline.html">Read →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- COMING SOON -->
+    <div class="guide-card coming-soon" data-sport="soccer">
+      <div class="guide-card-body">
+        <span class="cs-badge">Coming Soon</span>
+        <div class="guide-title">How Much Does Travel Soccer Cost on Long Island?</div>
+        <div class="guide-desc">Full cost breakdown from rec to ECNL — club fees, uniforms, tournaments, travel, and how to evaluate value at every level.</div>
+        <div class="guide-footer"><span class="guide-read">⚽ Soccer</span></div>
+      </div>
+    </div>
+
+    <div class="guide-card coming-soon" data-sport="lacrosse">
+      <div class="guide-card-body">
+        <span class="cs-badge">Coming Soon</span>
+        <div class="guide-title">Best Girls Lacrosse Clubs on Long Island</div>
+        <div class="guide-desc">Team 91 Girls, LI Empire, LI Jesters, Yellow Jackets, Legacy, and more — comparing the top girls travel lacrosse programs on LI.</div>
+        <div class="guide-footer"><span class="guide-read">🥍 Lacrosse</span></div>
+      </div>
+    </div>
+
+    <div class="guide-card coming-soon" data-sport="baseball">
+      <div class="guide-card-body">
+        <span class="cs-badge">Coming Soon</span>
+        <div class="guide-title">Best Travel Baseball Organizations on Long Island</div>
+        <div class="guide-desc">LI Elite, LI Huskies, HEAT Baseball, Eastern A's, LI Dodgers Nation — what each organization offers and how to choose.</div>
+        <div class="guide-footer"><span class="guide-read">⚾ Baseball</span></div>
+      </div>
+    </div>
+
+    <div class="guide-card coming-soon" data-sport="soccer">
+      <div class="guide-card-body">
+        <span class="cs-badge">Coming Soon</span>
+        <div class="guide-title">LIJSL vs. ECNL vs. MLS NEXT — What's the Difference?</div>
+        <div class="guide-desc">A plain-English guide to the competitive tiers of youth soccer on Long Island and how they connect to the college game.</div>
+        <div class="guide-footer"><span class="guide-read">⚽ Soccer</span></div>
+      </div>
+    </div>
+
+    <div class="guide-card coming-soon" data-sport="lacrosse">
+      <div class="guide-card-body">
+        <span class="cs-badge">Coming Soon</span>
+        <div class="guide-title">Long Island Lacrosse Recruiting Guide</div>
+        <div class="guide-desc">D1, D2, D3 timelines, showcase events, NCSA for lacrosse, and how LI programs like Team 91 and Express prepare players for college.</div>
+        <div class="guide-footer"><span class="guide-read">🥍 Lacrosse</span></div>
+      </div>
+    </div>
+
+    <div class="guide-card coming-soon" data-sport="baseball">
+      <div class="guide-card-body">
+        <span class="cs-badge">Coming Soon</span>
+        <div class="guide-title">Little League on Long Island — A Parent's First Year Guide</div>
+        <div class="guide-desc">Everything first-year baseball families need to know — registration, equipment, what to expect, and how to find your local league.</div>
+        <div class="guide-footer"><span class="guide-read">⚾ Baseball</span></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- NEWSLETTER -->
+  <div class="newsletter">
+    <h2>Get New Guides in Your Inbox</h2>
+    <p>We publish new Long Island youth sports guides and resources every week. Subscribe and we'll send them directly to you — no spam, unsubscribe anytime.</p>
+    <div class="nl-form">
+      <input type="email" id="nl-email" placeholder="Your email address">
+      <button onclick="subscribe()">Subscribe</button>
+    </div>
+    <p id="nl-msg" style="font-size:12px;color:var(--gold-light);margin-top:10px;display:none"></p>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">Youth<span>Sports</span>Connect</div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="soccer.html">Soccer</a>
+      <a href="lacrosse.html">Lacrosse</a>
+      <a href="baseball.html">Baseball</a>
+      <a href="submit.html">Submit Listing</a>
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+    <div class="footer-copy">© 2025 Coastal Directory, LLC · Wyoming</div>
+  </div>
+</footer>
+
+<script>
+  function filter(sport, btn) {
+    document.querySelectorAll('.ftab').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('[data-sport]').forEach(card => {
+      card.style.display = (sport === 'all' || card.dataset.sport === sport) ? '' : 'none';
+    });
+  }
+
+  function subscribe() {
+    const email = document.getElementById('nl-email').value.trim();
+    if (!email || !email.includes('@')) { alert('Please enter a valid email.'); return; }
+    document.getElementById('nl-msg').textContent = '✓ You\'re subscribed! First guide is on its way.';
+    document.getElementById('nl-msg').style.display = 'block';
+    document.getElementById('nl-email').value = '';
+  }
+</script>
+</body>
+</html>
