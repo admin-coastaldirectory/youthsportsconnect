@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>About | YouthSportsConnect — Long Island Youth Sports Directory</title>
+<meta name="description" content="YouthSportsConnect is the most complete directory of youth sports on Long Island — leagues, clubs, coaches, and summer camps across Nassau and Suffolk County. Built by a Long Island sports family.">
+<link rel="canonical" href="https://youthsportsconnect.co/about.html">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"AboutPage","name":"About YouthSportsConnect","description":"YouthSportsConnect is a Long Island youth sports directory owned and operated by Coastal Directory, LLC.","url":"https://youthsportsconnect.co/about.html","publisher":{"@type":"Organization","name":"Coastal Directory, LLC","url":"https://youthsportsconnect.co"}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --navy:#0a1628;--navy-mid:#112240;
+    --gold:#c9a84c;--gold-light:#e8c96d;--gold-pale:#fdf6e3;
+    --white:#fff;--off-white:#f5f7fa;--border:#e2e8f0;
+    --text:#1a202c;--text-mid:#4a5568;--text-muted:#718096;
+    --green:#1a6b3a;
+  }
+  body{font-family:'Inter',sans-serif;background:var(--off-white);color:var(--text)}
+  a{text-decoration:none;color:inherit}
+
+  /* NAV */
+  .top-bar{background:var(--navy);padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:36px}
+  .top-bar a{font-size:11px;color:rgba(255,255,255,.5);font-weight:500}
+  .top-bar a:hover{color:var(--gold)}
+  .top-bar-links{display:flex;gap:20px}
+  nav{background:var(--navy-mid);padding:0 40px;display:flex;align-items:center;height:62px;border-bottom:3px solid var(--gold);position:sticky;top:0;z-index:100}
+  .nav-logo{font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:1px;color:var(--white);margin-right:36px}
+  .nav-logo span{color:var(--gold)}
+  .nav-links{display:flex;gap:2px;flex:1}
+  .nav-links a{font-size:12px;font-weight:600;color:rgba(255,255,255,.65);padding:0 14px;height:62px;display:flex;align-items:center;border-bottom:3px solid transparent;transition:all .15s;text-transform:uppercase;letter-spacing:.3px}
+  .nav-links a:hover,.nav-links a.active{color:var(--gold);border-bottom-color:var(--gold)}
+
+  /* HERO */
+  .hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 100%);padding:56px 40px 48px;border-bottom:3px solid var(--gold)}
+  .hero-inner{max-width:820px;margin:0 auto}
+  .hero-label{font-size:11px;font-weight:700;color:var(--gold);text-transform:uppercase;letter-spacing:.8px;margin-bottom:12px}
+  .hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(42px,5vw,64px);color:var(--white);line-height:1;letter-spacing:2px;margin-bottom:16px}
+  .hero h1 span{color:var(--gold-light)}
+  .hero p{font-size:16px;color:rgba(255,255,255,.72);line-height:1.8;max-width:600px}
+
+  /* MAIN */
+  .wrap{max-width:820px;margin:0 auto;padding:40px 40px 80px}
+
+  /* CARDS */
+  .card{background:var(--white);border-radius:12px;border:1px solid var(--border);padding:36px;margin-bottom:24px}
+  .card h2{font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:1px;color:var(--navy);margin-bottom:14px;padding-bottom:12px;border-bottom:2px solid var(--gold)}
+  .card p{font-size:15px;color:var(--text-mid);line-height:1.85;margin-bottom:14px}
+  .card p:last-child{margin-bottom:0}
+  .card strong{color:var(--navy)}
+
+  /* MISSION STATS */
+  .stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:24px 0}
+  .stat-box{background:var(--off-white);border-radius:10px;padding:20px;text-align:center;border:1px solid var(--border)}
+  .stat-num{font-family:'Bebas Neue',sans-serif;font-size:44px;color:var(--navy);line-height:1;letter-spacing:1px}
+  .stat-num span{color:var(--gold)}
+  .stat-label{font-size:12px;color:var(--text-muted);text-transform:uppercase;letter-spacing:.5px;margin-top:4px}
+
+  /* SPORTS ICONS */
+  .sport-row{display:flex;gap:12px;margin:20px 0;flex-wrap:wrap}
+  .sport-chip{display:flex;align-items:center;gap:8px;background:var(--off-white);border:1px solid var(--border);border-radius:8px;padding:10px 16px;font-size:13px;font-weight:600;color:var(--navy)}
+
+  /* VALUES */
+  .values-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px}
+  .value-item{background:var(--off-white);border-radius:8px;padding:16px;border-left:3px solid var(--gold)}
+  .value-item h4{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:5px}
+  .value-item p{font-size:13px;color:var(--text-muted);line-height:1.65;margin:0}
+
+  /* CTA */
+  .cta-card{background:linear-gradient(135deg,var(--navy) 0%,#0d2b1a 100%);border-radius:12px;padding:36px;text-align:center;position:relative;overflow:hidden}
+  .cta-card::before{content:'⚽🥍⚾';position:absolute;right:-10px;bottom:-10px;font-size:80px;opacity:.06;line-height:1}
+  .cta-card h2{font-family:'Bebas Neue',sans-serif;font-size:30px;letter-spacing:1px;color:var(--white);margin-bottom:10px}
+  .cta-card p{font-size:14px;color:rgba(255,255,255,.65);line-height:1.7;margin-bottom:22px;max-width:500px;margin-left:auto;margin-right:auto}
+  .cta-btn{display:inline-block;background:var(--gold);color:var(--navy);padding:13px 28px;border-radius:7px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;transition:background .15s;margin:0 6px}
+  .cta-btn:hover{background:var(--gold-light)}
+  .cta-btn-outline{background:transparent;color:var(--white);border:1.5px solid rgba(255,255,255,.3)}
+  .cta-btn-outline:hover{border-color:var(--gold);color:var(--gold);background:transparent}
+
+  /* CONTACT */
+  .contact-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
+  .contact-chip{display:flex;align-items:center;gap:8px;background:var(--off-white);border:1px solid var(--border);border-radius:7px;padding:10px 16px;font-size:13px;color:var(--text-mid)}
+  .contact-chip a{color:var(--navy);font-weight:600}
+  .contact-chip a:hover{color:var(--green)}
+
+  /* FOOTER */
+  footer{background:var(--navy);padding:28px 40px}
+  .footer-inner{max-width:820px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+  .footer-logo{font-family:'Bebas Neue',sans-serif;font-size:20px;color:var(--white);letter-spacing:1px}
+  .footer-logo span{color:var(--gold)}
+  .footer-links{display:flex;gap:16px}
+  .footer-links a{font-size:12px;color:rgba(255,255,255,.4);transition:color .15s}
+  .footer-links a:hover{color:var(--gold)}
+  .footer-copy{font-size:11px;color:rgba(255,255,255,.3)}
+
+  @media(max-width:640px){
+    .wrap,.hero,.top-bar{padding-left:20px;padding-right:20px}
+    nav{padding:0 20px}
+    .stat-grid{grid-template-columns:1fr 1fr}
+    .values-grid{grid-template-columns:1fr}
+    .card{padding:22px}
+    .footer-inner{padding:0 20px}
+  }
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+  <div class="top-bar-links">
+    <a href="index.html">← Home</a>
+  </div>
+  <div class="top-bar-links">
+    <a href="soccer.html">Soccer</a>
+    <a href="lacrosse.html">Lacrosse</a>
+    <a href="baseball.html">Baseball</a>
+    <a href="submit.html">Submit a Listing</a>
+  </div>
+</div>
+
+<nav>
+  <a href="index.html" class="nav-logo">Youth<span>Sports</span>Connect</a>
+  <div class="nav-links">
+    <a href="index.html">All Sports</a>
+    <a href="soccer.html">⚽ Soccer</a>
+    <a href="lacrosse.html">🥍 Lacrosse</a>
+    <a href="baseball.html">⚾ Baseball</a>
+    <a href="about.html" class="active">About</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-label">About Us</div>
+    <h1>Built for <span>Long Island</span><br>Sports Families</h1>
+    <p>YouthSportsConnect is the most complete directory of youth sports leagues, clubs, coaches, and summer camps on Long Island — free for every family to use.</p>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <!-- MISSION -->
+  <div class="card">
+    <h2>Our Mission</h2>
+    <p>Finding the right youth sports program on Long Island shouldn't be a full-time job. Between the 97 LIJSL soccer clubs, hundreds of Little League chapters, dozens of elite lacrosse travel programs, and countless private coaches and summer camps — the information is scattered, outdated, or buried in Facebook groups.</p>
+    <p><strong>We built YouthSportsConnect to fix that.</strong> One place where every Long Island sports family can find leagues, clubs, academies, coaches, facilities, and summer camps — searchable by sport, level, and type, with real contact information and direct links.</p>
+    <p>Every listing is free. We don't charge families to search, and we don't charge organizations to be listed. Our goal is to make youth sports more accessible to every family across Nassau and Suffolk County.</p>
+
+    <div class="stat-grid">
+      <div class="stat-box">
+        <div class="stat-num">200<span>+</span></div>
+        <div class="stat-label">Listings & Growing</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">3<span></span></div>
+        <div class="stat-label">Sports Covered</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">LI<span></span></div>
+        <div class="stat-label">Long Island Focused</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WHAT WE COVER -->
+  <div class="card">
+    <h2>What We Cover</h2>
+    <p>We currently cover three core youth sports on Long Island, with more sports and regions on the way.</p>
+
+    <div class="sport-row">
+      <div class="sport-chip">⚽ Soccer — Leagues, clubs, academies, coaches, camps</div>
+      <div class="sport-chip">🥍 Lacrosse — PAL, travel clubs, girls programs, coaches</div>
+      <div class="sport-chip">⚾ Baseball — Little Leagues, travel teams, facilities, coaches</div>
+    </div>
+
+    <p>Each sport page includes a full directory of programs with type filters (leagues, teams, academies, coaches, facilities, summer camps), contact information, social media links, and an AI-generated summary for every listing.</p>
+    <p>We cover programs from <strong>recreational</strong> entry-level programs all the way through <strong>elite</strong> nationally competitive clubs — because Long Island youth sports serves every kind of family.</p>
+  </div>
+
+  <!-- WHO WE ARE -->
+  <div class="card">
+    <h2>Who We Are</h2>
+    <p>YouthSportsConnect was built by parents of kids playing youth sports on Long Island who wanted a better way to find programs, compare options, and connect with leagues and coaches. One simple idea: local directories that actually serve their communities.</p>
+    <p>We started with Long Island because it's home — and because Long Island has one of the richest youth sports ecosystems in the country. <strong>60,000+ youth soccer players</strong> across 97 LIJSL clubs. One of the highest concentrations of D1 lacrosse commits per capita in the US. A baseball culture that has produced professional players for generations. That community deserves a great resource.</p>
+    <p>Our plan is to expand to other sports and other regions — but we're doing Long Island right first. Every listing is verified, every page is built for parents actually searching for programs, and the directory grows every week.</p>
+  </div>
+
+  <!-- VALUES -->
+  <div class="card">
+    <h2>How We Operate</h2>
+    <div class="values-grid">
+      <div class="value-item">
+        <h4>Free to search, free to list</h4>
+        <p>Parents never pay to use the directory. Organizations never pay to be listed. Our basic directory is and always will be free.</p>
+      </div>
+      <div class="value-item">
+        <h4>Transparent about revenue</h4>
+        <p>We earn money through featured listing upgrades, affiliate links (like Amazon gear recommendations), and local sponsorships. We disclose all of this clearly.</p>
+      </div>
+      <div class="value-item">
+        <h4>No editorial bias</h4>
+        <p>Paid featured placements are clearly marked. Affiliate relationships don't affect how organizations are described or ranked in the directory.</p>
+      </div>
+      <div class="value-item">
+        <h4>Community-driven growth</h4>
+        <p>Coaches, leagues, and families can submit listings directly. We review every submission before it goes live to maintain accuracy.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="card">
+    <h2>Get in Touch</h2>
+    <p>Want to add your organization, update an existing listing, report an error, or explore advertising opportunities? We'd love to hear from you.</p>
+    <div class="contact-row">
+      <div class="contact-chip">✉ <a href="/cdn-cgi/l/email-protection#49212c2525260930263c3d213a39263b3d3a2a2627272c2a3d672a26"><span class="__cf_email__" data-cfemail="92faf7fefefdd2ebfde7e6fae1e2fde0e6e1f1fdfcfcf7f1e6bcf1fd">[email&#160;protected]</span></a></div>
+      <div class="contact-chip">📋 <a href="submit.html">Submit or update a listing</a></div>
+      <div class="contact-chip">🏢 Coastal Directory, LLC · Wyoming</div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-card">
+    <h2>Is Your Program Listed?</h2>
+    <p>Add your league, club, team, academy, coach, facility, or summer camp to the directory for free. Submissions are reviewed within 48 hours.</p>
+    <a href="submit.html" class="cta-btn">Submit a Free Listing →</a>
+    <a href="index.html" class="cta-btn cta-btn-outline">Browse the Directory</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">Youth<span>Sports</span>Connect</div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="soccer.html">Soccer</a>
+      <a href="lacrosse.html">Lacrosse</a>
+      <a href="baseball.html">Baseball</a>
+      <a href="submit.html">Submit Listing</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="affiliate-disclosure.html">Affilia
