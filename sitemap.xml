@@ -48,4 +48,6 @@
   <url><loc>https://youthsportsconnect.co/rugby.html</loc><priority>0.85</priority><changefreq>weekly</changefreq></url>
   <url><loc>https://youthsportsconnect.co/dance.html</loc><priority>0.85</priority><changefreq>weekly</changefreq></url>
   <url><loc>https://youthsportsconnect.co/martial-arts.html</loc><priority>0.85</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://youthsportsconnect.co/gear.html</loc><priority>0.80</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://youthsportsconnect.co/advertise.html</loc><priority>0.80</priority><changefreq>monthly</changefreq></url>
 </urlset>

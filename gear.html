@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Youth Sports Gear & Equipment — Long Island | YouthSportsConnect</title>
+<meta name="description" content="Shop youth sports gear for every sport on Long Island. Curated equipment lists for soccer, lacrosse, baseball, basketball, and all 20 sports. Amazon affiliate store.">
+<link rel="canonical" href="https://youthsportsconnect.co/gear.html">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#0a1628;--navy-mid:#112240;--gold:#c9a84c;--gold-light:#e8c96d;--gold-pale:#fdf6e3;--white:#fff;--off-white:#f5f7fa;--border:#e2e8f0;--text:#1a202c;--text-mid:#4a5568;--text-muted:#718096}
+body{font-family:'Inter',sans-serif;background:var(--off-white);color:var(--text)}
+a{text-decoration:none;color:inherit}
+nav{background:var(--navy-mid);padding:0 40px;display:flex;align-items:center;height:56px;border-bottom:3px solid var(--gold);position:sticky;top:0;z-index:100}
+.nav-logo{font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:1px;color:#fff;margin-right:auto}.nav-logo span{color:var(--gold)}
+.nav-links{display:flex;gap:20px}.nav-links a{font-size:12px;font-weight:600;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:.4px;transition:color .15s}.nav-links a:hover{color:var(--gold)}
+.page-hero{background:linear-gradient(135deg,var(--navy) 0%,#1a3a6e 100%);padding:48px 40px 40px;border-bottom:3px solid var(--gold)}
+.page-hero-inner{max-width:1100px;margin:0 auto}
+.page-hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(36px,5vw,58px);color:#fff;letter-spacing:2px;line-height:1;margin-bottom:10px}
+.page-hero h1 em{color:var(--gold-light);font-style:normal}
+.page-hero p{font-size:15px;color:rgba(255,255,255,.65);max-width:560px;line-height:1.7;margin-bottom:6px}
+.disclosure{font-size:11px;color:rgba(255,255,255,.35);margin-top:8px}
+.disclosure a{color:rgba(255,255,255,.35);text-decoration:underline}
+.main{max-width:1100px;margin:0 auto;padding:36px 40px 60px}
+.section-head{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:1px;color:var(--navy);margin:36px 0 16px;padding-bottom:8px;border-bottom:2px solid var(--gold);display:flex;align-items:center;gap:10px}
+.section-head span{font-size:13px;font-family:'Inter',sans-serif;font-weight:600;color:var(--text-muted);letter-spacing:0}
+/* RETAILER CARDS */
+.retailer-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin-bottom:40px}
+.retailer-card{background:#fff;border-radius:10px;border:1px solid var(--border);overflow:hidden;transition:all .15s}
+.retailer-card:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.08);border-color:var(--gold)}
+.retailer-head{padding:16px 18px;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--border)}
+.retailer-logo{width:44px;height:44px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
+.retailer-name{font-size:15px;font-weight:700;color:var(--navy)}
+.retailer-desc{font-size:12px;color:var(--text-muted);margin-top:2px}
+.retailer-body{padding:14px 18px}
+.retailer-sports{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:12px}
+.sport-tag{font-size:10px;font-weight:600;background:var(--off-white);border:1px solid var(--border);padding:2px 8px;border-radius:10px;color:var(--text-mid)}
+.retailer-btn{display:block;background:var(--navy);color:#fff;text-align:center;padding:10px;border-radius:6px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;transition:background .15s}
+.retailer-btn:hover{background:var(--gold);color:var(--navy)}
+.commission-badge{font-size:10px;font-weight:700;background:#d1fae5;color:#065f46;padding:2px 8px;border-radius:3px;margin-left:auto}
+/* SPORT GEAR GRID */
+.sport-gear-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-bottom:40px}
+.sport-gear-card{background:#fff;border-radius:8px;border:1px solid var(--border);padding:14px;display:flex;flex-direction:column;gap:10px;transition:all .15s}
+.sport-gear-card:hover{border-color:var(--gold);transform:translateY(-1px)}
+.gear-sport-icon{font-size:28px;text-align:center}
+.gear-sport-name{font-size:13px;font-weight:700;color:var(--navy);text-align:center}
+.gear-links{display:flex;flex-direction:column;gap:5px}
+.gear-link{font-size:11px;color:var(--text-mid);padding:5px 8px;background:var(--off-white);border-radius:4px;transition:all .15s;font-weight:500}
+.gear-link:hover{background:var(--gold-pale);color:var(--navy)}
+.gear-link span{float:right;color:var(--text-muted)}
+/* CTA */
+.featured-cta{background:var(--navy);border-radius:12px;padding:32px;text-align:center;margin:40px 0;color:#fff}
+.featured-cta h2{font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:1px;color:var(--gold-light);margin-bottom:8px}
+.featured-cta p{font-size:14px;color:rgba(255,255,255,.65);margin-bottom:20px;max-width:500px;margin-left:auto;margin-right:auto}
+.featured-cta a{display:inline-block;background:var(--gold);color:var(--navy);padding:12px 28px;border-radius:6px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;margin:0 6px;transition:background .15s}
+.featured-cta a:hover{background:var(--gold-light)}
+.featured-cta a.outline{background:transparent;color:rgba(255,255,255,.7);border:1.5px solid rgba(255,255,255,.25)}
+.featured-cta a.outline:hover{border-color:var(--gold);color:var(--gold);background:transparent}
+footer{background:var(--navy);padding:24px 40px;border-top:3px solid var(--gold)}
+.footer-inner{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.footer-logo{font-family:'Bebas Neue',sans-serif;font-size:20px;color:#fff;letter-spacing:1px}.footer-logo span{color:var(--gold)}
+.footer-links{display:flex;gap:14px;flex-wrap:wrap}.footer-links a{font-size:11px;color:rgba(255,255,255,.4)}.footer-links a:hover{color:var(--gold)}
+@media(max-width:700px){.page-hero,.main{padding-left:20px;padding-right:20px}nav{padding:0 20px}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo">Youth<span>Sports</span>Connect</a>
+  <div class="nav-links">
+    <a href="index.html">← Directory</a>
+    <a href="blog.html">Guides</a>
+    <a href="submit.html">List Program</a>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <h1>Youth Sports <em>Gear</em> &amp; Equipment</h1>
+    <p>Curated gear recommendations for every sport on Long Island. We partner with the best youth sports retailers so you can shop with confidence.</p>
+    <div class="disclosure">Affiliate disclosure: We earn a small commission on purchases made through our links at no extra cost to you. <a href="affiliate-disclosure.html">Full disclosure →</a></div>
+  </div>
+</div>
+
+<div class="main">
+
+  <div class="section-head">🏪 Our Retail Partners <span>Trusted stores with affiliate programs</span></div>
+  <div class="retailer-grid">
+
+    <div class="retailer-card">
+      <div class="retailer-head">
+        <div class="retailer-logo" style="background:#ff9900;color:#fff">📦</div>
+        <div><div class="retailer-name">Amazon Sports</div><div class="retailer-desc">Every sport, every brand, fast shipping</div></div>
+        <span class="commission-badge">3–10%</span>
+      </div>
+      <div class="retailer-body">
+        <div class="retailer-sports"><span class="sport-tag">All 20 Sports</span><span class="sport-tag">Free Prime Shipping</span></div>
+        <a href="https://amazon.com/s?k=youth+sports+gear&tag=youthsportsconnect-20" target="_blank" class="retailer-btn">Shop Amazon →</a>
+      </div>
+    </div>
+
+    <div class="retailer-card">
+      <div class="retailer-head">
+        <div class="retailer-logo" style="background:#e31837;color:#fff">⚾</div>
+        <div><div class="retailer-name">Dick's Sporting Goods</div><div class="retailer-desc">America's largest sporting goods chain</div></div>
+        <span class="commission-badge">3–5%</span>
+      </div>
+      <div class="retailer-body">
+        <div class="retailer-sports"><span class="sport-tag">Baseball</span><span class="sport-tag">Basketball</span><span class="sport-tag">Soccer</span><span class="sport-tag">All Sports</span></div>
+        <a href="https://dickssportinggoods.com" target="_blank" class="retailer-btn">Shop Dick's →</a>
+      </div>
+    </div>
+
+    <div class="retailer-card">
+      <div class="retailer-head">
+        <div class="retailer-logo" style="background:#003087;color:#fff">🥍</div>
+        <div><div class="retailer-name">Lacrosse Unlimited</div><div class="retailer-desc">LI's own lacrosse specialty retailer</div></div>
+        <span class="commission-badge">5–8%</span>
+      </div>
+      <div class="retailer-body">
+        <div class="retailer-sports"><span class="sport-tag">Lacrosse</span><span class="sport-tag">Field Hockey</span><span class="sport-tag">LI-Based</span></div>
+        <a href="https://lacrosseunlimited.com" target="_blank" class="retailer-btn">Shop Lacrosse Unlimited →</a>
+      </div>
+    </div>
+
+    <div class="retailer-card">
+      <div class="retailer-head">
+        <div class="retailer-logo" style="background:#000;color:#fff">👟</div>
+        <div><div class="retailer-name">Nike</div><div class="retailer-desc">Youth apparel, footwear & team gear</div></div>
+        <span class="commission-badge">4–11%</span>
+      </div>
+      <div class="retailer-body">
+        <div class="retailer-sports"><span class="sport-tag">Soccer</span><span class="sport-tag">Basketball</span><span class="sport-tag">Football</span><span class="sport-tag">All Sports</span></div>
+        <a href="https://nike.com/kids" target="_blank" class="retailer-btn">Shop Nike Kids →</a>
+      </div>
+    </div>
+
+    <div class="retailer-card">
+      <div class="retailer-head">
+        <div class="retailer-logo" style="background:#000;color:#fff">⚡</div>
+        <div><div class="retailer-name">Under Armour</div><div class="retailer-desc">Performance youth athletic gear</div></div>
+        <span class="commission-badge">5–8%</span>
+      </div>
+      <div class="retailer-body">
+        <div class="retailer-sports"><span class="sport-tag">All Sports</span><span class="sport-tag">Team Uniforms</span></div>
+        <a href="https://underarmour.com/kids" target="_blank" class="retailer-btn">Shop Under Armour →</a>
+      </div>
+    </div>
+
+    <div class="retailer-card">
+      <div class="retailer-head">
+        <div class="retailer-logo" style="background:#1a472a;color:#fff">⚾</div>
+        <div><div class="retailer-name">Baseball Express</div><div class="retailer-desc">Youth baseball specialist</div></div>
+        <span class="commission-badge">5–8%</span>
+      </div>
+      <div class="retailer-body">
+        <div class="retailer-sports"><span class="sport-tag">Baseball</span><span class="sport-tag">Softball</span></div>
+        <a href="https://baseballexpress.com" target="_blank" class="retailer-btn">Shop Baseball Express →</a>
+      </div>
+    </div>
+
+    <div class="retailer-card">
+      <div class="retailer-head">
+        <div class="retailer-logo" style="background:#0052cc;color:#fff">🏒</div>
+        <div><div class="retailer-name">Pure Hockey</div><div class="retailer-desc">Ice & roller hockey specialist</div></div>
+        <span class="commission-badge">5%</span>
+      </div>
+      <div class="retailer-body">
+        <div class="retailer-sports"><span class="sport-tag">Hockey</span><span class="sport-tag">Skates</span><span class="sport-tag">Sticks</span></div>
+        <a href="https://purehockey.com" target="_blank" class="retailer-btn">Shop Pure Hockey →</a>
+      </div>
+    </div>
+
+    <div class="retailer-card">
+      <div class="retailer-head">
+        <div class="retailer-logo" style="background:#e8c96d;color:#0a1628">🎾</div>
+        <div><div class="retailer-name">Tennis Warehouse</div><div class="retailer-desc">Junior rackets, strings & accessories</div></div>
+        <span class="commission-badge">5–7%</span>
+      </div>
+      <div class="retailer-body">
+        <div class="retailer-sports"><span class="sport-tag">Tennis</span><span class="sport-tag">Pickleball</span></div>
+        <a href="https://tenniswarehouse.com" target="_blank" class="retailer-btn">Shop Tennis Warehouse →</a>
+      </div>
+    </div>
+
+    <div class="retailer-card">
+      <div class="retailer-head">
+        <div class="retailer-logo" style="background:#4d7c0f;color:#fff">⛳</div>
+        <div><div class="retailer-name">GlobalGolf</div><div class="retailer-desc">Junior golf clubs & accessories</div></div>
+        <span class="commission-badge">6–8%</span>
+      </div>
+      <div class="retailer-body">
+        <div class="retailer-sports"><span class="sport-tag">Golf</span><span class="sport-tag">Junior Clubs</span></div>
+        <a href="https://globalgolf.com" target="_blank" class="retailer-btn">Shop GlobalGolf →</a>
+      </div>
+    </div>
+
+    <div class="retailer-card">
+      <div class="retailer-head">
+        <div class="retailer-logo" style="background:#0891b2;color:#fff">🏊</div>
+        <div><div class="retailer-name">Swim Outlet</div><div class="retailer-desc">Competitive swim gear specialist</div></div>
+        <span class="commission-badge">6–10%</span>
+      </div>
+      <div class="retailer-body">
+        <div class="retailer-sports"><span class="sport-tag">Swimming</span><span class="sport-tag">Goggles</span><span class="sport-tag">Suits</span></div>
+        <a href="https://swimoutlet.com" target="_blank" class="retailer-btn">Shop Swim Outlet →</a>
+      </div>
+    </div>
+
+    <div class="retailer-card">
+      <div class="retailer-head">
+        <div class="retailer-logo" style="background:#7e22ce;color:#fff">🤸</div>
+        <div><div class="retailer-name">GK Elite Sportswear</div><div class="retailer-desc">Gymnastics leotards & apparel</div></div>
+        <span class="commission-badge">8–12%</span>
+      </div>
+      <div class="retailer-body">
+        <div class="retailer-sports"><span class="sport-tag">Gymnastics</span><span class="sport-tag">Cheerleading</span><span class="sport-tag">Dance</span></div>
+        <a href="https://gkelite.com" target="_blank" class="retailer-btn">Shop GK Elite →</a>
+      </div>
+    </div>
+
+    <div class="retailer-card">
+      <div class="retailer-head">
+        <div class="retailer-logo" style="background:#b91c1c;color:#fff">🥋</div>
+        <div><div class="retailer-name">Martial Arts Superstore</div><div class="retailer-desc">Gi uniforms, belts & sparring gear</div></div>
+        <span class="commission-badge">8–12%</span>
+      </div>
+      <div class="retailer-body">
+        <div class="retailer-sports"><span class="sport-tag">Karate</span><span class="sport-tag">Taekwondo</span><span class="sport-tag">Judo</span><span class="sport-tag">MMA</span></div>
+        <a href="https://martialartssuperstore.com" target="_blank" class="retailer-btn">Shop MA Superstore →</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SPORT-BY-SPORT GEAR GUIDES -->
+  <div class="section-head">🎽 Shop by Sport <span>Curated gear lists for every sport</span></div>
+  <div class="sport-gear-grid">
+    <div class="sport-gear-card">
+      <div class="gear-sport-icon">⚽</div>
+      <div class="gear-sport-name">Soccer</div>
+      <div class="gear-links">
+        <a href="https://amazon.com/s?k=youth+soccer+cleats&tag=youthsportsconnect-20" target="_blank" class="gear-link">Cleats <span>→</span></a>
+        <a href="https://amazon.com/s?k=youth+soccer+ball&tag=youthsportsconnect-20" target="_blank" class="gear-link">Balls <span>→</span></a>
+        <a href="https://amazon.com/s?k=youth+soccer+shin+guards&tag=youthsportsconnect-20" target="_blank" class="gear-link">Shin Guards <span>→</span></a>
+        <a href="https://amazon.com/s?k=youth+soccer+goalkeeper+gloves&tag=youthsportsconnect-20" target="_blank" class="gear-link">GK Gloves <span>→</span></a>
+      </div>
+    </div>
+    <div class="sport-gear-card">
+      <div class="gear-sport-icon">🥍</div>
+      <div class="gear-sport-name">Lacrosse</div>
+      <div class="gear-links">
+        <a href="https://lacrosseunlimited.com/sticks" target="_blank" class="gear-link">Sticks <span>→</span></a>
+        <a href="https://lacrosseunlimited.com/helmets" target="_blank" class="gear-link">Helmets <span>→</span></a>
+        <a href="https://amazon.com/s?k=youth+lacrosse+gloves&tag=youthsportsconnect-20" target="_blank" class="gear-link">Gloves <span>→</span></a>
+        <a href="https://amazon.com/s?k=girls+lacrosse+goggles&tag=youthsportsconnect-20" target="_blank" class="gear-link">Girls Goggles <span>→</span></a>
+      </div>
+    </div>
+    <div class="sport-gear-card">
+      <div class="gear-sport-icon">⚾</div>
+      <div class="gear-sport-name">Baseball</div>
+      <div class="gear-links">
+        <a href="https://amazon.com/s?k=youth+baseball+bat+usssa&tag=youthsportsconnect-20" target="_blank" class="gear-link">USSSA Bats <span>→</span></a>
+        <a href="https://amazon.com/s?k=youth+baseball+glove&tag=youthsportsconnect-20" target="_blank" class="gear-link">Gloves <span>→</span></a>
+        <a href="https://amazon.com/s?k=youth+baseball+helmet&tag=youthsportsconnect-20" target="_blank" class="gear-link">Helmets <span>→</span></a>
+        <a href="https://amazon.com/s?k=blast+motion+baseball+sensor&tag=youthsportsconnect-20" target="_blank" class="gear-link">Blast Motion Sensor <span>→</span></a>
+      </div>
+    </div>
+    <div class="sport-gear-card">
+      <div class="gear-sport-icon">🥎</div>
+      <div class="gear-sport-name">Softball</div>
+      <div class="gear-links">
+        <a href="https://amazon.com/s?k=youth+fastpitch+softball+bat&tag=youthsportsconnect-20" target="_blank" class="gear-link">Fastpitch Bats <span>→</span></a>
+        <a href="https://amazon.com/s?k=softball+glove+girls+youth&tag=youthsportsconnect-20" target="_blank" class="gear-link">Gloves <span>→</span></a>
+        <a href="https://amazon.com/s?k=softball+pitching+trainer&tag=youthsportsconnect-20" target="_blank" class="gear-link">Pitching Trainer <span>→</span></a>
+        <a href="https://amazon.com/s?k=softball+batting+helmet&tag=youthsportsconnect-20" target="_blank" class="gear-link">Helmets <span>→</span></a>
+      </div>
+    </div>
+    <div class="sport-gear-card">
+      <div class="gear-sport-icon">🏀</div>
+      <div class="gear-sport-name">Basketball</div>
+      <div class="gear-links">
+        <a href="https://amazon.com/s?k=youth+basketball+size+5&tag=youthsportsconnect-20" target="_blank" class="gear-link">Basketballs <span>→</span></a>
+        <a href="https://amazon.com/s?k=youth+basketball+shoes&tag=youthsportsconnect-20" target="_blank" class="gear-link">Shoes <span>→</span></a>
+        <a href="https://amazon.com/s?k=basketball+training+aids+youth&tag=youthsportsconnect-20" target="_blank" class="gear-link">Training Aids <span>→</span></a>
+        <a href="https://amazon.com/s?k=portable+basketball+hoop&tag=youthsportsconnect-20" target="_blank" class="gear-link">Portable Hoops <span>→</span></a>
+      </div>
+    </div>
+    <div class="sport-gear-card">
+      <div class="gear-sport-icon">🏈</div>
+      <div class="gear-sport-name">Football</div>
+      <div class="gear-links">
+        <a href="https://amazon.com/s?k=youth+football+helmet&tag=youthsportsconnect-20" target="_blank" class="gear-link">Helmets <span>→</span></a>
+        <a href="https://amazon.com/s?k=youth+football+shoulder+pads&tag=youthsportsconnect-20" target="_blank" class="gear-link">Shoulder Pads <span>→</span></a>
+        <a href="https://amazon.com/s?k=flag+football+belt+set&tag=youthsportsconnect-20" target="_blank" class="gear-link">Flag Belts <span>→</span></a>
+        <a href="https://amazon.com/s?k=youth+football+cleats&tag=youthsportsconnect-20" target="_blank" class="gear-link">Cleats <span>→</span></a>
+      </div>
+    </div>
+    <div class="sport-gear-card">
+      <div class="gear-sport-icon">🎾</div>
+      <div class="gear-sport-name">Tennis</div>
+      <div class="gear-links">
+        <a href="https://tenniswarehouse.com/junior-racquets" target="_blank" class="gear-link">Junior Rackets <span>→</span></a>
+        <a href="https://amazon.com/s?k=tennis+balls+youth+red+orange&tag=youthsportsconnect-20" target="_blank" class="gear-link">Youth Balls <span>→</span></a>
+        <a href="https://amazon.com/s?k=tennis+bag+junior&tag=youthsportsconnect-20" target="_blank" class="gear-link">Tennis Bags <span>→</span></a>
+        <a href="https://amazon.com/s?k=tennis+shoes+youth&tag=youthsportsconnect-20" target="_blank" class="gear-link">Court Shoes <span>→</span></a>
+      </div>
+    </div>
+    <div class="sport-gear-card">
+      <div class="gear-sport-icon">🏒</div>
+      <div class="gear-sport-name">Hockey</div>
+      <div class="gear-links">
+        <a href="https://purehockey.com/youth-sticks" target="_blank" class="gear-link">Youth Sticks <span>→</span></a>
+        <a href="https://purehockey.com/youth-skates" target="_blank" class="gear-link">Ice Skates <span>→</span></a>
+        <a href="https://amazon.com/s?k=youth+hockey+helmet+cage&tag=youthsportsconnect-20" target="_blank" class="gear-link">Helmets <span>→</span></a>
+        <a href="https://amazon.com/s?k=youth+hockey+gloves&tag=youthsportsconnect-20" target="_blank" class="gear-link">Gloves <span>→</span></a>
+      </div>
+    </div>
+    <div class="sport-gear-card">
+      <div class="gear-sport-icon">🏐</div>
+      <div class="gear-sport-name">Volleyball</div>
+      <div class="gear-links">
+        <a href="https://amazon.com/s?k=youth+volleyball+size+5&tag=youthsportsconnect-20" target="_blank" class="gear-link">Volleyballs <span>→</span></a>
+        <a href="https://amazon.com/s?k=volleyball+knee+pads+youth&tag=youthsportsconnect-20" target="_blank" class="gear-link">Knee Pads <span>→</span></a>
+        <a href="https://amazon.com/s?k=volleyball+shoes+youth&tag=youthsportsconnect-20" target="_blank" class="gear-link">Court Shoes <span>→</span></a>
+        <a href="https://amazon.com/s?k=portable+volleyball+net&tag=youthsportsconnect-20" target="_blank" class="gear-link">Training Nets <span>→</span></a>
+      </div>
+    </div>
+    <div class="sport-gear-card">
+      <div class="gear-sport-icon">🤸</div>
+      <div class="gear-sport-name">Gymnastics</div>
+      <div class="gear-links">
+        <a href="https://gkelite.com/leotards" target="_blank" class="gear-link">Leotards <span>→</span></a>
+        <a href="https://amazon.com/s?k=gymnastics+grips+youth&tag=youthsportsconnect-20" target="_blank" class="gear-link">Hand Grips <span>→</span></a>
+        <a href="https://amazon.com/s?k=gymnastics+beam+home&tag=youthsportsconnect-20" target="_blank" class="gear-link">Home Beam <span>→</span></a>
+        <a href="https://amazon.com/s?k=gymnastics+bar+kip+bar&tag=youthsportsconnect-20" target="_blank" class="gear-link">Kip Bar <span>→</span></a>
+      </div>
+    </div>
+    <div class="sport-gear-card">
+      <div class="gear-sport-icon">🏊</div>
+      <div class="gear-sport-name">Swimming</div>
+      <div class="gear-links">
+        <a href="https://swimoutlet.com/youth-goggles" target="_blank" class="gear-link">Goggles <span>→</span></a>
+        <a href="https://swimoutlet.com/youth-swimsuits" target="_blank" class="gear-link">Competitive Suits <span>→</span></a>
+        <a href="https://amazon.com/s?k=swim+fins+youth&tag=youthsportsconnect-20" target="_blank" class="gear-link">Training Fins <span>→</span></a>
+        <a href="https://amazon.com/s?k=swim+cap+silicone+youth&tag=youthsportsconnect-20" target="_blank" class="gear-link">Swim Caps <span>→</span></a>
+      </div>
+    </div>
+    <div class="sport-gear-card">
+      <div class="gear-sport-icon">🤼</div>
+      <div class="gear-sport-name">Wrestling</div>
+      <div class="gear-links">
+        <a href="https://amazon.com/s?k=youth+wrestling+singlet&tag=youthsportsconnect-20" target="_blank" class="gear-link">Singlets <span>→</span></a>
+        <a href="https://amazon.com/s?k=youth+wrestling+shoes&tag=youthsportsconnect-20" target="_blank" class="gear-link">Shoes <span>→</span></a>
+        <a href="https://amazon.com/s?k=wrestling+headgear+youth&tag=youthsportsconnect-20" target="_blank" class="gear-link">Headgear <span>→</span></a>
+        <a href="https://amazon.com/s?k=wrestling+mat+home&tag=youthsportsconnect-20" target="_blank" class="gear-link">Home Mat <span>→</span></a>
+      </div>
+    </div>
+    <div class="sport-gear-card">
+      <div class="gear-sport-icon">🏃</div>
+      <div class="gear-sport-name">Track & Field</div>
+      <div class="gear-links">
+        <a href="https://amazon.com/s?k=youth+track+spikes&tag=youthsportsconnect-20" target="_blank" class="gear-link">Track Spikes <span>→</span></a>
+        <a href="https://amazon.com/s?k=shot+put+youth+4lb&tag=youthsportsconnect-20" target="_blank" class="gear-link">Shot Put <span>→</span></a>
+        <a href="https://amazon.com/s?k=youth+running+shoes+track&tag=youthsportsconnect-20" target="_blank" class="gear-link">Running Shoes <span>→</span></a>
+        <a href="https://amazon.com/s?k=hurdles+youth+adjustable&tag=youthsportsconnect-20" target="_blank" class="gear-link">Hurdles <span>→</span></a>
+      </div>
+    </div>
+    <div class="sport-gear-card">
+      <div class="gear-sport-icon">⛳</div>
+      <div class="gear-sport-name">Golf</div>
+      <div class="gear-links">
+        <a href="https://amazon.com/s?k=junior+golf+club+set&tag=youthsportsconnect-20" target="_blank" class="gear-link">Junior Club Sets <span>→</span></a>
+        <a href="https://globalgolf.com/junior-golf" target="_blank" class="gear-link">Used Junior Clubs <span>→</span></a>
+        <a href="https://amazon.com/s?k=golf+bag+junior&tag=youthsportsconnect-20" target="_blank" class="gear-link">Golf Bags <span>→</span></a>
+        <a href="https://amazon.com/s?k=golf+training+aids+youth&tag=youthsportsconnect-20" target="_blank" class="gear-link">Training Aids <span>→</span></a>
+      </div>
+    </div>
+    <div class="sport-gear-card">
+      <div class="gear-sport-icon">🏑</div>
+      <div class="gear-sport-name">Field Hockey</div>
+      <div class="gear-links">
+        <a href="https://amazon.com/s?k=youth+field+hockey+stick&tag=youthsportsconnect-20" target="_blank" class="gear-link">Sticks <span>→</span></a>
+        <a href="https://amazon.com/s?k=field+hockey+goggles+youth&tag=youthsportsconnect-20" target="_blank" class="gear-link">Goggles <span>→</span></a>
+        <a href="https://amazon.com/s?k=field+hockey+shin+guards&tag=youthsportsconnect-20" target="_blank" class="gear-link">Shin Guards <span>→</span></a>
+        <a href="https://amazon.com/s?k=field+hockey+mouth+guard&tag=youthsportsconnect-20" target="_blank" class="gear-link">Mouth Guards <span>→</span></a>
+      </div>
+    </div>
+    <div class="sport-gear-card">
+      <div class="gear-sport-icon">🏉</div>
+      <div class="gear-sport-name">Rugby</div>
+      <div class="gear-links">
+        <a href="https://amazon.com/s?k=youth+rugby+ball&tag=youthsportsconnect-20" target="_blank" class="gear-link">Rugby Balls <span>→</span></a>
+        <a href="https://amazon.com/s?k=rugby+boots+youth&tag=youthsportsconnect-20" target="_blank" class="gear-link">Boots/Cleats <span>→</span></a>
+        <a href="https://amazon.com/s?k=rugby+mouth+guard+youth&tag=youthsportsconnect-20" target="_blank" class="gear-link">Mouth Guards <span>→</span></a>
+        <a href="https://amazon.com/s?k=rugby+jersey+youth&tag=youthsportsconnect-20" target="_blank" class="gear-link">Jerseys <span>→</span></a>
+      </div>
+    </div>
+    <div class="sport-gear-card">
+      <div class="gear-sport-icon">💃</div>
+      <div class="gear-sport-name">Dance</div>
+      <div class="gear-links">
+        <a href="https://amazon.com/s?k=girls+ballet+shoes+youth&tag=youthsportsconnect-20" target="_blank" class="gear-link">Ballet Shoes <span>→</span></a>
+        <a href="https://gkelite.com/dance-leotards" target="_blank" class="gear-link">Leotards <span>→</span></a>
+        <a href="https://amazon.com/s?k=youth+tap+shoes+girls&tag=youthsportsconnect-20" target="_blank" class="gear-link">Tap Shoes <span>→</span></a>
+        <a href="https://amazon.com/s?k=dance+bag+girls+youth&tag=youthsportsconnect-20" target="_blank" class="gear-link">Dance Bags <span>→</span></a>
+      </div>
+    </div>
+    <div class="sport-gear-card">
+      <div class="gear-sport-icon">🥋</div>
+      <div class="gear-sport-name">Martial Arts</div>
+      <div class="gear-links">
+        <a href="https://amazon.com/s?k=youth+karate+gi+uniform&tag=youthsportsconnect-20" target="_blank" class="gear-link">Gi Uniforms <span>→</span></a>
+        <a href="https://amazon.com/s?k=youth+sparring+gear+set&tag=youthsportsconnect-20" target="_blank" class="gear-link">Sparring Gear <span>→</span></a>
+        <a href="https://amazon.com/s?k=taekwondo+pads+youth&tag=youthsportsconnect-20" target="_blank" class="gear-link">TKD Pads <span>→</span></a>
+        <a href="https://amazon.com/s?k=martial+arts+belt+display&tag=youthsportsconnect-20" target="_blank" class="gear-link">Belt Display <span>→</span></a>
+      </div>
+    </div>
+    <div class="sport-gear-card">
+      <div class="gear-sport-icon">📣</div>
+      <div class="gear-sport-name">Cheerleading</div>
+      <div class="gear-links">
+        <a href="https://amazon.com/s?k=youth+cheer+shoes+girls&tag=youthsportsconnect-20" target="_blank" class="gear-link">Cheer Shoes <span>→</span></a>
+        <a href="https://amazon.com/s?k=cheer+bow+youth&tag=youthsportsconnect-20" target="_blank" class="gear-link">Cheer Bows <span>→</span></a>
+        <a href="https://amazon.com/s?k=cheerleading+pom+poms&tag=youthsportsconnect-20" target="_blank" class="gear-link">Pom Poms <span>→</span></a>
+        <a href="https://amazon.com/s?k=cheer+tumbling+mat&tag=youthsportsconnect-20" target="_blank" class="gear-link">Tumbling Mats <span>→</span></a>
+      </div>
+    </div>
+    <div class="sport-gear-card">
+      <div class="gear-sport-icon">🏋️</div>
+      <div class="gear-sport-name">Multi-Sport Training</div>
+      <div class="gear-links">
+        <a href="https://amazon.com/s?k=speed+ladder+agility+youth&tag=youthsportsconnect-20" target="_blank" class="gear-link">Agility Ladders <span>→</span></a>
+        <a href="https://amazon.com/s?k=resistance+bands+youth+sports&tag=youthsportsconnect-20" target="_blank" class="gear-link">Resistance Bands <span>→</span></a>
+        <a href="https://amazon.com/s?k=sports+cones+training+set&tag=youthsportsconnect-20" target="_blank" class="gear-link">Training Cones <span>→</span></a>
+        <a href="https://amazon.com/s?k=sports+water+bottle+kids&tag=youthsportsconnect-20" target="_blank" class="gear-link">Water Bottles <span>→</span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="featured-cta">
+    <h2>List Your Program — It's Free</h2>
+    <p>Get in front of thousands of Long Island sports families searching for leagues, academies, coaches, and programs right now.</p>
+    <a href="submit.html">Submit a Free Listing</a>
+    <a href="advertise.html" class="outline">Advertise With Us →</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">Youth<span>Sports</span>Connect</div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="long-island-youth-sports.html">All Sports</a>
+      <a href="blog.html">Guides</a>
+      <a href="submit.html">Submit</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+      <a href="privacy.html">Privacy</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
