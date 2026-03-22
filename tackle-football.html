@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Long Island Youth Tackle Football — Leagues, Clubs & Programs | YouthSportsConnect</title>
+<meta name="description" content="Find Long Island youth tackle football leagues, travel clubs, Pop Warner programs, and summer camps across Nassau and Suffolk County.">
+<link rel="canonical" href="https://youthsportsconnect.co/tackle-football.html">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#0a1628;--navy-mid:#112240;--gold:#c9a84c;--gold-light:#e8c96d;--gold-pale:#fdf6e3;--sport:#c05c00;--sport-pale:#fff3e0;--white:#fff;--off-white:#f5f7fa;--border:#e2e8f0;--text:#1a202c;--text-mid:#4a5568;--text-muted:#718096}
+body{font-family:'Inter',sans-serif;background:var(--off-white);color:var(--text)}
+a{text-decoration:none;color:inherit}
+.top-bar{background:var(--navy);padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:36px}
+.top-bar a{font-size:11px;color:rgba(255,255,255,.5);font-weight:500}
+.top-bar a:hover{color:var(--gold)}
+.top-bar-links{display:flex;gap:20px}
+nav{background:var(--navy-mid);padding:0 40px;display:flex;align-items:center;height:62px;border-bottom:3px solid var(--gold);position:sticky;top:0;z-index:100}
+.nav-logo{font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:1px;color:var(--white);margin-right:36px}
+.nav-logo span{color:var(--gold)}
+.nav-links{display:flex;gap:2px;flex:1}
+.nav-links a{font-size:12px;font-weight:600;color:rgba(255,255,255,.65);padding:0 14px;height:62px;display:flex;align-items:center;border-bottom:3px solid transparent;transition:all .15s;text-transform:uppercase;letter-spacing:.3px}
+.nav-links a:hover,.nav-links a.active{color:var(--gold);border-bottom-color:var(--gold)}
+.hero{background:linear-gradient(135deg,#0a1628 0%,#2a1500 60%,#5c2a00 100%);padding:52px 40px 44px;border-bottom:3px solid var(--gold);position:relative;overflow:hidden}
+.hero::before{content:'🏈';position:absolute;right:-10px;top:-20px;font-size:240px;opacity:.04;pointer-events:none}
+.hero-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center}
+.breadcrumb{font-size:12px;color:rgba(255,255,255,.4);margin-bottom:12px}
+.breadcrumb a{color:rgba(255,255,255,.4)}
+.breadcrumb a:hover{color:var(--gold)}
+.breadcrumb span{margin:0 7px;color:rgba(255,255,255,.2)}
+.hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(38px,5vw,62px);color:var(--white);line-height:1;letter-spacing:2px;margin-bottom:12px}
+.hero h1 em{color:var(--gold-light);font-style:normal}
+.hero p{font-size:15px;color:rgba(255,255,255,.68);line-height:1.7;max-width:520px;margin-bottom:20px}
+.hero-cta-row{display:flex;gap:10px;flex-wrap:wrap}
+.btn-primary{display:inline-flex;align-items:center;gap:6px;background:var(--gold);color:var(--navy);padding:11px 22px;border-radius:6px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;transition:all .15s}
+.btn-primary:hover{background:var(--gold-light)}
+.btn-outline{display:inline-flex;align-items:center;background:transparent;color:rgba(255,255,255,.75);padding:11px 22px;border-radius:6px;font-size:13px;font-weight:600;border:1.5px solid rgba(255,255,255,.25);transition:all .15s}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold)}
+.hero-stats{display:flex;flex-direction:column;gap:14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:22px 26px;flex-shrink:0;text-align:center}
+.hs-num{font-family:'Bebas Neue',sans-serif;font-size:38px;color:var(--gold-light);line-height:1}
+.hs-label{font-size:10px;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.5px;margin-top:2px}
+.quick-bar{background:var(--sport);padding:0 40px}
+.quick-bar-inner{max-width:1200px;margin:0 auto;display:flex;gap:0;overflow-x:auto}
+.quick-link{font-size:12px;font-weight:600;color:rgba(255,255,255,.75);padding:12px 18px;white-space:nowrap;border-bottom:3px solid transparent;transition:all .15s;text-transform:uppercase;letter-spacing:.4px;cursor:pointer}
+.quick-link:hover,.quick-link.active{color:var(--white);border-bottom-color:rgba(255,255,255,.8)}
+.main{max-width:1200px;margin:0 auto;padding:32px 40px;display:grid;grid-template-columns:1fr 280px;gap:32px;align-items:start}
+.intro-card{background:var(--white);border-radius:10px;border:1px solid var(--border);padding:24px 28px;margin-bottom:24px}
+.intro-card h2{font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:.8px;color:var(--navy);margin-bottom:10px}
+.intro-card p{font-size:14px;color:var(--text-mid);line-height:1.8;margin-bottom:10px}
+.intro-card p:last-child{margin-bottom:0}
+.filter-bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px;align-items:center}
+.ftab{padding:6px 14px;border-radius:20px;border:1.5px solid var(--border);background:var(--white);font-size:11px;font-weight:700;font-family:'Inter',sans-serif;color:var(--text-mid);cursor:pointer;text-transform:uppercase;letter-spacing:.4px;transition:all .15s}
+.ftab:hover{border-color:var(--sport);color:var(--sport)}
+.ftab.active{background:var(--sport);border-color:var(--sport);color:var(--white)}
+.results-meta{font-size:12px;color:var(--text-muted);margin-left:auto}
+.listings-card{background:var(--white);border-radius:10px;border:1px solid var(--border);overflow:hidden}
+.table-head{display:grid;grid-template-columns:1fr 100px 110px 140px;padding:10px 20px;background:var(--navy);font-size:10px;font-weight:700;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.5px}
+.listing-row{display:grid;grid-template-columns:1fr 100px 110px 140px;padding:15px 20px;border-bottom:1px solid var(--border);align-items:center;transition:background .12s;cursor:pointer;animation:fadeUp .3s ease both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.listing-row:last-child{border-bottom:none}
+.listing-row:hover{background:var(--sport-pale)}
+.listing-row.open{background:var(--sport-pale)}
+.listing-row.featured{border-left:3px solid var(--gold)}
+.row-name-block{display:flex;align-items:center;gap:12px}
+.sport-dot{width:36px;height:36px;background:var(--sport-pale);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+.row-name{font-size:14px;font-weight:600;color:var(--navy)}
+.row-name a:hover{color:var(--gold)}
+.row-sub{font-size:11px;color:var(--text-muted);margin-top:2px}
+.badge{display:inline-block;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;text-transform:uppercase;letter-spacing:.3px}
+.badge-league{background:#ede9fe;color:#5b21b6}.badge-team{background:#dbeafe;color:#1e40af}.badge-academy{background:#fce7f3;color:#9d174d}.badge-coach{background:#d1fae5;color:#065f46}.badge-facility{background:#fee2e2;color:#991b1b}.badge-summer_camp{background:#fef9c3;color:#854d0e}
+.level-badge{background:transparent;border:1px solid;font-size:10px;font-weight:600;padding:2px 8px;border-radius:4px;text-transform:capitalize}
+.level-rec{color:#166534;border-color:#166534}.level-travel{color:#1d4ed8;border-color:#1d4ed8}.level-elite{color:#9f1239;border-color:#9f1239}
+.row-actions{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.btn-visit{display:inline-flex;align-items:center;font-size:11px;font-weight:700;color:#fff;background:var(--navy);text-decoration:none;padding:6px 11px;border-radius:5px;transition:all .15s;white-space:nowrap;border:1.5px solid var(--navy)}
+.btn-visit:hover{background:var(--gold);color:var(--navy);border-color:var(--gold)}
+.btn-details{display:inline-flex;align-items:center;gap:3px;font-size:11px;font-weight:700;color:var(--navy);background:#fff;padding:6px 11px;border-radius:5px;transition:all .15s;white-space:nowrap;cursor:pointer;border:1.5px solid var(--border);font-family:'Inter',sans-serif}
+.btn-details:hover,.listing-row.open .btn-details{border-color:var(--sport);background:var(--sport);color:#fff}
+.d-arrow{transition:transform .2s;display:inline-block}
+.listing-row.open .d-arrow{transform:rotate(180deg)}
+.contact-dropdown{display:none;padding:22px 24px 22px 72px;background:var(--sport-pale);border-top:1px solid var(--border);border-bottom:2px solid var(--sport)}
+.contact-dropdown.open{display:grid;grid-template-columns:1fr 1fr;gap:28px;animation:dropIn .2s ease}
+@keyframes dropIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
+.ai-tag{display:inline-block;font-size:10px;font-weight:700;background:var(--gold-pale);color:#92400e;padding:2px 8px;border-radius:3px;text-transform:uppercase;letter-spacing:.3px;margin-bottom:8px}
+.ci{display:flex;align-items:center;gap:10px;padding:9px 12px;background:#fff;border:1px solid var(--border);border-radius:6px;margin-bottom:6px}
+.ci-icon{width:28px;height:28px;background:var(--navy);border-radius:5px;display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0;color:#fff}
+.ci-label{font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:.3px}
+.ci-val{font-size:13px;font-weight:600;color:var(--navy)}
+.ci-val a{color:var(--navy)}
+.ci-val a:hover{color:var(--sport)}
+.cd-cta{display:inline-flex;align-items:center;gap:6px;margin-top:12px;background:var(--sport);color:#fff;padding:9px 18px;border-radius:6px;font-size:12px;font-weight:700;text-decoration:none;text-transform:uppercase;letter-spacing:.4px;transition:all .15s}
+.cd-cta:hover{background:var(--navy)}
+.skel-row{display:grid;grid-template-columns:1fr 100px 110px 140px;padding:15px 20px;border-bottom:1px solid var(--border);align-items:center;gap:12px}
+.skel{background:#e2e8f0;border-radius:4px;animation:pulse 1.4s infinite ease-in-out}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.sidebar{display:flex;flex-direction:column;gap:18px}
+.sidebar-card{background:var(--white);border-radius:10px;border:1px solid var(--border);overflow:hidden}
+.sidebar-head{background:var(--navy);padding:12px 16px;font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:.8px;color:var(--white)}
+.sidebar-head span{color:var(--gold)}
+.sidebar-body{padding:14px 16px}
+.sidebar-item{display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid var(--border);font-size:13px;color:var(--text-mid);cursor:pointer;transition:color .12s}
+.sidebar-item:last-child{border-bottom:none}
+.sidebar-item:hover{color:var(--sport)}
+.sidebar-count{font-size:11px;font-weight:700;background:var(--sport-pale);color:var(--sport);padding:2px 8px;border-radius:10px}
+.affiliate-card{background:linear-gradient(135deg,var(--navy),#0d1f0d);border-radius:10px;padding:20px;color:#fff}
+.affiliate-card h4{font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:.8px;color:var(--gold-light);margin-bottom:6px}
+.affiliate-card p{font-size:12px;color:rgba(255,255,255,.7);line-height:1.6;margin-bottom:14px}
+.affiliate-card a{display:block;background:var(--gold);color:var(--navy);text-align:center;padding:9px;border-radius:6px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;transition:background .15s}
+.affiliate-card a:hover{background:var(--gold-light)}
+.affiliate-note{font-size:10px;color:rgba(255,255,255,.35);margin-top:8px;text-align:center}
+.submit-card{background:var(--gold-pale);border:1px solid #e8d5a3;border-radius:10px;padding:18px;text-align:center}
+.submit-card h4{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:6px}
+.submit-card p{font-size:12px;color:var(--text-mid);margin-bottom:12px;line-height:1.6}
+.submit-card a{display:block;background:var(--navy);color:#fff;padding:9px;border-radius:6px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.4px}
+.submit-card a:hover{background:var(--sport)}
+.empty-state{padding:48px 20px;text-align:center;color:var(--text-muted)}
+.empty-state h3{font-family:'Bebas Neue',sans-serif;font-size:22px;color:var(--navy);letter-spacing:1px;margin-bottom:6px}
+footer{background:var(--navy);padding:24px 40px;margin-top:40px}
+.footer-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.footer-logo{font-family:'Bebas Neue',sans-serif;font-size:20px;color:var(--white);letter-spacing:1px}
+.footer-logo span{color:var(--gold)}
+.footer-links{display:flex;gap:14px;flex-wrap:wrap}
+.footer-links a{font-size:11px;color:rgba(255,255,255,.4)}
+.footer-links a:hover{color:var(--gold)}
+.footer-copy{font-size:11px;color:rgba(255,255,255,.3)}
+@media(max-width:900px){
+  .main{grid-template-columns:1fr;padding:20px}
+  .hero-inner{grid-template-columns:1fr}
+  .contact-dropdown.open{grid-template-columns:1fr}
+  .table-head,.listing-row,.skel-row{grid-template-columns:1fr 90px 130px}
+  .table-head>div:nth-child(3),.listing-row>div:nth-child(3){display:none}
+  .hero,.top-bar,.quick-bar{padding-left:20px;padding-right:20px}
+  nav{padding:0 20px}
+}
+</style>
+</head>
+<body>
+<div class="top-bar">
+  <div class="top-bar-links"><a href="index.html">Home</a><a href="long-island-youth-sports.html">All Sports</a></div>
+  <div class="top-bar-links"><a href="submit.html">Submit a Listing</a><a href="blog.html">Guides</a></div>
+</div>
+<nav>
+  <a href="index.html" class="nav-logo">Youth<span>Sports</span>Connect</a>
+  <div class="nav-links">
+    <a href="long-island-youth-sports.html">Long Island</a>
+    <a href="soccer.html">Soccer</a>
+    <a href="lacrosse.html">Lacrosse</a>
+    <a href="baseball.html">Baseball</a>
+    <a href="tackle-football.html" class="active">🏈 Tackle Football</a>
+  </div>
+</nav>
+<div class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><a href="long-island-youth-sports.html">Long Island</a><span>/</span><span style="color:rgba(255,255,255,.7)">Tackle Football</span></div>
+      <h1>Long Island<br><em>Youth Tackle Football</em><br>Leagues & Clubs</h1>
+      <p>Pop Warner programs, NCYFL leagues, travel clubs, and summer football camps for youth tackle football players across Nassau and Suffolk County.</p>
+      <div class="hero-cta-row">
+        <a href="submit.html" class="btn-primary">🏈 Submit a Free Listing</a>
+        <a href="long-island-youth-sports.html" class="btn-outline">All Sports</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div><div class="hs-num" id="stat-total">—</div><div class="hs-label">Listings</div></div>
+      <div><div class="hs-num" id="stat-leagues">—</div><div class="hs-label">Leagues</div></div>
+      <div><div class="hs-num" id="stat-clubs">—</div><div class="hs-label">Clubs</div></div>
+    </div>
+  </div>
+</div>
+<div class="quick-bar">
+  <div class="quick-bar-inner">
+    <div class="quick-link active" onclick="setType('all',this)">All</div>
+    <div class="quick-link" onclick="setType('league',this)">Leagues</div>
+    <div class="quick-link" onclick="setType('team',this)">Clubs & Teams</div>
+    <div class="quick-link" onclick="setType('academy',this)">Academies</div>
+    <div class="quick-link" onclick="setType('facility',this)">Facilities</div>
+    <div class="quick-link" onclick="setType('summer_camp',this)">Summer Camps</div>
+  </div>
+</div>
+<div class="main">
+  <div>
+    <div class="intro-card">
+      <h2>Long Island Youth Tackle Football</h2>
+      <p>Long Island youth tackle football is anchored by Pop Warner chapters and the Nassau County Youth Football League (NCYFL) at the recreational level, and elite travel programs like Long Island Knights Football and the Sound Sharks at the competitive level. The Long Island Youth Football Association (LIYFA) connects players, coaches, and families across Nassau and Suffolk County.</p>
+      <p>Whether your child is just putting on pads for the first time or competing for a high school roster spot, Long Island's tackle football community has a program for every age and level. Browse all LI youth tackle football programs below.</p>
+    </div>
+    <div class="filter-bar">
+      <button class="ftab active" onclick="setType('all',this)">All Listings</button>
+      <button class="ftab" onclick="setType('league',this)">Leagues</button>
+      <button class="ftab" onclick="setType('team',this)">Clubs</button>
+      <button class="ftab" onclick="setType('academy',this)">Academies</button>
+      <button class="ftab" onclick="setType('facility',this)">Facilities</button>
+      <button class="ftab" onclick="setType('summer_camp',this)">Summer Camps</button>
+      <span class="results-meta" id="results-meta"></span>
+    </div>
+    <div class="listings-card">
+      <div class="table-head"><div>Organization</div><div>Type</div><div>Level</div><div>Actions</div></div>
+      <div id="listings-body">
+        <div class="skel-row"><div class="skel" style="height:36px;width:80%"></div><div class="skel" style="height:22px;width:70px"></div><div class="skel" style="height:22px;width:80px"></div><div class="skel" style="height:22px;width:110px"></div></div>
+        <div class="skel-row"><div class="skel" style="height:36px;width:65%"></div><div class="skel" style="height:22px;width:60px"></div><div class="skel" style="height:22px;width:70px"></div><div class="skel" style="height:22px;width:110px"></div></div>
+        <div class="skel-row"><div class="skel" style="height:36px;width:75%"></div><div class="skel" style="height:22px;width:75px"></div><div class="skel" style="height:22px;width:85px"></div><div class="skel" style="height:22px;width:110px"></div></div>
+      </div>
+    </div>
+  </div>
+  <div class="sidebar">
+    <div class="sidebar-card">
+      <div class="sidebar-head">Browse by <span>Type</span></div>
+      <div class="sidebar-body">
+        <div class="sidebar-item" onclick="setType('league',null)"><span>Leagues</span><span class="sidebar-count" id="sc-league">—</span></div>
+        <div class="sidebar-item" onclick="setType('team',null)"><span>Clubs & Teams</span><span class="sidebar-count" id="sc-team">—</span></div>
+        <div class="sidebar-item" onclick="setType('academy',null)"><span>Academies</span><span class="sidebar-count" id="sc-academy">—</span></div>
+        <div class="sidebar-item" onclick="setType('facility',null)"><span>Facilities</span><span class="sidebar-count" id="sc-facility">—</span></div>
+        <div class="sidebar-item" onclick="setType('summer_camp',null)"><span>Summer Camps</span><span class="sidebar-count" id="sc-camp">—</span></div>
+      </div>
+    </div>
+    <div class="affiliate-card">
+      <h4>🏈 Football Gear</h4>
+      <p>Find youth football helmets, shoulder pads, cleats, gloves, and training equipment for tackle football players.</p>
+      <a href="https://amazon.com/s?k=youth+tackle+football+gear&tag=youthsportsconnect-20" target="_blank">Shop Football Gear on Amazon →</a>
+      <div class="affiliate-note">Affiliate link — we may earn a commission.</div>
+    </div>
+    <div class="submit-card">
+      <h4>Is Your Program Listed?</h4>
+      <p>Add your league, club, or coaching program to the directory for free.</p>
+      <a href="submit.html">Submit a Free Listing →</a>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">Youth<span>Sports</span>Connect</div>
+    <div class="footer-links">
+      <a href="index.html">Home</a><a href="long-island-youth-sports.html">All Sports</a>
+      <a href="soccer.html">Soccer</a><a href="lacrosse.html">Lacrosse</a><a href="baseball.html">Baseball</a>
+      <a href="blog.html">Guides</a><a href="submit.html">Submit</a>
+      <a href="privacy.html">Privacy</a><a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+    <div class="footer-copy">© 2025 Coastal Directory, LLC · Wyoming</div>
+  </div>
+</footer>
+<script>
+const SUPABASE_URL='https://iognzfpzipwemrbcltcu.supabase.co';
+const SUPABASE_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlvZ256ZnB6aXB3ZW1yYmNsdGN1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQwNjY5NzcsImV4cCI6MjA4OTY0Mjk3N30.or4FEjl3tyVAR7_0t9TH74-0Ds1S4oE2eF6LdYXZO4k';
+let all=[],activeType='all';
+const TL={league:'League',team:'Team',academy:'Academy',coach:'Coach',facility:'Facility',summer_camp:'Summer Camp'};
+async function fetchListings(){
+  const res=await fetch(`${SUPABASE_URL}/rest/v1/listings?select=*,sports(name,slug),locations(name,slug)&status=eq.active&order=featured.desc,name.asc`,{headers:{apikey:SUPABASE_KEY,Authorization:`Bearer ${SUPABASE_KEY}`}});
+  const data=await res.json();
+  all=data.filter(l=>l.sports?.slug==='basketball');
+  updateStats();render();
+}
+function updateStats(){
+  document.getElementById('stat-total').textContent=all.length;
+  document.getElementById('stat-leagues').textContent=all.filter(l=>l.listing_type==='league').length;
+  document.getElementById('stat-clubs').textContent=all.filter(l=>l.listing_type==='team').length;
+  document.getElementById('sc-league').textContent=all.filter(l=>l.listing_type==='league').length;
+  document.getElementById('sc-team').textContent=all.filter(l=>l.listing_type==='team').length;
+  document.getElementById('sc-academy').textContent=all.filter(l=>l.listing_type==='academy').length;
+  document.getElementById('sc-facility').textContent=all.filter(l=>l.listing_type==='facility').length;
+  document.getElementById('sc-camp').textContent=all.filter(l=>l.listing_type==='summer_camp').length;
+}
+function render(){
+  let f=activeType==='all'?all:all.filter(l=>l.listing_type===activeType);
+  document.getElementById('results-meta').textContent=`${f.length} listing${f.length!==1?'s':''}`;
+  const body=document.getElementById('listings-body');
+  if(!f.length){body.innerHTML='<div class="empty-state"><h3>No Results Found</h3><p>Try a different filter or <a href="submit.html" style="color:var(--sport)">submit a listing</a>.</p></div>';return;}
+  body.innerHTML=f.map((l,i)=>rowHTML(l,i)).join('');
+}
+function aiSummary(l){
+  const sport=l.sports?.name||'Tackle Football',loc=l.locations?.name||'Long Island';
+  const ages=l.age_groups?.length?l.age_groups.join(', '):'all ages',lvl=l.competitive_level||'';
+  const desc=l.description?l.description.split('.')[0]+'.':'';
+  const t=l.listing_type;
+  if(t==='league')return`${l.name} is a ${lvl} ${sport} league on ${loc} for players aged ${ages}. ${desc||'Contact them for registration dates and schedules.'}`;
+  if(t==='team')return`${l.name} is a ${lvl} ${sport} club on ${loc} for players aged ${ages}. ${desc||'Reach out for tryout dates and roster info.'}`;
+  if(t==='academy')return`${l.name} provides ${sport} training on ${loc} for players aged ${ages}. ${desc||'Contact them for session schedules and pricing.'}`;
+  if(t==='facility')return`${l.name} is a ${sport} facility on ${loc}. ${desc||'Contact them for availability and scheduling.'}`;
+  return desc||'Contact this organization for more information.';
+}
+function toggleRow(id){
+  const row=document.getElementById(`row-${id}`),drop=document.getElementById(`drop-${id}`);
+  if(!row||!drop)return;
+  const isOpen=row.classList.contains('open');
+  document.querySelectorAll('.listing-row.open').forEach(r=>r.classList.remove('open'));
+  document.querySelectorAll('.contact-dropdown.open').forEach(d=>d.classList.remove('open'));
+  if(!isOpen){row.classList.add('open');drop.classList.add('open');}
+}
+function rowHTML(l,i){
+  const lvl=(l.competitive_level||'').toLowerCase(),lvlD=l.competitive_level||'';
+  const tl=TL[l.listing_type]||l.listing_type,sum=aiSummary(l);
+  const eR=l.contact_email?`<div class="ci"><div class="ci-icon">✉</div><div><div class="ci-label">Email</div><div class="ci-val"><a href="mailto:${l.contact_email}">${l.contact_email}</a></div></div></div>`:'';
+  const wR=l.website_url?`<div class="ci"><div class="ci-icon">🌐</div><div><div class="ci-label">Website</div><div class="ci-val"><a href="${l.website_url}" target="_blank">${l.website_url.replace(/https?:\/\//,'')}</a></div></div></div>`:'';
+  const nC=(!l.contact_email&&!l.website_url)?'<p style="font-size:12px;color:var(--text-muted);font-style:italic;margin-top:4px">No contact info on file yet.</p>':'';
+  return`
+  <div class="listing-row${l.featured?' featured':''}" id="row-${l.id}" style="animation-delay:${i*.03}s" onclick="toggleRow('${l.id}')">
+    <div class="row-name-block">
+      <div class="sport-dot">🏈</div>
+      <div><div class="row-name"><a href="listing.html?slug=${l.slug}" onclick="event.stopPropagation()">${l.name}</a></div><div class="row-sub">${l.locations?.name||'Long Island'}</div></div>
+    </div>
+    <div><span class="badge badge-${l.listing_type}">${tl}</span></div>
+    <div>${lvlD?`<span class="badge level-badge level-${lvl}">${lvlD}</span>`:'<span style="color:var(--text-muted);font-size:12px">—</span>'}</div>
+    <div class="row-actions">
+      ${l.website_url?`<a class="btn-visit" href="${l.website_url}" target="_blank" onclick="event.stopPropagation()">Visit ↗</a>`:''}
+      <button class="btn-details" onclick="toggleRow('${l.id}');event.stopPropagation()">Info <span class="d-arrow">▾</span></button>
+    </div>
+  </div>
+  <div class="contact-dropdown" id="drop-${l.id}">
+    <div><div class="ai-tag">✦ AI Summary</div><p style="font-size:13px;color:var(--text-mid);line-height:1.75;margin-top:6px">${sum}</p>${l.age_groups?.length?`<p style="margin-top:8px;font-size:12px;color:var(--text-muted)"><strong>Age groups:</strong> ${l.age_groups.join(', ')}</p>`:''}</div>
+    <div><div style="font-family:'Bebas Neue',sans-serif;font-size:15px;letter-spacing:.5px;color:var(--navy);margin-bottom:10px">Contact & Links</div>${eR}${wR}${nC}${l.website_url?`<a class="cd-cta" href="${l.website_url}" target="_blank" onclick="event.stopPropagation()">Visit Website ↗</a>`:''}</div>
+  </div>`;
+}
+function setType(type,el){
+  activeType=type;
+  document.querySelectorAll('.ftab,.quick-link').forEach(b=>b.classList.remove('active'));
+  if(el)el.classList.add('active');
+  render();
+}
+fetchListings();
+</script>
+</body>
+</html>
