@@ -162,7 +162,119 @@ footer{background:var(--navy);padding:24px 40px;margin-top:40px}
   .hub-section-label{font-family:"Bebas Neue",sans-serif;font-size:22px;letter-spacing:1px;color:var(--navy);margin-bottom:14px;padding-bottom:8px;border-top:2px solid var(--gold);padding-top:32px}
   @media(max-width:900px){.sport-hub{padding:0 16px}.hub-grid{grid-template-columns:1fr}}
 
+  
+  /* FAQ SECTION */
+  .faq-section{max-width:1200px;margin:32px auto 0;padding:0 40px}
+  .faq-section-title{font-family:"Bebas Neue",sans-serif;font-size:22px;letter-spacing:1px;color:var(--navy,#0a1628);margin-bottom:16px;padding-top:24px;border-top:2px solid var(--gold,#c9a84c)}
+  .faq-item{border-bottom:1px solid var(--border,#e2e6ed);padding:0}
+  .faq-q{width:100%;background:none;border:none;text-align:left;padding:16px 0;font-size:14px;font-weight:700;color:var(--navy,#0a1628);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;font-family:"Inter",sans-serif;line-height:1.4}
+  .faq-q:hover{color:var(--gold,#c9a84c)}
+  .faq-icon{flex-shrink:0;font-size:18px;font-weight:300;transition:transform .2s;color:var(--gold,#c9a84c)}
+  .faq-a{display:none;padding:0 0 16px;font-size:13px;color:var(--text-mid,#4a5568);line-height:1.7}
+  .faq-item.open .faq-a{display:block}
+  .faq-item.open .faq-icon{transform:rotate(45deg)}
+  @media(max-width:768px){.faq-section{padding:0 16px}}
+
   </style>
+
+<!-- SCHEMA START -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Long Island Youth Wrestling — Leagues, Clubs & Programs | YouthSportsConnect",
+  "description": "Find Long Island youth wrestling leagues, clubs, coaches, and programs across Nassau and Suffolk County. The most complete LI wrestling directory.",
+  "url": "https://youthsportsconnect.co/wrestling.html",
+  "inLanguage": "en-US",
+  "isPartOf": {
+    "@type": "WebSite",
+    "url": "https://youthsportsconnect.co",
+    "name": "YouthSportsConnect"
+  },
+  "about": {
+    "@type": "SportsOrganization",
+    "name": "Long Island Youth Wrestling",
+    "areaServed": "Long Island, New York"
+  },
+  "keywords": "youth wrestling Long Island, wrestling clubs Nassau County, USA Wrestling Long Island",
+  "publisher": {
+    "@type": "Organization",
+    "name": "YouthSportsConnect",
+    "url": "https://youthsportsconnect.co"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "YouthSportsConnect",
+  "url": "https://youthsportsconnect.co",
+  "logo": "https://youthsportsconnect.co/logo.png",
+  "description": "Long Island's most complete youth sports directory. Find leagues, travel teams, academies, coaches, summer camps and facilities across Nassau and Suffolk County. 20 sports. 1,000+ listings.",
+  "email": "hello@coastaldirectoryllc.com",
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "Long Island, New York"
+  },
+  "sameAs": [
+    "https://www.facebook.com/youthsportsconnect",
+    "https://www.instagram.com/youthsportsconnect",
+    "https://twitter.com/youthsportscxn"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://youthsportsconnect.co"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Long Island Youth Sports",
+      "item": "https://youthsportsconnect.co/long-island-youth-sports.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Youth Wrestling",
+      "item": "https://youthsportsconnect.co/wrestling.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What age can my child start wrestling on Long Island?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most Long Island youth wrestling clubs accept wrestlers starting at age 6-7. USA Wrestling's Kids division starts at approximately grades K-5. Many high school wrestling powerhouses like Massapequa and Syosset have direct feeder youth programs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is wrestling safe for young kids?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Youth wrestling under USA Wrestling guidelines is one of the safest contact sports, with strict weight classes, no striking, and highly regulated technique. Long Island coaches are required to complete safety certifications."
+      }
+    }
+  ]
+}
+</script>
+<!-- SCHEMA END -->
 </head>
 <body>
 <div class="top-bar">
@@ -325,6 +437,42 @@ footer{background:var(--navy);padding:24px 40px;margin-top:40px}
 
   </div>
 </div>
+
+
+<!-- FAQ SECTION -->
+<div class="faq-section">
+  <div class="faq-section-title">❓ Frequently Asked Questions</div>
+  <div class="faq-item" id="faq-wrestling-0">
+    <button class="faq-q" onclick="toggleFaq('wrestling-0')">
+      <span>What age can my child start wrestling on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Most Long Island youth clubs accept wrestlers starting at age 6–7. USA Wrestling's Kids division begins around Kindergarten. High school wrestling powerhouses like Massapequa and Syosset have direct youth feeder programs.</div>
+  </div>
+  <div class="faq-item" id="faq-wrestling-1">
+    <button class="faq-q" onclick="toggleFaq('wrestling-1')">
+      <span>Is wrestling safe for young kids?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Under USA Wrestling guidelines, youth wrestling is one of the safest contact sports with strict weight classes, no striking, and regulated techniques. Long Island coaches complete mandatory safety certifications.</div>
+  </div>
+  <div class="faq-item" id="faq-wrestling-2">
+    <button class="faq-q" onclick="toggleFaq('wrestling-2')">
+      <span>How much does youth wrestling cost on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Youth wrestling club fees run $200–$600 per year. Tournament entry fees add $15–$30 per event. Wrestling equipment (singlet, shoes, headgear) costs $100–$250.</div>
+  </div>
+  <div class="faq-item" id="faq-wrestling-3">
+    <button class="faq-q" onclick="toggleFaq('wrestling-3')">
+      <span>What are the best wrestling programs on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Long Island wrestling is nationally competitive. Top programs include Massapequa, Syosset, Half Hollow Hills, and Smithtown. LI Wrestling Club and LI Mat Club (girls) develop elite competitive athletes.</div>
+  </div>
+</div>
+<script>
+function toggleFaq(id){
+  var el=document.getElementById('faq-'+id);
+  if(el)el.classList.toggle('open');
+}
+</script>
 
 <footer>
   <div class="footer-inner">

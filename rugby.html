@@ -108,7 +108,119 @@ footer{background:var(--navy);padding:24px 40px;margin-top:40px;border-top:3px s
   .hub-section-label{font-family:"Bebas Neue",sans-serif;font-size:22px;letter-spacing:1px;color:var(--navy);margin-bottom:14px;padding-bottom:8px;border-top:2px solid var(--gold);padding-top:32px}
   @media(max-width:900px){.sport-hub{padding:0 16px}.hub-grid{grid-template-columns:1fr}}
 
+  
+  /* FAQ SECTION */
+  .faq-section{max-width:1200px;margin:32px auto 0;padding:0 40px}
+  .faq-section-title{font-family:"Bebas Neue",sans-serif;font-size:22px;letter-spacing:1px;color:var(--navy,#0a1628);margin-bottom:16px;padding-top:24px;border-top:2px solid var(--gold,#c9a84c)}
+  .faq-item{border-bottom:1px solid var(--border,#e2e6ed);padding:0}
+  .faq-q{width:100%;background:none;border:none;text-align:left;padding:16px 0;font-size:14px;font-weight:700;color:var(--navy,#0a1628);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;font-family:"Inter",sans-serif;line-height:1.4}
+  .faq-q:hover{color:var(--gold,#c9a84c)}
+  .faq-icon{flex-shrink:0;font-size:18px;font-weight:300;transition:transform .2s;color:var(--gold,#c9a84c)}
+  .faq-a{display:none;padding:0 0 16px;font-size:13px;color:var(--text-mid,#4a5568);line-height:1.7}
+  .faq-item.open .faq-a{display:block}
+  .faq-item.open .faq-icon{transform:rotate(45deg)}
+  @media(max-width:768px){.faq-section{padding:0 16px}}
+
   </style>
+
+<!-- SCHEMA START -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Long Island Youth Rugby — Programs, Clubs & Academies | YouthSportsConnect",
+  "description": "Find Long Island youth rugby programs, academies, and clubs across Nassau and Suffolk County. The most complete LI rugby directory.",
+  "url": "https://youthsportsconnect.co/rugby.html",
+  "inLanguage": "en-US",
+  "isPartOf": {
+    "@type": "WebSite",
+    "url": "https://youthsportsconnect.co",
+    "name": "YouthSportsConnect"
+  },
+  "about": {
+    "@type": "SportsOrganization",
+    "name": "Long Island Youth Rugby",
+    "areaServed": "Long Island, New York"
+  },
+  "keywords": "youth rugby Long Island, USA Rugby Nassau County, rugby clubs Suffolk County",
+  "publisher": {
+    "@type": "Organization",
+    "name": "YouthSportsConnect",
+    "url": "https://youthsportsconnect.co"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "YouthSportsConnect",
+  "url": "https://youthsportsconnect.co",
+  "logo": "https://youthsportsconnect.co/logo.png",
+  "description": "Long Island's most complete youth sports directory. Find leagues, travel teams, academies, coaches, summer camps and facilities across Nassau and Suffolk County. 20 sports. 1,000+ listings.",
+  "email": "hello@coastaldirectoryllc.com",
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "Long Island, New York"
+  },
+  "sameAs": [
+    "https://www.facebook.com/youthsportsconnect",
+    "https://www.instagram.com/youthsportsconnect",
+    "https://twitter.com/youthsportscxn"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://youthsportsconnect.co"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Long Island Youth Sports",
+      "item": "https://youthsportsconnect.co/long-island-youth-sports.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Youth Rugby",
+      "item": "https://youthsportsconnect.co/rugby.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is rugby safe for kids on Long Island?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Youth rugby under USA Rugby's guidelines is safe. Flag rugby (non-contact) is recommended for players under age 10. Full contact rugby begins at under-12 with modified laws, reduced contact, and strict coaching certification requirements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why should my child play rugby on Long Island?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rugby develops unique skills — spatial awareness, teamwork, and physical literacy. With rugby 7s in the 2028 Olympics, the pathway from Long Island youth rugby to national competition has never been clearer."
+      }
+    }
+  ]
+}
+</script>
+<!-- SCHEMA END -->
 </head>
 <body>
 <nav>
@@ -262,6 +374,42 @@ footer{background:var(--navy);padding:24px 40px;margin-top:40px;border-top:3px s
 
   </div>
 </div>
+
+
+<!-- FAQ SECTION -->
+<div class="faq-section">
+  <div class="faq-section-title">❓ Frequently Asked Questions</div>
+  <div class="faq-item" id="faq-rugby-0">
+    <button class="faq-q" onclick="toggleFaq('rugby-0')">
+      <span>Is rugby safe for kids on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Youth rugby under USA Rugby guidelines is safe. Flag rugby (non-contact) is recommended under age 10. Full contact begins at U12 with modified laws, reduced contact, and mandatory coaching certification.</div>
+  </div>
+  <div class="faq-item" id="faq-rugby-1">
+    <button class="faq-q" onclick="toggleFaq('rugby-1')">
+      <span>Why is rugby growing on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Rugby 7s will debut at the 2028 Los Angeles Olympics, creating major national interest. Long Island's athletic culture and strong club network make it a prime market for youth rugby growth.</div>
+  </div>
+  <div class="faq-item" id="faq-rugby-2">
+    <button class="faq-q" onclick="toggleFaq('rugby-2')">
+      <span>What is the difference between rugby union and rugby league?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Rugby union (15 players per side) is the Olympic format and what most Long Island youth clubs play. Rugby 7s (7 players) is the fast-paced Olympic version. Rugby league is a separate professional code popular in Australia and the UK.</div>
+  </div>
+  <div class="faq-item" id="faq-rugby-3">
+    <button class="faq-q" onclick="toggleFaq('rugby-3')">
+      <span>How do I find youth rugby programs on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Browse YouthSportsConnect's rugby listings. Key programs include Nassau County RFU, Bethpage RFC Youth, Long Island RFC, and Hauppauge Eagles Rugby. Many programs offer free introductory sessions.</div>
+  </div>
+</div>
+<script>
+function toggleFaq(id){
+  var el=document.getElementById('faq-'+id);
+  if(el)el.classList.toggle('open');
+}
+</script>
 
 <footer>
   <div class="footer-inner">

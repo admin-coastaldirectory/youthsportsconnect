@@ -103,6 +103,48 @@ footer{background:var(--navy);padding:24px 40px;border-top:3px solid var(--gold)
 .modal-submit:hover{background:var(--gold);color:var(--navy)}
 @media(max-width:700px){.hero,.main{padding-left:20px;padding-right:20px}nav{padding:0 20px}.hero-stats{gap:24px}}
 </style>
+
+<!-- SCHEMA START -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Advertise With Us — YouthSportsConnect Long Island",
+  "description": "Reach thousands of Long Island sports families. Featured listings, sport sponsorships, and pay-per-click advertising for youth sports businesses.",
+  "url": "https://youthsportsconnect.co/advertise.html",
+  "isPartOf": {
+    "@type": "WebSite",
+    "url": "https://youthsportsconnect.co",
+    "name": "YouthSportsConnect"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "YouthSportsConnect",
+    "url": "https://youthsportsconnect.co"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "YouthSportsConnect",
+  "url": "https://youthsportsconnect.co",
+  "logo": "https://youthsportsconnect.co/logo.png",
+  "description": "Long Island's most complete youth sports directory. Find leagues, travel teams, academies, coaches, summer camps and facilities across Nassau and Suffolk County. 20 sports. 1,000+ listings.",
+  "email": "hello@coastaldirectoryllc.com",
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "Long Island, New York"
+  },
+  "sameAs": [
+    "https://www.facebook.com/youthsportsconnect",
+    "https://www.instagram.com/youthsportsconnect",
+    "https://twitter.com/youthsportscxn"
+  ]
+}
+</script>
+<!-- SCHEMA END -->
 </head>
 <body>
 <nav>
@@ -217,7 +259,7 @@ footer{background:var(--navy);padding:24px 40px;border-top:3px solid var(--gold)
         <div class="price-feature"><span class="check">&#10003;</span> No clicks = no charge</div>
         <div class="price-feature"><span class="check">&#10003;</span> Cancel anytime</div>
       </div>
-      <a href="mailto:hello@coastaldirectoryllc.com?subject=Pay Per Click Inquiry" class="price-cta">Start PPC &rarr;</a>
+      <a href="/cdn-cgi/l/email-protection#ff979a939390bf9c909e8c8b9e939b968d9a9c8b908d8693939cd19c9092c08c8a9d959a9c8bc2af9e86dfaf9a8ddfbc93969c94dfb6918e8a968d86" class="price-cta">Start PPC &rarr;</a>
     </div>
 
   </div>
@@ -347,7 +389,7 @@ footer{background:var(--navy);padding:24px 40px;border-top:3px solid var(--gold)
 
 </div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 var markets = {
   local:    { label:'Long Island', desc:'Showing <strong>Long Island</strong> pricing — reach Nassau & Suffolk County sports families.', featured:'$29.99', sponsor:'$49.99', sponsorTag:'Own a sport category on Long Island', featReach:'Nassau & Suffolk County reach', ppcTarget:'Target by sport & county' },
   regional: { label:'Northeast',   desc:'Showing <strong>Regional (Northeast)</strong> pricing — reach NY, NJ, CT, PA, and MA sports families.', featured:'$49.99', sponsor:'$69.99', sponsorTag:'Own a sport across the Northeast', featReach:'NY, NJ, CT, PA & MA reach', ppcTarget:'Target by sport & state' },
@@ -380,10 +422,4 @@ function submitInterest(id) {
   var subject = encodeURIComponent("I'm Interested: " + labels[id] + " - YouthSportsConnect");
   var body = encodeURIComponent("Hi,\n\nI'm interested in the " + labels[id] + " when it becomes available.\n\nName: " + name + "\nEmail: " + email);
   window.open('mailto:hello@coastaldirectoryllc.com?subject=' + subject + '&body=' + body);
-  nameEl.style.display='none'; emailEl.style.display='none'; btnEl.style.display='none';
-  successEl.style.display='block';
-}
-</script>
-<footer>
-  <div class="footer-inner">
-    <div class="footer-logo">Youth<span>Sports</span>C
+  nameEl.style.display='none'; emailEl

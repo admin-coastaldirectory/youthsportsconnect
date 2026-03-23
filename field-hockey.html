@@ -111,7 +111,119 @@ footer{background:var(--navy);padding:24px 40px;margin-top:40px}
   .hub-section-label{font-family:"Bebas Neue",sans-serif;font-size:22px;letter-spacing:1px;color:var(--navy);margin-bottom:14px;padding-bottom:8px;border-top:2px solid var(--gold);padding-top:32px}
   @media(max-width:900px){.sport-hub{padding:0 16px}.hub-grid{grid-template-columns:1fr}}
 
+  
+  /* FAQ SECTION */
+  .faq-section{max-width:1200px;margin:32px auto 0;padding:0 40px}
+  .faq-section-title{font-family:"Bebas Neue",sans-serif;font-size:22px;letter-spacing:1px;color:var(--navy,#0a1628);margin-bottom:16px;padding-top:24px;border-top:2px solid var(--gold,#c9a84c)}
+  .faq-item{border-bottom:1px solid var(--border,#e2e6ed);padding:0}
+  .faq-q{width:100%;background:none;border:none;text-align:left;padding:16px 0;font-size:14px;font-weight:700;color:var(--navy,#0a1628);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;font-family:"Inter",sans-serif;line-height:1.4}
+  .faq-q:hover{color:var(--gold,#c9a84c)}
+  .faq-icon{flex-shrink:0;font-size:18px;font-weight:300;transition:transform .2s;color:var(--gold,#c9a84c)}
+  .faq-a{display:none;padding:0 0 16px;font-size:13px;color:var(--text-mid,#4a5568);line-height:1.7}
+  .faq-item.open .faq-a{display:block}
+  .faq-item.open .faq-icon{transform:rotate(45deg)}
+  @media(max-width:768px){.faq-section{padding:0 16px}}
+
   </style>
+
+<!-- SCHEMA START -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Long Island Youth Field Hockey — Leagues, Clubs & Programs | YouthSportsConnect",
+  "description": "Find Long Island youth field hockey leagues, clubs, academies, and programs across Nassau and Suffolk County.",
+  "url": "https://youthsportsconnect.co/field-hockey.html",
+  "inLanguage": "en-US",
+  "isPartOf": {
+    "@type": "WebSite",
+    "url": "https://youthsportsconnect.co",
+    "name": "YouthSportsConnect"
+  },
+  "about": {
+    "@type": "SportsOrganization",
+    "name": "Long Island Youth Field Hockey",
+    "areaServed": "Long Island, New York"
+  },
+  "keywords": "LIFHA field hockey, Long Island field hockey clubs, girls field hockey Nassau County",
+  "publisher": {
+    "@type": "Organization",
+    "name": "YouthSportsConnect",
+    "url": "https://youthsportsconnect.co"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "YouthSportsConnect",
+  "url": "https://youthsportsconnect.co",
+  "logo": "https://youthsportsconnect.co/logo.png",
+  "description": "Long Island's most complete youth sports directory. Find leagues, travel teams, academies, coaches, summer camps and facilities across Nassau and Suffolk County. 20 sports. 1,000+ listings.",
+  "email": "hello@coastaldirectoryllc.com",
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "Long Island, New York"
+  },
+  "sameAs": [
+    "https://www.facebook.com/youthsportsconnect",
+    "https://www.instagram.com/youthsportsconnect",
+    "https://twitter.com/youthsportscxn"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://youthsportsconnect.co"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Long Island Youth Sports",
+      "item": "https://youthsportsconnect.co/long-island-youth-sports.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Youth Field Hockey",
+      "item": "https://youthsportsconnect.co/field-hockey.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is LIFHA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LIFHA (Long Island Field Hockey Association) is the governing body for youth field hockey on Long Island. It runs travel leagues and coordinates club competition across Nassau and Suffolk County, serving as the primary feeder to Long Island's nationally ranked high school field hockey programs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When does field hockey season run on Long Island?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The primary field hockey season is fall (August–November) matching the high school season. LIFHA runs a spring club season as well. Most programs begin camp and training in July."
+      }
+    }
+  ]
+}
+</script>
+<!-- SCHEMA END -->
 </head>
 <body>
 <div class="top-bar">
@@ -272,6 +384,48 @@ footer{background:var(--navy);padding:24px 40px;margin-top:40px}
 
   </div>
 </div>
+
+
+<!-- FAQ SECTION -->
+<div class="faq-section">
+  <div class="faq-section-title">❓ Frequently Asked Questions</div>
+  <div class="faq-item" id="faq-field-hockey-0">
+    <button class="faq-q" onclick="toggleFaq('field-hockey-0')">
+      <span>What is LIFHA?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">LIFHA (Long Island Field Hockey Association) is the governing body for youth field hockey on Long Island, running travel leagues and coordinating club competition across Nassau and Suffolk County. LIFHA feeds into Long Island's nationally ranked high school programs.</div>
+  </div>
+  <div class="faq-item" id="faq-field-hockey-1">
+    <button class="faq-q" onclick="toggleFaq('field-hockey-1')">
+      <span>When does field hockey season run on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">The primary season is fall (August–November) aligned with the high school season. LIFHA runs a spring club season as well. Summer camps and training begin in July.</div>
+  </div>
+  <div class="faq-item" id="faq-field-hockey-2">
+    <button class="faq-q" onclick="toggleFaq('field-hockey-2')">
+      <span>How much does youth field hockey cost on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Recreational LIFHA programs cost $200–$500. Club travel field hockey runs $500–$1,500 per year. Equipment (stick, goggles, shin guards, mouthguard) costs $100–$250.</div>
+  </div>
+  <div class="faq-item" id="faq-field-hockey-3">
+    <button class="faq-q" onclick="toggleFaq('field-hockey-3')">
+      <span>What equipment does my daughter need for field hockey?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Players need a field hockey stick (31–36 inches depending on height), goggles, shin guards, a mouthguard, turf shoes or cleats, and an athletic skirt or shorts. Goalies need significantly more protective equipment.</div>
+  </div>
+  <div class="faq-item" id="faq-field-hockey-4">
+    <button class="faq-q" onclick="toggleFaq('field-hockey-4')">
+      <span>Why is Long Island field hockey so competitive?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Long Island has one of the most competitive high school field hockey landscapes in the country. Nassau County has historically produced 5 of 6 state championship schools. LIFHA's strong development pipeline contributes to this excellence.</div>
+  </div>
+</div>
+<script>
+function toggleFaq(id){
+  var el=document.getElementById('faq-'+id);
+  if(el)el.classList.toggle('open');
+}
+</script>
 
 <footer>
   <div class="footer-inner">

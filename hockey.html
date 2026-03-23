@@ -162,7 +162,127 @@ footer{background:var(--navy);padding:24px 40px;margin-top:40px}
   .hub-section-label{font-family:"Bebas Neue",sans-serif;font-size:22px;letter-spacing:1px;color:var(--navy);margin-bottom:14px;padding-bottom:8px;border-top:2px solid var(--gold);padding-top:32px}
   @media(max-width:900px){.sport-hub{padding:0 16px}.hub-grid{grid-template-columns:1fr}}
 
+  
+  /* FAQ SECTION */
+  .faq-section{max-width:1200px;margin:32px auto 0;padding:0 40px}
+  .faq-section-title{font-family:"Bebas Neue",sans-serif;font-size:22px;letter-spacing:1px;color:var(--navy,#0a1628);margin-bottom:16px;padding-top:24px;border-top:2px solid var(--gold,#c9a84c)}
+  .faq-item{border-bottom:1px solid var(--border,#e2e6ed);padding:0}
+  .faq-q{width:100%;background:none;border:none;text-align:left;padding:16px 0;font-size:14px;font-weight:700;color:var(--navy,#0a1628);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;font-family:"Inter",sans-serif;line-height:1.4}
+  .faq-q:hover{color:var(--gold,#c9a84c)}
+  .faq-icon{flex-shrink:0;font-size:18px;font-weight:300;transition:transform .2s;color:var(--gold,#c9a84c)}
+  .faq-a{display:none;padding:0 0 16px;font-size:13px;color:var(--text-mid,#4a5568);line-height:1.7}
+  .faq-item.open .faq-a{display:block}
+  .faq-item.open .faq-icon{transform:rotate(45deg)}
+  @media(max-width:768px){.faq-section{padding:0 16px}}
+
   </style>
+
+<!-- SCHEMA START -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Long Island Youth Hockey — Leagues, Clubs & Programs | YouthSportsConnect",
+  "description": "Find Long Island youth hockey leagues, clubs, coaches, and programs across Nassau and Suffolk County. The most complete LI hockey directory.",
+  "url": "https://youthsportsconnect.co/hockey.html",
+  "inLanguage": "en-US",
+  "isPartOf": {
+    "@type": "WebSite",
+    "url": "https://youthsportsconnect.co",
+    "name": "YouthSportsConnect"
+  },
+  "about": {
+    "@type": "SportsOrganization",
+    "name": "Long Island Youth Ice Hockey",
+    "areaServed": "Long Island, New York"
+  },
+  "keywords": "youth hockey Long Island, ice hockey Nassau County, USA Hockey Long Island",
+  "publisher": {
+    "@type": "Organization",
+    "name": "YouthSportsConnect",
+    "url": "https://youthsportsconnect.co"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "YouthSportsConnect",
+  "url": "https://youthsportsconnect.co",
+  "logo": "https://youthsportsconnect.co/logo.png",
+  "description": "Long Island's most complete youth sports directory. Find leagues, travel teams, academies, coaches, summer camps and facilities across Nassau and Suffolk County. 20 sports. 1,000+ listings.",
+  "email": "hello@coastaldirectoryllc.com",
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "Long Island, New York"
+  },
+  "sameAs": [
+    "https://www.facebook.com/youthsportsconnect",
+    "https://www.instagram.com/youthsportsconnect",
+    "https://twitter.com/youthsportscxn"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://youthsportsconnect.co"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Long Island Youth Sports",
+      "item": "https://youthsportsconnect.co/long-island-youth-sports.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Youth Ice Hockey",
+      "item": "https://youthsportsconnect.co/hockey.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I get my child started in ice hockey on Long Island?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Start with a Learn to Skate program at a local arena. Nassau County arenas include Newbridge Road Park, Cold Spring Harbor, and Syosset. Suffolk County has LICAC, Hauppauge, and others. From there, progress to USA Hockey's Mite program."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does youth ice hockey cost on Long Island?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ice hockey is one of the most expensive youth sports. Equipment alone can cost $500–$1,500. Annual ice time, coaching, and tournament fees for travel programs typically run $3,000–$8,000+ per year."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the best hockey program on Long Island for elite players?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Long Island Jr Gulls (LIJG) is the top AAA program on Long Island with alumni in the NHL and NCAA. For AA competitive hockey, Bethpage Ice, Syosset, and Huntington all have strong programs."
+      }
+    }
+  ]
+}
+</script>
+<!-- SCHEMA END -->
 </head>
 <body>
 <div class="top-bar">
@@ -325,6 +445,48 @@ footer{background:var(--navy);padding:24px 40px;margin-top:40px}
 
   </div>
 </div>
+
+
+<!-- FAQ SECTION -->
+<div class="faq-section">
+  <div class="faq-section-title">❓ Frequently Asked Questions</div>
+  <div class="faq-item" id="faq-hockey-0">
+    <button class="faq-q" onclick="toggleFaq('hockey-0')">
+      <span>How do I get my child started in ice hockey on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Start with a Learn to Skate program at a local arena. Nassau County arenas include Newbridge Road Park (Bellmore), Cold Spring Harbor, and Syosset. From there, progress to USA Hockey's Mite program at age 6–8.</div>
+  </div>
+  <div class="faq-item" id="faq-hockey-1">
+    <button class="faq-q" onclick="toggleFaq('hockey-1')">
+      <span>How much does youth ice hockey cost on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Ice hockey is one of the most expensive youth sports. Equipment runs $500–$1,500. Annual ice time, coaching, and tournament fees for travel programs run $3,000–$8,000+ per year.</div>
+  </div>
+  <div class="faq-item" id="faq-hockey-2">
+    <button class="faq-q" onclick="toggleFaq('hockey-2')">
+      <span>What is the best elite hockey program on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Long Island Jr Gulls (LIJG) is the top AAA program with alumni in the NHL and NCAA. For AA competitive hockey, Bethpage Ice, Syosset, and Huntington all have strong programs.</div>
+  </div>
+  <div class="faq-item" id="faq-hockey-3">
+    <button class="faq-q" onclick="toggleFaq('hockey-3')">
+      <span>Does Long Island have roller hockey leagues?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Yes — Long Island Ducks Roller Hockey and independent roller rinks offer youth roller hockey leagues at multiple locations. Roller hockey is a more affordable alternative to ice hockey.</div>
+  </div>
+  <div class="faq-item" id="faq-hockey-4">
+    <button class="faq-q" onclick="toggleFaq('hockey-4')">
+      <span>What NHL players came from Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Long Island has produced many NHL players including Bryan Trottier, Pat LaFontaine, and Mike Bossy (though Bossy grew up in Montreal, he was a beloved Islander). The New York Islanders' presence has deeply influenced hockey culture on Long Island.</div>
+  </div>
+</div>
+<script>
+function toggleFaq(id){
+  var el=document.getElementById('faq-'+id);
+  if(el)el.classList.toggle('open');
+}
+</script>
 
 <footer>
   <div class="footer-inner">

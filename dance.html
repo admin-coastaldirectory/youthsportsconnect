@@ -108,7 +108,119 @@ footer{background:var(--navy);padding:24px 40px;margin-top:40px;border-top:3px s
   .hub-section-label{font-family:"Bebas Neue",sans-serif;font-size:22px;letter-spacing:1px;color:var(--navy);margin-bottom:14px;padding-bottom:8px;border-top:2px solid var(--gold);padding-top:32px}
   @media(max-width:900px){.sport-hub{padding:0 16px}.hub-grid{grid-template-columns:1fr}}
 
+  
+  /* FAQ SECTION */
+  .faq-section{max-width:1200px;margin:32px auto 0;padding:0 40px}
+  .faq-section-title{font-family:"Bebas Neue",sans-serif;font-size:22px;letter-spacing:1px;color:var(--navy,#0a1628);margin-bottom:16px;padding-top:24px;border-top:2px solid var(--gold,#c9a84c)}
+  .faq-item{border-bottom:1px solid var(--border,#e2e6ed);padding:0}
+  .faq-q{width:100%;background:none;border:none;text-align:left;padding:16px 0;font-size:14px;font-weight:700;color:var(--navy,#0a1628);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;font-family:"Inter",sans-serif;line-height:1.4}
+  .faq-q:hover{color:var(--gold,#c9a84c)}
+  .faq-icon{flex-shrink:0;font-size:18px;font-weight:300;transition:transform .2s;color:var(--gold,#c9a84c)}
+  .faq-a{display:none;padding:0 0 16px;font-size:13px;color:var(--text-mid,#4a5568);line-height:1.7}
+  .faq-item.open .faq-a{display:block}
+  .faq-item.open .faq-icon{transform:rotate(45deg)}
+  @media(max-width:768px){.faq-section{padding:0 16px}}
+
   </style>
+
+<!-- SCHEMA START -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Long Island Youth Dance — Programs, Clubs & Academies | YouthSportsConnect",
+  "description": "Find Long Island youth dance programs, academies, and clubs across Nassau and Suffolk County. The most complete LI dance directory.",
+  "url": "https://youthsportsconnect.co/dance.html",
+  "inLanguage": "en-US",
+  "isPartOf": {
+    "@type": "WebSite",
+    "url": "https://youthsportsconnect.co",
+    "name": "YouthSportsConnect"
+  },
+  "about": {
+    "@type": "SportsOrganization",
+    "name": "Long Island Youth Dance",
+    "areaServed": "Long Island, New York"
+  },
+  "keywords": "dance studios Long Island, competitive dance Nassau County, dance classes Suffolk County",
+  "publisher": {
+    "@type": "Organization",
+    "name": "YouthSportsConnect",
+    "url": "https://youthsportsconnect.co"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "YouthSportsConnect",
+  "url": "https://youthsportsconnect.co",
+  "logo": "https://youthsportsconnect.co/logo.png",
+  "description": "Long Island's most complete youth sports directory. Find leagues, travel teams, academies, coaches, summer camps and facilities across Nassau and Suffolk County. 20 sports. 1,000+ listings.",
+  "email": "hello@coastaldirectoryllc.com",
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "Long Island, New York"
+  },
+  "sameAs": [
+    "https://www.facebook.com/youthsportsconnect",
+    "https://www.instagram.com/youthsportsconnect",
+    "https://twitter.com/youthsportscxn"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://youthsportsconnect.co"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Long Island Youth Sports",
+      "item": "https://youthsportsconnect.co/long-island-youth-sports.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Youth Dance",
+      "item": "https://youthsportsconnect.co/dance.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I choose a dance studio on Long Island?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Look for studios with clearly trained instructors (BFA or professional performance background), clean facilities, age-appropriate class sizes, and transparent competitive schedules if you want competition. Visit two or three studios before committing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What dance styles are available for kids on Long Island?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Long Island dance studios offer ballet, tap, jazz, lyrical, contemporary, hip-hop, acrobatics (acro), musical theater, and Irish step dance. Most recreational studios teach multiple styles in combo classes for younger children."
+      }
+    }
+  ]
+}
+</script>
+<!-- SCHEMA END -->
 </head>
 <body>
 <nav>
@@ -262,6 +374,48 @@ footer{background:var(--navy);padding:24px 40px;margin-top:40px;border-top:3px s
 
   </div>
 </div>
+
+
+<!-- FAQ SECTION -->
+<div class="faq-section">
+  <div class="faq-section-title">❓ Frequently Asked Questions</div>
+  <div class="faq-item" id="faq-dance-0">
+    <button class="faq-q" onclick="toggleFaq('dance-0')">
+      <span>How do I choose a dance studio on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Look for studios with professionally trained instructors, clean facilities, age-appropriate class sizes, and transparent communication about competitive schedules. Visit 2–3 studios before committing.</div>
+  </div>
+  <div class="faq-item" id="faq-dance-1">
+    <button class="faq-q" onclick="toggleFaq('dance-1')">
+      <span>What dance styles are available for kids on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Long Island studios offer ballet, tap, jazz, lyrical, contemporary, hip-hop, acrobatics (acro), musical theater, Irish step dance, and competitive pom. Most recreational studios teach combo classes for younger children.</div>
+  </div>
+  <div class="faq-item" id="faq-dance-2">
+    <button class="faq-q" onclick="toggleFaq('dance-2')">
+      <span>How much do dance classes cost on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Recreational dance classes run $80–$150/month. Competitive company participation adds $500–$2,000+ per year for costumes, competition fees, and intensives.</div>
+  </div>
+  <div class="faq-item" id="faq-dance-3">
+    <button class="faq-q" onclick="toggleFaq('dance-3')">
+      <span>At what age should my child start dance on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Most Long Island studios offer parent-tot classes starting at age 18 months to 2 years. Formal ballet technique is typically introduced at age 5–6. Competitive dance training starts at age 7–8 at most studios.</div>
+  </div>
+  <div class="faq-item" id="faq-dance-4">
+    <button class="faq-q" onclick="toggleFaq('dance-4')">
+      <span>What is the difference between recreational and competitive dance?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Recreational dance focuses on fun, technique basics, and the annual recital. Competitive dance involves a dedicated company team that attends regional and national competitions, with significantly higher time and cost commitment.</div>
+  </div>
+</div>
+<script>
+function toggleFaq(id){
+  var el=document.getElementById('faq-'+id);
+  if(el)el.classList.toggle('open');
+}
+</script>
 
 <footer>
   <div class="footer-inner">
