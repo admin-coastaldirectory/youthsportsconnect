@@ -81,7 +81,37 @@ footer{background:var(--navy);padding:24px 40px;margin-top:40px}
 .footer-links{display:flex;gap:14px;flex-wrap:wrap}.footer-links a{font-size:11px;color:rgba(255,255,255,.4)}.footer-links a:hover{color:var(--gold)}
 .footer-copy{font-size:11px;color:rgba(255,255,255,.3)}
 @media(max-width:900px){.main{grid-template-columns:1fr;padding:20px}.hero-inner{grid-template-columns:1fr}.contact-dropdown.open{grid-template-columns:1fr}.table-head,.listing-row,.skel-row{grid-template-columns:1fr 90px 130px}.table-head>div:nth-child(3),.listing-row>div:nth-child(3){display:none}.hero,.top-bar,.quick-bar{padding-left:20px;padding-right:20px}nav{padding:0 20px}}
-</style>
+
+    /* SPORT NAV BAR */
+    .sport-nav{background:var(--navy);border-bottom:1px solid rgba(255,255,255,.1);padding:0 40px;position:sticky;top:56px;z-index:99}
+    .sport-nav-inner{max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;gap:0;overflow-x:auto}
+    .sport-nav a{font-size:11px;font-weight:600;color:rgba(255,255,255,.5);padding:9px 13px;white-space:nowrap;text-decoration:none;text-transform:uppercase;letter-spacing:.3px;transition:all .15s;border-bottom:2px solid transparent}
+    .sport-nav a:hover{color:var(--gold);border-bottom-color:var(--gold)}
+    .sport-nav a.active{color:var(--gold);border-bottom-color:var(--gold)}
+
+  /* SPORT CONTENT HUB */
+  .sport-hub{max-width:1200px;margin:40px auto 0;padding:0 40px 0}
+  .hub-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;margin-bottom:48px}
+  .hub-card{background:var(--white);border-radius:10px;border:1px solid var(--border);overflow:hidden;transition:all .15s}
+  .hub-card:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.08);border-color:var(--gold)}
+  .hub-card-head{background:var(--navy);padding:14px 18px;display:flex;align-items:center;gap:10px}
+  .hub-card-icon{font-size:20px}
+  .hub-card-title{font-family:"Bebas Neue",sans-serif;font-size:16px;letter-spacing:.8px;color:var(--white)}
+  .hub-card-title span{color:var(--gold)}
+  .hub-card-body{padding:16px 18px}
+  .hub-link{display:flex;align-items:center;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--border);font-size:13px;color:var(--text-mid);text-decoration:none;transition:color .12s}
+  .hub-link:last-child{border-bottom:none}
+  .hub-link:hover{color:var(--sport)}
+  .hub-link-arrow{color:var(--text-muted);font-size:11px}
+  .hub-gear-btn{display:block;margin-top:14px;background:var(--gold);color:var(--navy);text-align:center;padding:10px;border-radius:6px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;text-decoration:none;transition:background .15s}
+  .hub-gear-btn:hover{background:var(--gold-light)}
+  .hub-gear-item{display:flex;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid var(--border);font-size:13px;color:var(--text-mid);text-decoration:none;transition:color .12s}
+  .hub-gear-item:last-of-type{border-bottom:none}
+  .hub-gear-item:hover{color:var(--sport)}
+  .hub-section-label{font-family:"Bebas Neue",sans-serif;font-size:22px;letter-spacing:1px;color:var(--navy);margin-bottom:14px;padding-bottom:8px;border-top:2px solid var(--gold);padding-top:32px}
+  @media(max-width:900px){.sport-hub{padding:0 16px}.hub-grid{grid-template-columns:1fr}}
+
+  </style>
 </head>
 <body>
 <div class="top-bar">
@@ -91,11 +121,35 @@ footer{background:var(--navy);padding:24px 40px;margin-top:40px}
 <nav>
   <a href="index.html" class="nav-logo">Youth<span>Sports</span>Connect</a>
   <div class="nav-links">
-    <a href="long-island-youth-sports.html">Long Island</a>
-    <a href="soccer.html">Soccer</a><a href="lacrosse.html">Lacrosse</a><a href="baseball.html">Baseball</a>
-    <a href="golf.html" class="active">⛳ Golf</a>
+    <a href="index.html">Home</a>
+    <a href="blog.html">📖 Guides</a>
+    <a href="submit.html">+ Submit</a>
   </div>
 </nav>
+<div class="sport-nav">
+  <div class="sport-nav-inner">
+    <a href="soccer.html">⚽ Soccer</a>
+    <a href="lacrosse.html">🥍 Lacrosse</a>
+    <a href="baseball.html">⚾ Baseball</a>
+    <a href="softball.html">🥎 Softball</a>
+    <a href="basketball.html">🏀 Basketball</a>
+    <a href="tackle-football.html">🏈 Tackle</a>
+    <a href="flag-football.html">🏈 Flag Football</a>
+    <a href="tennis.html">🎾 Tennis</a>
+    <a href="hockey.html">🏒 Hockey</a>
+    <a href="volleyball.html">🏐 Volleyball</a>
+    <a href="wrestling.html">🤼 Wrestling</a>
+    <a href="swimming.html">🏊 Swimming</a>
+    <a href="gymnastics.html">🤸 Gymnastics</a>
+    <a href="cheerleading.html">📣 Cheer</a>
+    <a href="golf.html" class="active">⛳ Golf</a>
+    <a href="field-hockey.html">🏑 Field Hockey</a>
+    <a href="track-field.html">🏃 Track</a>
+    <a href="rugby.html">🏉 Rugby</a>
+    <a href="dance.html">💃 Dance</a>
+    <a href="martial-arts.html">🥋 Martial Arts</a>
+  </div>
+</div>
 <div class="hero">
   <div class="hero-inner">
     <div>
@@ -171,6 +225,54 @@ footer{background:var(--navy);padding:24px 40px;margin-top:40px}
     </div>
   </div>
 </div>
+
+<!-- SPORT CONTENT HUB -->
+<div class="sport-hub">
+  <div class="hub-section-label">⛳ More Golf Resources</div>
+  <div class="hub-grid">
+
+    <div class="hub-card">
+      <div class="hub-card-head">
+        <span class="hub-card-icon">📋</span>
+        <div class="hub-card-title">Parent <span>Guides</span></div>
+      </div>
+      <div class="hub-card-body">
+        <a href="youth-golf-long-island-guide.html" class="hub-link">Youth Golf on LI — Junior Programs & Getting Started <span class="hub-link-arrow">→</span></a>
+        <a href="youth-golf-long-island-guide.html" class="hub-link">Junior Golf Guide <span class="hub-link-arrow">→</span></a>
+        <a href="long-island-youth-sports.html" class="hub-link">All LI Youth Sports <span class="hub-link-arrow">→</span></a>
+        <a href="blog.html" class="hub-link">All Guides &amp; Articles <span class="hub-link-arrow">→</span></a>
+      </div>
+    </div>
+
+    <div class="hub-card">
+      <div class="hub-card-head">
+        <span class="hub-card-icon">📰</span>
+        <div class="hub-card-title">Latest <span>Articles</span></div>
+      </div>
+      <div class="hub-card-body">
+        <a href="youth-golf-long-island-guide.html" class="hub-link">Bethpage, First Tee & TGA — Best Junior Golf Programs on LI <span class="hub-link-arrow">→</span></a>
+        <a href="blog.html?sport=golf" class="hub-link">More Golf Articles <span class="hub-link-arrow">→</span></a>
+        <a href="blog.html" class="hub-link">All Sports Articles <span class="hub-link-arrow">→</span></a>
+      </div>
+    </div>
+
+    <div class="hub-card">
+      <div class="hub-card-head">
+        <span class="hub-card-icon">🛒</span>
+        <div class="hub-card-title">Golf <span>Gear</span></div>
+      </div>
+      <div class="hub-card-body">
+        <a href="https://amazon.com/s?k=junior+golf+club+set&tag=youthsportsconnect-20" target="_blank" class="hub-gear-item">🛒 Junior Club Sets <span class="hub-link-arrow">→</span></a>
+        <a href="https://globalgolf.com/junior-golf" target="_blank" class="hub-gear-item">🛒 Used Junior Clubs <span class="hub-link-arrow">→</span></a>
+        <a href="https://amazon.com/s?k=golf+bag+junior&tag=youthsportsconnect-20" target="_blank" class="hub-gear-item">🛒 Golf Bags <span class="hub-link-arrow">→</span></a>
+        <a href="https://amazon.com/s?k=golf+training+aids+youth&tag=youthsportsconnect-20" target="_blank" class="hub-gear-item">🛒 Training Aids <span class="hub-link-arrow">→</span></a>
+        <a href="gear.html" class="hub-gear-btn">All Golf Gear →</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 <footer>
   <div class="footer-inner">
     <div class="footer-logo">Youth<span>Sports</span>Connect</div>
