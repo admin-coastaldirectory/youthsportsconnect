@@ -44,7 +44,19 @@ footer{background:var(--navy);padding:24px 40px;margin-top:0;border-top:3px soli
 .footer-logo{font-family:'Bebas Neue',sans-serif;font-size:20px;color:#fff;letter-spacing:1px}.footer-logo span{color:var(--gold)}
 .footer-links{display:flex;gap:14px;flex-wrap:wrap}.footer-links a{font-size:11px;color:rgba(255,255,255,.4)}.footer-links a:hover{color:var(--gold)}
 @media(max-width:700px){.article-hero,.article-body{padding-left:20px;padding-right:20px}nav{padding:0 20px}}
-</style>
+
+  .faq-section{max-width:860px;margin:40px auto 0;padding:0 40px}
+  .faq-section-title{font-family:"Bebas Neue",sans-serif;font-size:22px;letter-spacing:1px;color:var(--navy,#0a1628);margin-bottom:16px;padding-top:24px;border-top:2px solid var(--gold,#c9a84c)}
+  .faq-item{border-bottom:1px solid var(--border,#e2e6ed)}
+  .faq-q{width:100%;background:none;border:none;text-align:left;padding:16px 0;font-size:14px;font-weight:700;color:var(--navy,#0a1628);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;font-family:"Inter",sans-serif;line-height:1.4}
+  .faq-q:hover{color:var(--gold,#c9a84c)}
+  .faq-icon{flex-shrink:0;font-size:18px;font-weight:300;transition:transform .2s;color:var(--gold,#c9a84c)}
+  .faq-a{display:none;padding:0 0 16px;font-size:13px;color:#4a5568;line-height:1.7}
+  .faq-item.open .faq-a{display:block}
+  .faq-item.open .faq-icon{transform:rotate(45deg)}
+  @media(max-width:768px){.faq-section{padding:0 16px}}
+
+  </style>
 
 <!-- SCHEMA START -->
 <script type="application/ld+json">
@@ -129,6 +141,9 @@ footer{background:var(--navy);padding:24px 40px;margin-top:0;border-top:3px soli
 }
 </script>
 <!-- SCHEMA END -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What age can my child start wrestling on Long Island?","acceptedAnswer":{"@type":"Answer","text":"Most Long Island youth wrestling clubs accept wrestlers starting at age 6–7 in the Kids Wrestling division. USA Wrestling has defined youth age groups starting at Kindergarten. Many feeder programs for schools like Massapequa and Syosset start at 1st grade."}},{"@type":"Question","name":"Is wrestling safe for young kids?","acceptedAnswer":{"@type":"Answer","text":"Under USA Wrestling guidelines, youth wrestling is one of the safest contact sports. Strict weight classes, no striking, regulated techniques, and mandatory coach safety certifications make it highly controlled. Injury rates compare favorably to soccer and basketball."}},{"@type":"Question","name":"How are weight classes determined in youth wrestling on Long Island?","acceptedAnswer":{"@type":"Answer","text":"USA Wrestling uses weight-based classes (not age-based beyond broad age divisions). Youth wrestlers are weighed before each competition. Long Island scholastic wrestling follows NYSPHSAA weight classes from 99 lbs through heavyweight."}},{"@type":"Question","name":"What are the best youth wrestling programs on Long Island?","acceptedAnswer":{"@type":"Answer","text":"Long Island wrestling is nationally competitive. Top feeder programs include Massapequa Wrestling Club, Syosset Youth Wrestling, and Smithtown Wrestling Academy. LI Wrestling Club develops elite competitive athletes targeting state and national competition."}},{"@type":"Question","name":"How do I prepare my child for their first wrestling tournament on Long Island?","acceptedAnswer":{"@type":"Answer","text":"Focus on weight management (avoiding drastic cuts), basic technique for top, bottom, and neutral positions, and mental preparation for one-on-one competition. LIAC and USA Wrestling both provide beginner tournament guides for first-time wrestlers."}}]}
+</script>
 </head>
 <body>
 <nav>
@@ -166,6 +181,42 @@ footer{background:var(--navy);padding:24px 40px;margin-top:0;border-top:3px soli
   <p>Browse leagues, clubs, academies, and coaches across Nassau and Suffolk County.</p>
   <a href="wrestling.html">Browse Wrestling Listings →</a>
 </div></div>
+
+<!-- GUIDE FAQ -->
+<div class="faq-section" style="margin-bottom:40px">
+  <div class="faq-section-title">❓ Frequently Asked Questions</div>
+  <div class="faq-item" id="gfaq-youth-wrestl-0">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What age can my child start wrestling on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Most Long Island youth wrestling clubs accept wrestlers starting at age 6–7 in the Kids Wrestling division. USA Wrestling has defined youth age groups starting at Kindergarten. Many feeder programs for schools like Massapequa and Syosset start at 1st grade.</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-wrestl-1">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>Is wrestling safe for young kids?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Under USA Wrestling guidelines, youth wrestling is one of the safest contact sports. Strict weight classes, no striking, regulated techniques, and mandatory coach safety certifications make it highly controlled. Injury rates compare favorably to soccer and basketball.</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-wrestl-2">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>How are weight classes determined in youth wrestling on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">USA Wrestling uses weight-based classes (not age-based beyond broad age divisions). Youth wrestlers are weighed before each competition. Long Island scholastic wrestling follows NYSPHSAA weight classes from 99 lbs through heavyweight.</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-wrestl-3">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What are the best youth wrestling programs on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Long Island wrestling is nationally competitive. Top feeder programs include Massapequa Wrestling Club, Syosset Youth Wrestling, and Smithtown Wrestling Academy. LI Wrestling Club develops elite competitive athletes targeting state and national competition.</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-wrestl-4">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>How do I prepare my child for their first wrestling tournament on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Focus on weight management (avoiding drastic cuts), basic technique for top, bottom, and neutral positions, and mental preparation for one-on-one competition. LIAC and USA Wrestling both provide beginner tournament guides for first-time wrestlers.</div>
+  </div>
+</div>
+
 <footer>
   <div class="footer-inner">
     <div class="footer-logo">Youth<span>Sports</span>Connect</div>

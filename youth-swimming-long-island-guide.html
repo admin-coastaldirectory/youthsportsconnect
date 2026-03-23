@@ -44,7 +44,19 @@ footer{background:var(--navy);padding:24px 40px;margin-top:0;border-top:3px soli
 .footer-logo{font-family:'Bebas Neue',sans-serif;font-size:20px;color:#fff;letter-spacing:1px}.footer-logo span{color:var(--gold)}
 .footer-links{display:flex;gap:14px;flex-wrap:wrap}.footer-links a{font-size:11px;color:rgba(255,255,255,.4)}.footer-links a:hover{color:var(--gold)}
 @media(max-width:700px){.article-hero,.article-body{padding-left:20px;padding-right:20px}nav{padding:0 20px}}
-</style>
+
+  .faq-section{max-width:860px;margin:40px auto 0;padding:0 40px}
+  .faq-section-title{font-family:"Bebas Neue",sans-serif;font-size:22px;letter-spacing:1px;color:var(--navy,#0a1628);margin-bottom:16px;padding-top:24px;border-top:2px solid var(--gold,#c9a84c)}
+  .faq-item{border-bottom:1px solid var(--border,#e2e6ed)}
+  .faq-q{width:100%;background:none;border:none;text-align:left;padding:16px 0;font-size:14px;font-weight:700;color:var(--navy,#0a1628);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;font-family:"Inter",sans-serif;line-height:1.4}
+  .faq-q:hover{color:var(--gold,#c9a84c)}
+  .faq-icon{flex-shrink:0;font-size:18px;font-weight:300;transition:transform .2s;color:var(--gold,#c9a84c)}
+  .faq-a{display:none;padding:0 0 16px;font-size:13px;color:#4a5568;line-height:1.7}
+  .faq-item.open .faq-a{display:block}
+  .faq-item.open .faq-icon{transform:rotate(45deg)}
+  @media(max-width:768px){.faq-section{padding:0 16px}}
+
+  </style>
 
 <!-- SCHEMA START -->
 <script type="application/ld+json">
@@ -129,6 +141,9 @@ footer{background:var(--navy);padding:24px 40px;margin-top:0;border-top:3px soli
 }
 </script>
 <!-- SCHEMA END -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is USA Swimming and how do I join on Long Island?","acceptedAnswer":{"@type":"Answer","text":"USA Swimming is the national governing body for competitive swimming. Join by finding a local USA Swimming member club — LIAC in Merrick, Bethpage Swim Club, Smithtown Swim Club, and Farmingdale Swim Club are among the top LI options. Attend a tryout after your child can swim one full length independently."}},{"@type":"Question","name":"What is the difference between summer swim team and USA Swimming?","acceptedAnswer":{"@type":"Answer","text":"Summer swim teams are recreational community programs running June–August at local pools. USA Swimming is year-round competitive swimming with standardized times, national rankings, and a pathway to Olympic Trials qualifying standards."}},{"@type":"Question","name":"How much does competitive swimming cost on Long Island?","acceptedAnswer":{"@type":"Answer","text":"USA Swimming club fees on Long Island run $1,200–$3,000+ per year including coaching, meet fees, and travel. Swimwear and equipment (goggles, fins, paddles, kickboard) adds $150–$300."}},{"@type":"Question","name":"What is LIAC?","acceptedAnswer":{"@type":"Answer","text":"LIAC (Long Island Aquatic Club) based in Merrick is one of the nation's most elite competitive swimming programs. LIAC has produced dozens of Olympic Trials qualifiers, NCAA All-Americans, and USA Swimming National Team members. It is the gold standard of competitive swimming on Long Island."}},{"@type":"Question","name":"What are USA Swimming meet time standards for Long Island swimmers?","acceptedAnswer":{"@type":"Answer","text":"USA Swimming has time standards ranging from B (entry level) through AAAA (national elite). Long Island swimmers at Metropolitan Swimming (Metro) meets compete at B/BB/A/AA levels. Reaching AA/AAA standards opens invitational meets and national-level competition."}}]}
+</script>
 </head>
 <body>
 <nav>
@@ -172,6 +187,42 @@ footer{background:var(--navy);padding:24px 40px;margin-top:0;border-top:3px soli
   <p>Browse leagues, clubs, academies, and coaches across Nassau and Suffolk County.</p>
   <a href="swimming.html">Browse Swimming Listings →</a>
 </div></div>
+
+<!-- GUIDE FAQ -->
+<div class="faq-section" style="margin-bottom:40px">
+  <div class="faq-section-title">❓ Frequently Asked Questions</div>
+  <div class="faq-item" id="gfaq-youth-swimmi-0">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What is USA Swimming and how do I join on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">USA Swimming is the national governing body for competitive swimming. Join by finding a local USA Swimming member club — LIAC in Merrick, Bethpage Swim Club, Smithtown Swim Club, and Farmingdale Swim Club are among the top LI options. Attend a tryout after your child can swim one full length independently.</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-swimmi-1">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What is the difference between summer swim team and USA Swimming?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Summer swim teams are recreational community programs running June–August at local pools. USA Swimming is year-round competitive swimming with standardized times, national rankings, and a pathway to Olympic Trials qualifying standards.</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-swimmi-2">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>How much does competitive swimming cost on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">USA Swimming club fees on Long Island run $1,200–$3,000+ per year including coaching, meet fees, and travel. Swimwear and equipment (goggles, fins, paddles, kickboard) adds $150–$300.</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-swimmi-3">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What is LIAC?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">LIAC (Long Island Aquatic Club) based in Merrick is one of the nation's most elite competitive swimming programs. LIAC has produced dozens of Olympic Trials qualifiers, NCAA All-Americans, and USA Swimming National Team members. It is the gold standard of competitive swimming on Long Island.</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-swimmi-4">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What are USA Swimming meet time standards for Long Island swimmers?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">USA Swimming has time standards ranging from B (entry level) through AAAA (national elite). Long Island swimmers at Metropolitan Swimming (Metro) meets compete at B/BB/A/AA levels. Reaching AA/AAA standards opens invitational meets and national-level competition.</div>
+  </div>
+</div>
+
 <footer>
   <div class="footer-inner">
     <div class="footer-logo">Youth<span>Sports</span>Connect</div>

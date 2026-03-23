@@ -44,7 +44,19 @@ footer{background:var(--navy);padding:24px 40px;margin-top:0;border-top:3px soli
 .footer-logo{font-family:'Bebas Neue',sans-serif;font-size:20px;color:#fff;letter-spacing:1px}.footer-logo span{color:var(--gold)}
 .footer-links{display:flex;gap:14px;flex-wrap:wrap}.footer-links a{font-size:11px;color:rgba(255,255,255,.4)}.footer-links a:hover{color:var(--gold)}
 @media(max-width:700px){.article-hero,.article-body{padding-left:20px;padding-right:20px}nav{padding:0 20px}}
-</style>
+
+  .faq-section{max-width:860px;margin:40px auto 0;padding:0 40px}
+  .faq-section-title{font-family:"Bebas Neue",sans-serif;font-size:22px;letter-spacing:1px;color:var(--navy,#0a1628);margin-bottom:16px;padding-top:24px;border-top:2px solid var(--gold,#c9a84c)}
+  .faq-item{border-bottom:1px solid var(--border,#e2e6ed)}
+  .faq-q{width:100%;background:none;border:none;text-align:left;padding:16px 0;font-size:14px;font-weight:700;color:var(--navy,#0a1628);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;font-family:"Inter",sans-serif;line-height:1.4}
+  .faq-q:hover{color:var(--gold,#c9a84c)}
+  .faq-icon{flex-shrink:0;font-size:18px;font-weight:300;transition:transform .2s;color:var(--gold,#c9a84c)}
+  .faq-a{display:none;padding:0 0 16px;font-size:13px;color:#4a5568;line-height:1.7}
+  .faq-item.open .faq-a{display:block}
+  .faq-item.open .faq-icon{transform:rotate(45deg)}
+  @media(max-width:768px){.faq-section{padding:0 16px}}
+
+  </style>
 
 <!-- SCHEMA START -->
 <script type="application/ld+json">
@@ -129,6 +141,9 @@ footer{background:var(--navy);padding:24px 40px;margin-top:0;border-top:3px soli
 }
 </script>
 <!-- SCHEMA END -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is LIFHA?","acceptedAnswer":{"@type":"Answer","text":"LIFHA (Long Island Field Hockey Association) is the governing body for youth field hockey on Long Island, running travel leagues and club competition across Nassau and Suffolk County. LIFHA is the primary feeder to Long Island's nationally ranked high school programs."}},{"@type":"Question","name":"When does field hockey season run on Long Island?","acceptedAnswer":{"@type":"Answer","text":"The primary season is fall (August–November) aligned with the high school season. LIFHA also runs a spring club season. Summer camps and team training typically begin in July."}},{"@type":"Question","name":"How much does youth field hockey cost on Long Island?","acceptedAnswer":{"@type":"Answer","text":"Recreational LIFHA programs cost $200–$500. Club travel field hockey runs $500–$1,500 per year. Equipment (stick, goggles, shin guards, mouthguard, cleats) costs $100–$250."}},{"@type":"Question","name":"What equipment does my daughter need for field hockey?","acceptedAnswer":{"@type":"Answer","text":"Players need a field hockey stick (sized to hip height), ASTM-certified goggles, shin guards, a mouthguard, and turf shoes or cleats. Goalies require a helmet, chest protector, leg guards, kickers, and gloves."}},{"@type":"Question","name":"Why is Long Island field hockey so nationally competitive?","acceptedAnswer":{"@type":"Answer","text":"Nassau County consistently produces among the most competitive high school field hockey programs in the country. LIFHA's strong development pipeline, experienced coaching base, and the intensity of Nassau County varsity competition creates elite players. Long Island athletes regularly earn D1 college scholarships."}}]}
+</script>
 </head>
 <body>
 <nav>
@@ -166,6 +181,42 @@ footer{background:var(--navy);padding:24px 40px;margin-top:0;border-top:3px soli
   <p>Browse leagues, clubs, academies, and coaches across Nassau and Suffolk County.</p>
   <a href="field-hockey.html">Browse Field Hockey Listings →</a>
 </div></div>
+
+<!-- GUIDE FAQ -->
+<div class="faq-section" style="margin-bottom:40px">
+  <div class="faq-section-title">❓ Frequently Asked Questions</div>
+  <div class="faq-item" id="gfaq-youth-field--0">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What is LIFHA?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">LIFHA (Long Island Field Hockey Association) is the governing body for youth field hockey on Long Island, running travel leagues and club competition across Nassau and Suffolk County. LIFHA is the primary feeder to Long Island's nationally ranked high school programs.</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-field--1">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>When does field hockey season run on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">The primary season is fall (August–November) aligned with the high school season. LIFHA also runs a spring club season. Summer camps and team training typically begin in July.</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-field--2">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>How much does youth field hockey cost on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Recreational LIFHA programs cost $200–$500. Club travel field hockey runs $500–$1,500 per year. Equipment (stick, goggles, shin guards, mouthguard, cleats) costs $100–$250.</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-field--3">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What equipment does my daughter need for field hockey?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Players need a field hockey stick (sized to hip height), ASTM-certified goggles, shin guards, a mouthguard, and turf shoes or cleats. Goalies require a helmet, chest protector, leg guards, kickers, and gloves.</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-field--4">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>Why is Long Island field hockey so nationally competitive?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Nassau County consistently produces among the most competitive high school field hockey programs in the country. LIFHA's strong development pipeline, experienced coaching base, and the intensity of Nassau County varsity competition creates elite players. Long Island athletes regularly earn D1 college scholarships.</div>
+  </div>
+</div>
+
 <footer>
   <div class="footer-inner">
     <div class="footer-logo">Youth<span>Sports</span>Connect</div>

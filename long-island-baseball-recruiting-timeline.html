@@ -128,7 +128,19 @@
     nav{padding:0 20px}
     .metrics-grid{grid-template-columns:1fr 1fr}
   }
-</style>
+
+  .faq-section{max-width:860px;margin:40px auto 0;padding:0 40px}
+  .faq-section-title{font-family:"Bebas Neue",sans-serif;font-size:22px;letter-spacing:1px;color:var(--navy,#0a1628);margin-bottom:16px;padding-top:24px;border-top:2px solid var(--gold,#c9a84c)}
+  .faq-item{border-bottom:1px solid var(--border,#e2e6ed)}
+  .faq-q{width:100%;background:none;border:none;text-align:left;padding:16px 0;font-size:14px;font-weight:700;color:var(--navy,#0a1628);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;font-family:"Inter",sans-serif;line-height:1.4}
+  .faq-q:hover{color:var(--gold,#c9a84c)}
+  .faq-icon{flex-shrink:0;font-size:18px;font-weight:300;transition:transform .2s;color:var(--gold,#c9a84c)}
+  .faq-a{display:none;padding:0 0 16px;font-size:13px;color:#4a5568;line-height:1.7}
+  .faq-item.open .faq-a{display:block}
+  .faq-item.open .faq-icon{transform:rotate(45deg)}
+  @media(max-width:768px){.faq-section{padding:0 16px}}
+
+  </style>
 
 <!-- SCHEMA START -->
 <script type="application/ld+json">
@@ -213,6 +225,9 @@
 }
 </script>
 <!-- SCHEMA END -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"When do college baseball coaches start recruiting Long Island players?","acceptedAnswer":{"@type":"Answer","text":"Division I coaches can contact recruits starting September 1 of their junior year of high school. However, evaluation begins much earlier — most D1 programs are evaluating players starting in 9th and 10th grade through travel showcases."}},{"@type":"Question","name":"What showcases should Long Island baseball players attend?","acceptedAnswer":{"@type":"Answer","text":"Key showcases for Long Island players include Perfect Game events, Baseball Factory, Area Code Games, and East Coast Professional Showcase. Playing on a well-known USSSA travel program gets you in front of more scouts."}},{"@type":"Question","name":"What GPA do I need to play college baseball?","acceptedAnswer":{"@type":"Answer","text":"Academic requirements vary by division. D1 NCAA requires a minimum 2.3 GPA in core courses. D2 requires 2.2. D3 and NAIA have no athletic eligibility GPA requirements. Academic standing significantly affects scholarship opportunities."}},{"@type":"Question","name":"How do I get a baseball scholarship from Long Island?","acceptedAnswer":{"@type":"Answer","text":"Create a Perfect Game profile, film quality video of your mechanics and games, attend showcases, and proactively email coaches with your stats and highlight video. Scholarships are most available at D1 and D2 programs. D3 schools offer academic aid instead."}},{"@type":"Question","name":"What travel baseball programs on Long Island help with college placement?","acceptedAnswer":{"@type":"Answer","text":"Programs with strong college placement records include South Shore Surge, LI Yankees Academy, LI Mustangs, and Centereach Baseball Club. Ask any program about their track record of college placements before committing."}}]}
+</script>
 </head>
 <body>
 
@@ -414,6 +429,42 @@
         <a class="related-link" href="baseball.html">Browse Baseball Directory →</a>
       </div>
     </div>
+  </div>
+</div>
+
+
+<!-- GUIDE FAQ -->
+<div class="faq-section" style="margin-bottom:40px">
+  <div class="faq-section-title">❓ Frequently Asked Questions</div>
+  <div class="faq-item" id="gfaq-long-island--0">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>When do college baseball coaches start recruiting Long Island players?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Division I coaches can contact recruits starting September 1 of their junior year of high school. However, evaluation begins much earlier — most D1 programs are evaluating players starting in 9th and 10th grade through travel showcases.</div>
+  </div>
+  <div class="faq-item" id="gfaq-long-island--1">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What showcases should Long Island baseball players attend?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Key showcases for Long Island players include Perfect Game events, Baseball Factory, Area Code Games, and East Coast Professional Showcase. Playing on a well-known USSSA travel program gets you in front of more scouts.</div>
+  </div>
+  <div class="faq-item" id="gfaq-long-island--2">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What GPA do I need to play college baseball?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Academic requirements vary by division. D1 NCAA requires a minimum 2.3 GPA in core courses. D2 requires 2.2. D3 and NAIA have no athletic eligibility GPA requirements. Academic standing significantly affects scholarship opportunities.</div>
+  </div>
+  <div class="faq-item" id="gfaq-long-island--3">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>How do I get a baseball scholarship from Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Create a Perfect Game profile, film quality video of your mechanics and games, attend showcases, and proactively email coaches with your stats and highlight video. Scholarships are most available at D1 and D2 programs. D3 schools offer academic aid instead.</div>
+  </div>
+  <div class="faq-item" id="gfaq-long-island--4">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What travel baseball programs on Long Island help with college placement?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Programs with strong college placement records include South Shore Surge, LI Yankees Academy, LI Mustangs, and Centereach Baseball Club. Ask any program about their track record of college placements before committing.</div>
   </div>
 </div>
 

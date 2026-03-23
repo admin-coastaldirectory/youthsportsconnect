@@ -44,7 +44,19 @@ footer{background:var(--navy);padding:24px 40px;margin-top:0;border-top:3px soli
 .footer-logo{font-family:'Bebas Neue',sans-serif;font-size:20px;color:#fff;letter-spacing:1px}.footer-logo span{color:var(--gold)}
 .footer-links{display:flex;gap:14px;flex-wrap:wrap}.footer-links a{font-size:11px;color:rgba(255,255,255,.4)}.footer-links a:hover{color:var(--gold)}
 @media(max-width:700px){.article-hero,.article-body{padding-left:20px;padding-right:20px}nav{padding:0 20px}}
-</style>
+
+  .faq-section{max-width:860px;margin:40px auto 0;padding:0 40px}
+  .faq-section-title{font-family:"Bebas Neue",sans-serif;font-size:22px;letter-spacing:1px;color:var(--navy,#0a1628);margin-bottom:16px;padding-top:24px;border-top:2px solid var(--gold,#c9a84c)}
+  .faq-item{border-bottom:1px solid var(--border,#e2e6ed)}
+  .faq-q{width:100%;background:none;border:none;text-align:left;padding:16px 0;font-size:14px;font-weight:700;color:var(--navy,#0a1628);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;font-family:"Inter",sans-serif;line-height:1.4}
+  .faq-q:hover{color:var(--gold,#c9a84c)}
+  .faq-icon{flex-shrink:0;font-size:18px;font-weight:300;transition:transform .2s;color:var(--gold,#c9a84c)}
+  .faq-a{display:none;padding:0 0 16px;font-size:13px;color:#4a5568;line-height:1.7}
+  .faq-item.open .faq-a{display:block}
+  .faq-item.open .faq-icon{transform:rotate(45deg)}
+  @media(max-width:768px){.faq-section{padding:0 16px}}
+
+  </style>
 
 <!-- SCHEMA START -->
 <script type="application/ld+json">
@@ -129,6 +141,9 @@ footer{background:var(--navy);padding:24px 40px;margin-top:0;border-top:3px soli
 }
 </script>
 <!-- SCHEMA END -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the difference between XCEL and Junior Olympic gymnastics?","acceptedAnswer":{"@type":"Answer","text":"XCEL is a flexible pathway designed to be more inclusive and fun. Junior Olympic (JO) is the traditional track from Level 1–10 with strict skill requirements at each level. JO is more demanding and competitive. Most Long Island gyms offer both pathways."}},{"@type":"Question","name":"How much does competitive gymnastics cost on Long Island?","acceptedAnswer":{"@type":"Answer","text":"Recreational gymnastics runs $80–$150/month. Competitive XCEL programs cost $200–$400/month. Junior Olympic competitive programs can reach $500–$1,000+/month when you include coaching, meet fees, leotards, and travel."}},{"@type":"Question","name":"At what age should my child start gymnastics on Long Island?","acceptedAnswer":{"@type":"Answer","text":"Most gyms offer parent-tot classes starting at 18 months. Formal instruction begins at age 3–4. Competitive gymnastics typically starts at age 5–7. Many elite gymnasts began formal training at age 3–5."}},{"@type":"Question","name":"What are the best gymnastics gyms on Long Island?","acceptedAnswer":{"@type":"Answer","text":"Top programs include Gold Medal Gymnastics (Westbury), Apex Gymnastics (Syosset), LI Gymnastics Center (Commack), Tumble Tech (Stony Brook), and Rising Stars Gymnastics (Massapequa). All are USAG member gyms with certified coaches."}},{"@type":"Question","name":"How do gymnastics competitions work on Long Island?","acceptedAnswer":{"@type":"Answer","text":"USAG JO gymnasts compete at Level 3 through Level 10 in invitational, state, regional, and national meets. XCEL gymnasts compete at Bronze, Silver, Gold, Platinum, and Diamond levels. Long Island gyms typically begin competing at age 7–8 at Level 3 or XCEL Bronze."}}]}
+</script>
 </head>
 <body>
 <nav>
@@ -174,6 +189,42 @@ footer{background:var(--navy);padding:24px 40px;margin-top:0;border-top:3px soli
   <p>Browse leagues, clubs, academies, and coaches across Nassau and Suffolk County.</p>
   <a href="gymnastics.html">Browse Gymnastics Listings →</a>
 </div></div>
+
+<!-- GUIDE FAQ -->
+<div class="faq-section" style="margin-bottom:40px">
+  <div class="faq-section-title">❓ Frequently Asked Questions</div>
+  <div class="faq-item" id="gfaq-youth-gymnas-0">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What is the difference between XCEL and Junior Olympic gymnastics?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">XCEL is a flexible pathway designed to be more inclusive and fun. Junior Olympic (JO) is the traditional track from Level 1–10 with strict skill requirements at each level. JO is more demanding and competitive. Most Long Island gyms offer both pathways.</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-gymnas-1">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>How much does competitive gymnastics cost on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Recreational gymnastics runs $80–$150/month. Competitive XCEL programs cost $200–$400/month. Junior Olympic competitive programs can reach $500–$1,000+/month when you include coaching, meet fees, leotards, and travel.</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-gymnas-2">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>At what age should my child start gymnastics on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Most gyms offer parent-tot classes starting at 18 months. Formal instruction begins at age 3–4. Competitive gymnastics typically starts at age 5–7. Many elite gymnasts began formal training at age 3–5.</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-gymnas-3">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What are the best gymnastics gyms on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Top programs include Gold Medal Gymnastics (Westbury), Apex Gymnastics (Syosset), LI Gymnastics Center (Commack), Tumble Tech (Stony Brook), and Rising Stars Gymnastics (Massapequa). All are USAG member gyms with certified coaches.</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-gymnas-4">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>How do gymnastics competitions work on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">USAG JO gymnasts compete at Level 3 through Level 10 in invitational, state, regional, and national meets. XCEL gymnasts compete at Bronze, Silver, Gold, Platinum, and Diamond levels. Long Island gyms typically begin competing at age 7–8 at Level 3 or XCEL Bronze.</div>
+  </div>
+</div>
+
 <footer>
   <div class="footer-inner">
     <div class="footer-logo">Youth<span>Sports</span>Connect</div>

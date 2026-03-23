@@ -44,7 +44,19 @@ footer{background:var(--navy);padding:24px 40px;margin-top:0;border-top:3px soli
 .footer-logo{font-family:'Bebas Neue',sans-serif;font-size:20px;color:#fff;letter-spacing:1px}.footer-logo span{color:var(--gold)}
 .footer-links{display:flex;gap:14px;flex-wrap:wrap}.footer-links a{font-size:11px;color:rgba(255,255,255,.4)}.footer-links a:hover{color:var(--gold)}
 @media(max-width:700px){.article-hero,.article-body{padding-left:20px;padding-right:20px}nav{padding:0 20px}}
-</style>
+
+  .faq-section{max-width:860px;margin:40px auto 0;padding:0 40px}
+  .faq-section-title{font-family:"Bebas Neue",sans-serif;font-size:22px;letter-spacing:1px;color:var(--navy,#0a1628);margin-bottom:16px;padding-top:24px;border-top:2px solid var(--gold,#c9a84c)}
+  .faq-item{border-bottom:1px solid var(--border,#e2e6ed)}
+  .faq-q{width:100%;background:none;border:none;text-align:left;padding:16px 0;font-size:14px;font-weight:700;color:var(--navy,#0a1628);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;font-family:"Inter",sans-serif;line-height:1.4}
+  .faq-q:hover{color:var(--gold,#c9a84c)}
+  .faq-icon{flex-shrink:0;font-size:18px;font-weight:300;transition:transform .2s;color:var(--gold,#c9a84c)}
+  .faq-a{display:none;padding:0 0 16px;font-size:13px;color:#4a5568;line-height:1.7}
+  .faq-item.open .faq-a{display:block}
+  .faq-item.open .faq-icon{transform:rotate(45deg)}
+  @media(max-width:768px){.faq-section{padding:0 16px}}
+
+  </style>
 
 <!-- SCHEMA START -->
 <script type="application/ld+json">
@@ -129,6 +141,9 @@ footer{background:var(--navy);padding:24px 40px;margin-top:0;border-top:3px soli
 }
 </script>
 <!-- SCHEMA END -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What age does youth softball start on Long Island?","acceptedAnswer":{"@type":"Answer","text":"Little League Softball starts at age 4–5 with T-Ball. Competitive fastpitch travel softball typically starts at 8U. Most Long Island communities run recreational spring leagues for girls ages 5–12."}},{"@type":"Question","name":"What is the difference between Little League Softball and travel fastpitch?","acceptedAnswer":{"@type":"Answer","text":"Little League is recreational, open to all girls, very affordable ($100–$300/season). Travel fastpitch is competitive, tryout-based, and plays USA Softball and NSA tournaments — costs $800–$2,500+ per year."}},{"@type":"Question","name":"What bat does my daughter need for softball on Long Island?","acceptedAnswer":{"@type":"Answer","text":"Fastpitch softball bats must be USA Softball certified. The bat should be sized appropriately — most youth players use a drop-10 to drop-12 bat. For Little League softball, USA Softball certification is required."}},{"@type":"Question","name":"When do travel softball tryouts happen on Long Island?","acceptedAnswer":{"@type":"Answer","text":"Most Long Island travel softball clubs hold tryouts in late summer (August–September) for the fall season and December–January for spring. Programs like LI Storm, Nassau Lightning, and East End Aces post tryout info on their websites."}},{"@type":"Question","name":"How do I get my daughter recruited for college softball from Long Island?","acceptedAnswer":{"@type":"Answer","text":"Play on a competitive travel program, attend USA Softball Premier Events and PGF showcases, build a recruiting profile on platforms like Extra Innings Softball, and proactively email college coaches with video and stats starting in 9th grade."}}]}
+</script>
 </head>
 <body>
 <nav>
@@ -167,6 +182,42 @@ footer{background:var(--navy);padding:24px 40px;margin-top:0;border-top:3px soli
   <p>Browse leagues, clubs, academies, and coaches across Nassau and Suffolk County.</p>
   <a href="softball.html">Browse Softball Listings →</a>
 </div></div>
+
+<!-- GUIDE FAQ -->
+<div class="faq-section" style="margin-bottom:40px">
+  <div class="faq-section-title">❓ Frequently Asked Questions</div>
+  <div class="faq-item" id="gfaq-youth-softba-0">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What age does youth softball start on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Little League Softball starts at age 4–5 with T-Ball. Competitive fastpitch travel softball typically starts at 8U. Most Long Island communities run recreational spring leagues for girls ages 5–12.</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-softba-1">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What is the difference between Little League Softball and travel fastpitch?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Little League is recreational, open to all girls, very affordable ($100–$300/season). Travel fastpitch is competitive, tryout-based, and plays USA Softball and NSA tournaments — costs $800–$2,500+ per year.</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-softba-2">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What bat does my daughter need for softball on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Fastpitch softball bats must be USA Softball certified. The bat should be sized appropriately — most youth players use a drop-10 to drop-12 bat. For Little League softball, USA Softball certification is required.</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-softba-3">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>When do travel softball tryouts happen on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Most Long Island travel softball clubs hold tryouts in late summer (August–September) for the fall season and December–January for spring. Programs like LI Storm, Nassau Lightning, and East End Aces post tryout info on their websites.</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-softba-4">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>How do I get my daughter recruited for college softball from Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Play on a competitive travel program, attend USA Softball Premier Events and PGF showcases, build a recruiting profile on platforms like Extra Innings Softball, and proactively email college coaches with video and stats starting in 9th grade.</div>
+  </div>
+</div>
+
 <footer>
   <div class="footer-inner">
     <div class="footer-logo">Youth<span>Sports</span>Connect</div>

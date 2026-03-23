@@ -44,7 +44,19 @@ footer{background:var(--navy);padding:24px 40px;margin-top:0;border-top:3px soli
 .footer-logo{font-family:'Bebas Neue',sans-serif;font-size:20px;color:#fff;letter-spacing:1px}.footer-logo span{color:var(--gold)}
 .footer-links{display:flex;gap:14px;flex-wrap:wrap}.footer-links a{font-size:11px;color:rgba(255,255,255,.4)}.footer-links a:hover{color:var(--gold)}
 @media(max-width:700px){.article-hero,.article-body{padding-left:20px;padding-right:20px}nav{padding:0 20px}}
-</style>
+
+  .faq-section{max-width:860px;margin:40px auto 0;padding:0 40px}
+  .faq-section-title{font-family:"Bebas Neue",sans-serif;font-size:22px;letter-spacing:1px;color:var(--navy,#0a1628);margin-bottom:16px;padding-top:24px;border-top:2px solid var(--gold,#c9a84c)}
+  .faq-item{border-bottom:1px solid var(--border,#e2e6ed)}
+  .faq-q{width:100%;background:none;border:none;text-align:left;padding:16px 0;font-size:14px;font-weight:700;color:var(--navy,#0a1628);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;font-family:"Inter",sans-serif;line-height:1.4}
+  .faq-q:hover{color:var(--gold,#c9a84c)}
+  .faq-icon{flex-shrink:0;font-size:18px;font-weight:300;transition:transform .2s;color:var(--gold,#c9a84c)}
+  .faq-a{display:none;padding:0 0 16px;font-size:13px;color:#4a5568;line-height:1.7}
+  .faq-item.open .faq-a{display:block}
+  .faq-item.open .faq-icon{transform:rotate(45deg)}
+  @media(max-width:768px){.faq-section{padding:0 16px}}
+
+  </style>
 
 <!-- SCHEMA START -->
 <script type="application/ld+json">
@@ -129,6 +141,9 @@ footer{background:var(--navy);padding:24px 40px;margin-top:0;border-top:3px soli
 }
 </script>
 <!-- SCHEMA END -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I get my child started in ice hockey on Long Island?","acceptedAnswer":{"@type":"Answer","text":"Start with a Learn to Skate program at a local arena. Nassau County arenas include Newbridge Road Park (Bellmore), Cold Spring Harbor, and Syosset. Once your child can skate independently, enroll in USA Hockey's Initiation Program (IP) for ages 4–9."}},{"@type":"Question","name":"How much does youth ice hockey cost on Long Island?","acceptedAnswer":{"@type":"Answer","text":"Ice hockey is one of the most expensive youth sports. Equipment alone costs $500–$1,500. Annual coaching, ice time, and tournament fees for travel programs run $3,000–$8,000+. House league programs are more affordable at $800–$2,000/year."}},{"@type":"Question","name":"What is the difference between house hockey and travel hockey on Long Island?","acceptedAnswer":{"@type":"Answer","text":"House hockey is recreational, skill-based, and plays games only at home rinks. Travel hockey is competitive, tryout-based, and plays against teams across Long Island, the metro area, and regionally. Travel involves significantly more ice time and cost."}},{"@type":"Question","name":"What is Long Island Jr Gulls?","acceptedAnswer":{"@type":"Answer","text":"Long Island Jr Gulls (LIJG) is the premier AAA youth hockey organization on Long Island. LIJG has produced numerous NHL players and NCAA Division I athletes. It is the highest level of youth hockey development on Long Island."}},{"@type":"Question","name":"What arenas have youth hockey programs on Long Island?","acceptedAnswer":{"@type":"Answer","text":"Key arenas include Bethpage Ice (Nassau), Syosset Ice, Cold Spring Harbor Ice, Newbridge Road Park Arena (Bellmore), Hauppauge, LICAC (Northport), and Cantiague Park. Each runs youth programs ranging from Learn to Skate through competitive travel."}}]}
+</script>
 </head>
 <body>
 <nav>
@@ -169,6 +184,42 @@ footer{background:var(--navy);padding:24px 40px;margin-top:0;border-top:3px soli
   <p>Browse leagues, clubs, academies, and coaches across Nassau and Suffolk County.</p>
   <a href="hockey.html">Browse Hockey Listings →</a>
 </div></div>
+
+<!-- GUIDE FAQ -->
+<div class="faq-section" style="margin-bottom:40px">
+  <div class="faq-section-title">❓ Frequently Asked Questions</div>
+  <div class="faq-item" id="gfaq-youth-hockey-0">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>How do I get my child started in ice hockey on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Start with a Learn to Skate program at a local arena. Nassau County arenas include Newbridge Road Park (Bellmore), Cold Spring Harbor, and Syosset. Once your child can skate independently, enroll in USA Hockey's Initiation Program (IP) for ages 4–9.</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-hockey-1">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>How much does youth ice hockey cost on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Ice hockey is one of the most expensive youth sports. Equipment alone costs $500–$1,500. Annual coaching, ice time, and tournament fees for travel programs run $3,000–$8,000+. House league programs are more affordable at $800–$2,000/year.</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-hockey-2">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What is the difference between house hockey and travel hockey on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">House hockey is recreational, skill-based, and plays games only at home rinks. Travel hockey is competitive, tryout-based, and plays against teams across Long Island, the metro area, and regionally. Travel involves significantly more ice time and cost.</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-hockey-3">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What is Long Island Jr Gulls?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Long Island Jr Gulls (LIJG) is the premier AAA youth hockey organization on Long Island. LIJG has produced numerous NHL players and NCAA Division I athletes. It is the highest level of youth hockey development on Long Island.</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-hockey-4">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What arenas have youth hockey programs on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Key arenas include Bethpage Ice (Nassau), Syosset Ice, Cold Spring Harbor Ice, Newbridge Road Park Arena (Bellmore), Hauppauge, LICAC (Northport), and Cantiague Park. Each runs youth programs ranging from Learn to Skate through competitive travel.</div>
+  </div>
+</div>
+
 <footer>
   <div class="footer-inner">
     <div class="footer-logo">Youth<span>Sports</span>Connect</div>

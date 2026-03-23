@@ -44,7 +44,19 @@ footer{background:var(--navy);padding:24px 40px;margin-top:0;border-top:3px soli
 .footer-logo{font-family:'Bebas Neue',sans-serif;font-size:20px;color:#fff;letter-spacing:1px}.footer-logo span{color:var(--gold)}
 .footer-links{display:flex;gap:14px;flex-wrap:wrap}.footer-links a{font-size:11px;color:rgba(255,255,255,.4)}.footer-links a:hover{color:var(--gold)}
 @media(max-width:700px){.article-hero,.article-body{padding-left:20px;padding-right:20px}nav{padding:0 20px}}
-</style>
+
+  .faq-section{max-width:860px;margin:40px auto 0;padding:0 40px}
+  .faq-section-title{font-family:"Bebas Neue",sans-serif;font-size:22px;letter-spacing:1px;color:var(--navy,#0a1628);margin-bottom:16px;padding-top:24px;border-top:2px solid var(--gold,#c9a84c)}
+  .faq-item{border-bottom:1px solid var(--border,#e2e6ed)}
+  .faq-q{width:100%;background:none;border:none;text-align:left;padding:16px 0;font-size:14px;font-weight:700;color:var(--navy,#0a1628);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;font-family:"Inter",sans-serif;line-height:1.4}
+  .faq-q:hover{color:var(--gold,#c9a84c)}
+  .faq-icon{flex-shrink:0;font-size:18px;font-weight:300;transition:transform .2s;color:var(--gold,#c9a84c)}
+  .faq-a{display:none;padding:0 0 16px;font-size:13px;color:#4a5568;line-height:1.7}
+  .faq-item.open .faq-a{display:block}
+  .faq-item.open .faq-icon{transform:rotate(45deg)}
+  @media(max-width:768px){.faq-section{padding:0 16px}}
+
+  </style>
 
 <!-- SCHEMA START -->
 <script type="application/ld+json">
@@ -129,6 +141,9 @@ footer{background:var(--navy);padding:24px 40px;margin-top:0;border-top:3px soli
 }
 </script>
 <!-- SCHEMA END -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What are the youth basketball age groups on Long Island?","acceptedAnswer":{"@type":"Answer","text":"Recreational leagues typically divide by grade (K-2, 3-4, 5-6, 7-8). AAU divisions run 3rd through 12th grade. USA Basketball age groups are 6U, 8U, 10U, 12U, 14U, 15U, 16U, 17U, and 18U based on the player's age on August 31st."}},{"@type":"Question","name":"When does AAU basketball season run on Long Island?","acceptedAnswer":{"@type":"Answer","text":"AAU travel basketball runs year-round. The main season (Nike, Adidas, Under Armour circuits) runs April–July. Fall circuit runs September–November. Winter training runs December–February. Rec leagues are typically winter only (November–March)."}},{"@type":"Question","name":"What is the difference between AAU and recreational basketball on Long Island?","acceptedAnswer":{"@type":"Answer","text":"Recreational basketball through PAL, CYO, or YMCA is open enrollment, low-cost, and local. AAU is tryout-based, competitive, and involves travel to tournaments across the region. AAU players compete on national circuits for college exposure at the elite level."}},{"@type":"Question","name":"How much does AAU basketball cost on Long Island?","acceptedAnswer":{"@type":"Answer","text":"AAU travel basketball costs $800–$2,500+ per year. This includes registration fees, uniforms, and tournament entry. Travel, lodging, and meals for road tournaments add significantly to the total annual cost."}},{"@type":"Question","name":"What age should my child start AAU basketball on Long Island?","acceptedAnswer":{"@type":"Answer","text":"AAU programs on Long Island typically start accepting players at 3rd–4th grade (ages 8–9). Most serious development begins in 5th–6th grade. For elite players, national circuit competition is most valuable in 9th–12th grade for college recruiting exposure."}}]}
+</script>
 </head>
 <body>
 <nav>
@@ -171,6 +186,42 @@ footer{background:var(--navy);padding:24px 40px;margin-top:0;border-top:3px soli
   <p>Browse leagues, clubs, academies, and coaches across Nassau and Suffolk County.</p>
   <a href="basketball.html">Browse Basketball Listings →</a>
 </div></div>
+
+<!-- GUIDE FAQ -->
+<div class="faq-section" style="margin-bottom:40px">
+  <div class="faq-section-title">❓ Frequently Asked Questions</div>
+  <div class="faq-item" id="gfaq-youth-basket-0">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What are the youth basketball age groups on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Recreational leagues typically divide by grade (K-2, 3-4, 5-6, 7-8). AAU divisions run 3rd through 12th grade. USA Basketball age groups are 6U, 8U, 10U, 12U, 14U, 15U, 16U, 17U, and 18U based on the player's age on August 31st.</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-basket-1">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>When does AAU basketball season run on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">AAU travel basketball runs year-round. The main season (Nike, Adidas, Under Armour circuits) runs April–July. Fall circuit runs September–November. Winter training runs December–February. Rec leagues are typically winter only (November–March).</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-basket-2">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What is the difference between AAU and recreational basketball on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Recreational basketball through PAL, CYO, or YMCA is open enrollment, low-cost, and local. AAU is tryout-based, competitive, and involves travel to tournaments across the region. AAU players compete on national circuits for college exposure at the elite level.</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-basket-3">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>How much does AAU basketball cost on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">AAU travel basketball costs $800–$2,500+ per year. This includes registration fees, uniforms, and tournament entry. Travel, lodging, and meals for road tournaments add significantly to the total annual cost.</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-basket-4">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What age should my child start AAU basketball on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">AAU programs on Long Island typically start accepting players at 3rd–4th grade (ages 8–9). Most serious development begins in 5th–6th grade. For elite players, national circuit competition is most valuable in 9th–12th grade for college recruiting exposure.</div>
+  </div>
+</div>
+
 <footer>
   <div class="footer-inner">
     <div class="footer-logo">Youth<span>Sports</span>Connect</div>

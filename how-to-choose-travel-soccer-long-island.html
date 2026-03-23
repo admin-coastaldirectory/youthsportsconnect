@@ -117,7 +117,19 @@
     .hero,.top-bar{padding-left:20px;padding-right:20px}
     nav{padding:0 20px}
   }
-</style>
+
+  .faq-section{max-width:860px;margin:40px auto 0;padding:0 40px}
+  .faq-section-title{font-family:"Bebas Neue",sans-serif;font-size:22px;letter-spacing:1px;color:var(--navy,#0a1628);margin-bottom:16px;padding-top:24px;border-top:2px solid var(--gold,#c9a84c)}
+  .faq-item{border-bottom:1px solid var(--border,#e2e6ed)}
+  .faq-q{width:100%;background:none;border:none;text-align:left;padding:16px 0;font-size:14px;font-weight:700;color:var(--navy,#0a1628);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;font-family:"Inter",sans-serif;line-height:1.4}
+  .faq-q:hover{color:var(--gold,#c9a84c)}
+  .faq-icon{flex-shrink:0;font-size:18px;font-weight:300;transition:transform .2s;color:var(--gold,#c9a84c)}
+  .faq-a{display:none;padding:0 0 16px;font-size:13px;color:#4a5568;line-height:1.7}
+  .faq-item.open .faq-a{display:block}
+  .faq-item.open .faq-icon{transform:rotate(45deg)}
+  @media(max-width:768px){.faq-section{padding:0 16px}}
+
+  </style>
 
 <!-- SCHEMA START -->
 <script type="application/ld+json">
@@ -202,6 +214,9 @@
 }
 </script>
 <!-- SCHEMA END -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the difference between recreational and travel soccer on Long Island?","acceptedAnswer":{"@type":"Answer","text":"Recreational soccer is open enrollment, low-cost ($100–$300/season), and boundary-based through your town. Travel soccer is tryout-based and competitive — teams represent their club in LIJSL and ENPL leagues against other towns across Long Island."}},{"@type":"Question","name":"When are travel soccer tryouts on Long Island?","acceptedAnswer":{"@type":"Answer","text":"Most LIJSL travel clubs hold tryouts in spring (April–June) for the upcoming fall season. Some clubs also hold fall tryouts for spring teams. Check individual club websites for specific dates."}},{"@type":"Question","name":"How much does youth travel soccer cost on Long Island?","acceptedAnswer":{"@type":"Answer","text":"Long Island travel soccer typically costs $800–$2,500 per year including registration, uniforms, and tournament entry fees. Elite academy programs can cost more. Factor in gear, travel, and lodging for away tournaments."}},{"@type":"Question","name":"What is LIJSL?","acceptedAnswer":{"@type":"Answer","text":"LIJSL (Long Island Junior Soccer League) is the governing body for youth travel soccer on Long Island, sanctioning hundreds of teams across Nassau and Suffolk County from U9 through U19. It is one of the largest youth soccer leagues in the United States."}},{"@type":"Question","name":"What age should my child join travel soccer?","acceptedAnswer":{"@type":"Answer","text":"Travel soccer on Long Island typically starts at U9 (age 8–9). Many clubs offer a pre-travel developmental program at U7–U8. Most experts recommend at least one to two seasons of recreational soccer before trying out for travel."}},{"@type":"Question","name":"What should I look for when choosing a travel soccer club on Long Island?","acceptedAnswer":{"@type":"Answer","text":"Look at coaching credentials, player development philosophy, team schedule and travel demands, cost transparency, and club culture. Visit practices before committing. Ask about the club's track record of college placements for older age groups."}}]}
+</script>
 </head>
 <body>
 
@@ -401,6 +416,48 @@
       </div>
     </div>
 
+  </div>
+</div>
+
+
+<!-- GUIDE FAQ -->
+<div class="faq-section" style="margin-bottom:40px">
+  <div class="faq-section-title">❓ Frequently Asked Questions</div>
+  <div class="faq-item" id="gfaq-how-to-choos-0">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What is the difference between recreational and travel soccer on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Recreational soccer is open enrollment, low-cost ($100–$300/season), and boundary-based through your town. Travel soccer is tryout-based and competitive — teams represent their club in LIJSL and ENPL leagues against other towns across Long Island.</div>
+  </div>
+  <div class="faq-item" id="gfaq-how-to-choos-1">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>When are travel soccer tryouts on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Most LIJSL travel clubs hold tryouts in spring (April–June) for the upcoming fall season. Some clubs also hold fall tryouts for spring teams. Check individual club websites for specific dates.</div>
+  </div>
+  <div class="faq-item" id="gfaq-how-to-choos-2">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>How much does youth travel soccer cost on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Long Island travel soccer typically costs $800–$2,500 per year including registration, uniforms, and tournament entry fees. Elite academy programs can cost more. Factor in gear, travel, and lodging for away tournaments.</div>
+  </div>
+  <div class="faq-item" id="gfaq-how-to-choos-3">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What is LIJSL?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">LIJSL (Long Island Junior Soccer League) is the governing body for youth travel soccer on Long Island, sanctioning hundreds of teams across Nassau and Suffolk County from U9 through U19. It is one of the largest youth soccer leagues in the United States.</div>
+  </div>
+  <div class="faq-item" id="gfaq-how-to-choos-4">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What age should my child join travel soccer?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Travel soccer on Long Island typically starts at U9 (age 8–9). Many clubs offer a pre-travel developmental program at U7–U8. Most experts recommend at least one to two seasons of recreational soccer before trying out for travel.</div>
+  </div>
+  <div class="faq-item" id="gfaq-how-to-choos-5">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What should I look for when choosing a travel soccer club on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Look at coaching credentials, player development philosophy, team schedule and travel demands, cost transparency, and club culture. Visit practices before committing. Ask about the club's track record of college placements for older age groups.</div>
   </div>
 </div>
 

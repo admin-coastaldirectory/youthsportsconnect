@@ -44,7 +44,19 @@ footer{background:var(--navy);padding:24px 40px;margin-top:0;border-top:3px soli
 .footer-logo{font-family:'Bebas Neue',sans-serif;font-size:20px;color:#fff;letter-spacing:1px}.footer-logo span{color:var(--gold)}
 .footer-links{display:flex;gap:14px;flex-wrap:wrap}.footer-links a{font-size:11px;color:rgba(255,255,255,.4)}.footer-links a:hover{color:var(--gold)}
 @media(max-width:700px){.article-hero,.article-body{padding-left:20px;padding-right:20px}nav{padding:0 20px}}
-</style>
+
+  .faq-section{max-width:860px;margin:40px auto 0;padding:0 40px}
+  .faq-section-title{font-family:"Bebas Neue",sans-serif;font-size:22px;letter-spacing:1px;color:var(--navy,#0a1628);margin-bottom:16px;padding-top:24px;border-top:2px solid var(--gold,#c9a84c)}
+  .faq-item{border-bottom:1px solid var(--border,#e2e6ed)}
+  .faq-q{width:100%;background:none;border:none;text-align:left;padding:16px 0;font-size:14px;font-weight:700;color:var(--navy,#0a1628);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;font-family:"Inter",sans-serif;line-height:1.4}
+  .faq-q:hover{color:var(--gold,#c9a84c)}
+  .faq-icon{flex-shrink:0;font-size:18px;font-weight:300;transition:transform .2s;color:var(--gold,#c9a84c)}
+  .faq-a{display:none;padding:0 0 16px;font-size:13px;color:#4a5568;line-height:1.7}
+  .faq-item.open .faq-a{display:block}
+  .faq-item.open .faq-icon{transform:rotate(45deg)}
+  @media(max-width:768px){.faq-section{padding:0 16px}}
+
+  </style>
 
 <!-- SCHEMA START -->
 <script type="application/ld+json">
@@ -129,6 +141,9 @@ footer{background:var(--navy);padding:24px 40px;margin-top:0;border-top:3px soli
 }
 </script>
 <!-- SCHEMA END -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What age can girls start club volleyball on Long Island?","acceptedAnswer":{"@type":"Answer","text":"Club volleyball starts at age 10–11 for 11U/12U divisions. USYVL instructional leagues accept players as young as 7. Recreational volleyball programs at YMCA and schools start even younger."}},{"@type":"Question","name":"How much does club volleyball cost on Long Island?","acceptedAnswer":{"@type":"Answer","text":"Long Island club volleyball programs cost $1,500–$3,500 per year including registration, uniforms, and tournament fees. Elite programs with national travel can cost $4,000–$6,000+."}},{"@type":"Question","name":"When are volleyball club tryouts on Long Island?","acceptedAnswer":{"@type":"Answer","text":"Most Long Island volleyball clubs hold tryouts in October–November for the season running December through May/June. Some programs hold spring tryouts for summer training groups."}},{"@type":"Question","name":"What is USAV volleyball?","acceptedAnswer":{"@type":"Answer","text":"USA Volleyball (USAV) is the national governing body for the sport. Long Island clubs compete in the Metropolitan Region. Top clubs qualify for USAV Junior National Qualifiers (JNQs) and Junior National Championships in the summer."}},{"@type":"Question","name":"Is there beach volleyball for youth on Long Island?","acceptedAnswer":{"@type":"Answer","text":"Yes — Island Beach Volleyball offers outdoor sand programs at Lido Beach for ages 10–18. Beach volleyball is a great summer complement to indoor club and develops slightly different technical skills."}}]}
+</script>
 </head>
 <body>
 <nav>
@@ -168,6 +183,42 @@ footer{background:var(--navy);padding:24px 40px;margin-top:0;border-top:3px soli
   <p>Browse leagues, clubs, academies, and coaches across Nassau and Suffolk County.</p>
   <a href="volleyball.html">Browse Volleyball Listings →</a>
 </div></div>
+
+<!-- GUIDE FAQ -->
+<div class="faq-section" style="margin-bottom:40px">
+  <div class="faq-section-title">❓ Frequently Asked Questions</div>
+  <div class="faq-item" id="gfaq-youth-volley-0">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What age can girls start club volleyball on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Club volleyball starts at age 10–11 for 11U/12U divisions. USYVL instructional leagues accept players as young as 7. Recreational volleyball programs at YMCA and schools start even younger.</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-volley-1">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>How much does club volleyball cost on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Long Island club volleyball programs cost $1,500–$3,500 per year including registration, uniforms, and tournament fees. Elite programs with national travel can cost $4,000–$6,000+.</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-volley-2">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>When are volleyball club tryouts on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Most Long Island volleyball clubs hold tryouts in October–November for the season running December through May/June. Some programs hold spring tryouts for summer training groups.</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-volley-3">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What is USAV volleyball?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">USA Volleyball (USAV) is the national governing body for the sport. Long Island clubs compete in the Metropolitan Region. Top clubs qualify for USAV Junior National Qualifiers (JNQs) and Junior National Championships in the summer.</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-volley-4">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>Is there beach volleyball for youth on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Yes — Island Beach Volleyball offers outdoor sand programs at Lido Beach for ages 10–18. Beach volleyball is a great summer complement to indoor club and develops slightly different technical skills.</div>
+  </div>
+</div>
+
 <footer>
   <div class="footer-inner">
     <div class="footer-logo">Youth<span>Sports</span>Connect</div>

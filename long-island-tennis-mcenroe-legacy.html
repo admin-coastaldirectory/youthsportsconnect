@@ -44,7 +44,19 @@ footer{background:var(--navy);padding:24px 40px;margin-top:0;border-top:3px soli
 .footer-logo{font-family:'Bebas Neue',sans-serif;font-size:20px;color:#fff;letter-spacing:1px}.footer-logo span{color:var(--gold)}
 .footer-links{display:flex;gap:14px;flex-wrap:wrap}.footer-links a{font-size:11px;color:rgba(255,255,255,.4)}.footer-links a:hover{color:var(--gold)}
 @media(max-width:700px){.article-hero,.article-body{padding-left:20px;padding-right:20px}nav{padding:0 20px}}
-</style>
+
+  .faq-section{max-width:860px;margin:40px auto 0;padding:0 40px}
+  .faq-section-title{font-family:"Bebas Neue",sans-serif;font-size:22px;letter-spacing:1px;color:var(--navy,#0a1628);margin-bottom:16px;padding-top:24px;border-top:2px solid var(--gold,#c9a84c)}
+  .faq-item{border-bottom:1px solid var(--border,#e2e6ed)}
+  .faq-q{width:100%;background:none;border:none;text-align:left;padding:16px 0;font-size:14px;font-weight:700;color:var(--navy,#0a1628);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;font-family:"Inter",sans-serif;line-height:1.4}
+  .faq-q:hover{color:var(--gold,#c9a84c)}
+  .faq-icon{flex-shrink:0;font-size:18px;font-weight:300;transition:transform .2s;color:var(--gold,#c9a84c)}
+  .faq-a{display:none;padding:0 0 16px;font-size:13px;color:#4a5568;line-height:1.7}
+  .faq-item.open .faq-a{display:block}
+  .faq-item.open .faq-icon{transform:rotate(45deg)}
+  @media(max-width:768px){.faq-section{padding:0 16px}}
+
+  </style>
 
 <!-- SCHEMA START -->
 <script type="application/ld+json">
@@ -129,6 +141,9 @@ footer{background:var(--navy);padding:24px 40px;margin-top:0;border-top:3px soli
 }
 </script>
 <!-- SCHEMA END -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Where did John McEnroe grow up on Long Island?","acceptedAnswer":{"@type":"Answer","text":"John McEnroe grew up in Douglaston, in the Queens/Nassau County border area, and trained at Port Washington Tennis Academy (PWTA) from a young age. His brother Patrick McEnroe also trained there."}},{"@type":"Question","name":"What is Port Washington Tennis Academy?","acceptedAnswer":{"@type":"Answer","text":"Port Washington Tennis Academy (PWTA) is one of the most prestigious junior tennis development programs in the United States. Located in Port Washington on Long Island's North Shore, it has produced multiple Grand Slam champions and national junior champions."}},{"@type":"Question","name":"What other famous tennis players came from Long Island?","acceptedAnswer":{"@type":"Answer","text":"Beyond the McEnroe brothers, Long Island has produced numerous USTA nationally ranked junior players over the decades. The combination of PWTA, Sportime facilities, and the USTA Eastern infrastructure makes Long Island one of the strongest junior tennis regions in the country."}},{"@type":"Question","name":"How has Long Island influenced American tennis history?","acceptedAnswer":{"@type":"Answer","text":"Long Island's tennis legacy begins with PWTA founding in the 1960s. The academy's coaching philosophy emphasized technical excellence and mental toughness. John McEnroe's success in the 1980s brought national attention to Long Island as a tennis development hub."}}]}
+</script>
 </head>
 <body>
 <nav>
@@ -162,6 +177,36 @@ footer{background:var(--navy);padding:24px 40px;margin-top:0;border-top:3px soli
   <p>Browse leagues, clubs, academies, and coaches across Nassau and Suffolk County.</p>
   <a href="tennis.html">Browse Tennis Listings →</a>
 </div></div>
+
+<!-- GUIDE FAQ -->
+<div class="faq-section" style="margin-bottom:40px">
+  <div class="faq-section-title">❓ Frequently Asked Questions</div>
+  <div class="faq-item" id="gfaq-long-island--0">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>Where did John McEnroe grow up on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">John McEnroe grew up in Douglaston, in the Queens/Nassau County border area, and trained at Port Washington Tennis Academy (PWTA) from a young age. His brother Patrick McEnroe also trained there.</div>
+  </div>
+  <div class="faq-item" id="gfaq-long-island--1">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What is Port Washington Tennis Academy?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Port Washington Tennis Academy (PWTA) is one of the most prestigious junior tennis development programs in the United States. Located in Port Washington on Long Island's North Shore, it has produced multiple Grand Slam champions and national junior champions.</div>
+  </div>
+  <div class="faq-item" id="gfaq-long-island--2">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What other famous tennis players came from Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Beyond the McEnroe brothers, Long Island has produced numerous USTA nationally ranked junior players over the decades. The combination of PWTA, Sportime facilities, and the USTA Eastern infrastructure makes Long Island one of the strongest junior tennis regions in the country.</div>
+  </div>
+  <div class="faq-item" id="gfaq-long-island--3">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>How has Long Island influenced American tennis history?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Long Island's tennis legacy begins with PWTA founding in the 1960s. The academy's coaching philosophy emphasized technical excellence and mental toughness. John McEnroe's success in the 1980s brought national attention to Long Island as a tennis development hub.</div>
+  </div>
+</div>
+
 <footer>
   <div class="footer-inner">
     <div class="footer-logo">Youth<span>Sports</span>Connect</div>

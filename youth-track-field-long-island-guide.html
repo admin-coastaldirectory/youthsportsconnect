@@ -44,7 +44,19 @@ footer{background:var(--navy);padding:24px 40px;margin-top:0;border-top:3px soli
 .footer-logo{font-family:'Bebas Neue',sans-serif;font-size:20px;color:#fff;letter-spacing:1px}.footer-logo span{color:var(--gold)}
 .footer-links{display:flex;gap:14px;flex-wrap:wrap}.footer-links a{font-size:11px;color:rgba(255,255,255,.4)}.footer-links a:hover{color:var(--gold)}
 @media(max-width:700px){.article-hero,.article-body{padding-left:20px;padding-right:20px}nav{padding:0 20px}}
-</style>
+
+  .faq-section{max-width:860px;margin:40px auto 0;padding:0 40px}
+  .faq-section-title{font-family:"Bebas Neue",sans-serif;font-size:22px;letter-spacing:1px;color:var(--navy,#0a1628);margin-bottom:16px;padding-top:24px;border-top:2px solid var(--gold,#c9a84c)}
+  .faq-item{border-bottom:1px solid var(--border,#e2e6ed)}
+  .faq-q{width:100%;background:none;border:none;text-align:left;padding:16px 0;font-size:14px;font-weight:700;color:var(--navy,#0a1628);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;font-family:"Inter",sans-serif;line-height:1.4}
+  .faq-q:hover{color:var(--gold,#c9a84c)}
+  .faq-icon{flex-shrink:0;font-size:18px;font-weight:300;transition:transform .2s;color:var(--gold,#c9a84c)}
+  .faq-a{display:none;padding:0 0 16px;font-size:13px;color:#4a5568;line-height:1.7}
+  .faq-item.open .faq-a{display:block}
+  .faq-item.open .faq-icon{transform:rotate(45deg)}
+  @media(max-width:768px){.faq-section{padding:0 16px}}
+
+  </style>
 
 <!-- SCHEMA START -->
 <script type="application/ld+json">
@@ -129,6 +141,9 @@ footer{background:var(--navy);padding:24px 40px;margin-top:0;border-top:3px soli
 }
 </script>
 <!-- SCHEMA END -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is USATF Junior Olympics?","acceptedAnswer":{"@type":"Answer","text":"USATF Junior Olympics is the national championship for youth track and field. Long Island athletes compete through the Niagara Association in local qualifying meets, advancing to Regional Championships, and then the USATF Junior Olympic National Championships."}},{"@type":"Question","name":"What age can my child start track and field on Long Island?","acceptedAnswer":{"@type":"Answer","text":"USATF youth clubs accept athletes starting at age 7–8 in the Bantam division. CYO and school track programs often start younger. Many athletes begin competitive club track at age 8–10."}},{"@type":"Question","name":"What are the youth track age divisions on Long Island?","acceptedAnswer":{"@type":"Answer","text":"USATF youth divisions: Bantam (7–8), Midget (9–10), Youth (11–12), Intermediate (13–14), Young (15–16). Each age group has designated events — younger athletes run shorter distances and cannot throw heavy implements."}},{"@type":"Question","name":"How much does youth track cost on Long Island?","acceptedAnswer":{"@type":"Answer","text":"USATF club membership and fees run $100–$400/year. Meet entry fees are $5–$20 per event. Track spikes cost $40–$120. Most clubs charge minimal fees and rely on parent volunteers for meets."}},{"@type":"Question","name":"Is track good cross-training for other sports on Long Island?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. Track is the best cross-training sport — sprint mechanics improve performance in every field sport, distance running builds aerobic base for soccer and lacrosse, and field events develop explosive power for basketball, football, and volleyball."}}]}
+</script>
 </head>
 <body>
 <nav>
@@ -166,6 +181,42 @@ footer{background:var(--navy);padding:24px 40px;margin-top:0;border-top:3px soli
   <p>Browse leagues, clubs, academies, and coaches across Nassau and Suffolk County.</p>
   <a href="track-field.html">Browse Track & Field Listings →</a>
 </div></div>
+
+<!-- GUIDE FAQ -->
+<div class="faq-section" style="margin-bottom:40px">
+  <div class="faq-section-title">❓ Frequently Asked Questions</div>
+  <div class="faq-item" id="gfaq-youth-track--0">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What is USATF Junior Olympics?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">USATF Junior Olympics is the national championship for youth track and field. Long Island athletes compete through the Niagara Association in local qualifying meets, advancing to Regional Championships, and then the USATF Junior Olympic National Championships.</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-track--1">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What age can my child start track and field on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">USATF youth clubs accept athletes starting at age 7–8 in the Bantam division. CYO and school track programs often start younger. Many athletes begin competitive club track at age 8–10.</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-track--2">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What are the youth track age divisions on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">USATF youth divisions: Bantam (7–8), Midget (9–10), Youth (11–12), Intermediate (13–14), Young (15–16). Each age group has designated events — younger athletes run shorter distances and cannot throw heavy implements.</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-track--3">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>How much does youth track cost on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">USATF club membership and fees run $100–$400/year. Meet entry fees are $5–$20 per event. Track spikes cost $40–$120. Most clubs charge minimal fees and rely on parent volunteers for meets.</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-track--4">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>Is track good cross-training for other sports on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Absolutely. Track is the best cross-training sport — sprint mechanics improve performance in every field sport, distance running builds aerobic base for soccer and lacrosse, and field events develop explosive power for basketball, football, and volleyball.</div>
+  </div>
+</div>
+
 <footer>
   <div class="footer-inner">
     <div class="footer-logo">Youth<span>Sports</span>Connect</div>

@@ -44,7 +44,19 @@ footer{background:var(--navy);padding:24px 40px;margin-top:0;border-top:3px soli
 .footer-logo{font-family:'Bebas Neue',sans-serif;font-size:20px;color:#fff;letter-spacing:1px}.footer-logo span{color:var(--gold)}
 .footer-links{display:flex;gap:14px;flex-wrap:wrap}.footer-links a{font-size:11px;color:rgba(255,255,255,.4)}.footer-links a:hover{color:var(--gold)}
 @media(max-width:700px){.article-hero,.article-body{padding-left:20px;padding-right:20px}nav{padding:0 20px}}
-</style>
+
+  .faq-section{max-width:860px;margin:40px auto 0;padding:0 40px}
+  .faq-section-title{font-family:"Bebas Neue",sans-serif;font-size:22px;letter-spacing:1px;color:var(--navy,#0a1628);margin-bottom:16px;padding-top:24px;border-top:2px solid var(--gold,#c9a84c)}
+  .faq-item{border-bottom:1px solid var(--border,#e2e6ed)}
+  .faq-q{width:100%;background:none;border:none;text-align:left;padding:16px 0;font-size:14px;font-weight:700;color:var(--navy,#0a1628);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;font-family:"Inter",sans-serif;line-height:1.4}
+  .faq-q:hover{color:var(--gold,#c9a84c)}
+  .faq-icon{flex-shrink:0;font-size:18px;font-weight:300;transition:transform .2s;color:var(--gold,#c9a84c)}
+  .faq-a{display:none;padding:0 0 16px;font-size:13px;color:#4a5568;line-height:1.7}
+  .faq-item.open .faq-a{display:block}
+  .faq-item.open .faq-icon{transform:rotate(45deg)}
+  @media(max-width:768px){.faq-section{padding:0 16px}}
+
+  </style>
 
 <!-- SCHEMA START -->
 <script type="application/ld+json">
@@ -129,6 +141,9 @@ footer{background:var(--navy);padding:24px 40px;margin-top:0;border-top:3px soli
 }
 </script>
 <!-- SCHEMA END -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I get my child started in golf on Long Island?","acceptedAnswer":{"@type":"Answer","text":"Start with First Tee of Long Island or TGA Premier Junior Golf — both bring affordable instruction to schools, parks, and community centers. Bethpage State Park offers junior programs at one of the world's most famous public golf complexes."}},{"@type":"Question","name":"What is Bethpage State Park's junior golf program?","acceptedAnswer":{"@type":"Answer","text":"Bethpage State Park — home of two US Opens and a PGA Championship — offers affordable junior golf clinics on its public courses. The Yellow and Red courses are used for junior instruction at accessible price points for Nassau County families."}},{"@type":"Question","name":"How much does junior golf cost on Long Island?","acceptedAnswer":{"@type":"Answer","text":"First Tee programs are free or very low cost. Group junior lessons run $25–$60/hour. Private PGA instruction costs $75–$150/hour. Starter junior club sets cost $150–$400. Competitive junior golf through NYSGA adds tournament entry fees of $25–$75 per event."}},{"@type":"Question","name":"What is US Kids Golf?","acceptedAnswer":{"@type":"Answer","text":"US Kids Golf is the world's largest junior golf development organization, running local, regional, and world championship tournaments for players ages 5–18. Long Island players compete in US Kids Golf local tour events at Nassau and Suffolk County courses."}},{"@type":"Question","name":"When can my child start competitive junior golf on Long Island?","acceptedAnswer":{"@type":"Answer","text":"US Kids Golf tournaments start at age 5. NYSGA junior events typically start at age 10. Nassau and Suffolk County Junior Golf Associations run competitive events for players 10–18. Most instructors recommend 1–2 years of lessons before entering competition."}}]}
+</script>
 </head>
 <body>
 <nav>
@@ -164,6 +179,42 @@ footer{background:var(--navy);padding:24px 40px;margin-top:0;border-top:3px soli
   <p>Browse leagues, clubs, academies, and coaches across Nassau and Suffolk County.</p>
   <a href="golf.html">Browse Golf Listings →</a>
 </div></div>
+
+<!-- GUIDE FAQ -->
+<div class="faq-section" style="margin-bottom:40px">
+  <div class="faq-section-title">❓ Frequently Asked Questions</div>
+  <div class="faq-item" id="gfaq-youth-golf-l-0">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>How do I get my child started in golf on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Start with First Tee of Long Island or TGA Premier Junior Golf — both bring affordable instruction to schools, parks, and community centers. Bethpage State Park offers junior programs at one of the world's most famous public golf complexes.</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-golf-l-1">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What is Bethpage State Park's junior golf program?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Bethpage State Park — home of two US Opens and a PGA Championship — offers affordable junior golf clinics on its public courses. The Yellow and Red courses are used for junior instruction at accessible price points for Nassau County families.</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-golf-l-2">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>How much does junior golf cost on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">First Tee programs are free or very low cost. Group junior lessons run $25–$60/hour. Private PGA instruction costs $75–$150/hour. Starter junior club sets cost $150–$400. Competitive junior golf through NYSGA adds tournament entry fees of $25–$75 per event.</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-golf-l-3">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What is US Kids Golf?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">US Kids Golf is the world's largest junior golf development organization, running local, regional, and world championship tournaments for players ages 5–18. Long Island players compete in US Kids Golf local tour events at Nassau and Suffolk County courses.</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-golf-l-4">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>When can my child start competitive junior golf on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">US Kids Golf tournaments start at age 5. NYSGA junior events typically start at age 10. Nassau and Suffolk County Junior Golf Associations run competitive events for players 10–18. Most instructors recommend 1–2 years of lessons before entering competition.</div>
+  </div>
+</div>
+
 <footer>
   <div class="footer-inner">
     <div class="footer-logo">Youth<span>Sports</span>Connect</div>

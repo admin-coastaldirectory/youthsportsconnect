@@ -44,7 +44,19 @@ footer{background:var(--navy);padding:24px 40px;margin-top:0;border-top:3px soli
 .footer-logo{font-family:'Bebas Neue',sans-serif;font-size:20px;color:#fff;letter-spacing:1px}.footer-logo span{color:var(--gold)}
 .footer-links{display:flex;gap:14px;flex-wrap:wrap}.footer-links a{font-size:11px;color:rgba(255,255,255,.4)}.footer-links a:hover{color:var(--gold)}
 @media(max-width:700px){.article-hero,.article-body{padding-left:20px;padding-right:20px}nav{padding:0 20px}}
-</style>
+
+  .faq-section{max-width:860px;margin:40px auto 0;padding:0 40px}
+  .faq-section-title{font-family:"Bebas Neue",sans-serif;font-size:22px;letter-spacing:1px;color:var(--navy,#0a1628);margin-bottom:16px;padding-top:24px;border-top:2px solid var(--gold,#c9a84c)}
+  .faq-item{border-bottom:1px solid var(--border,#e2e6ed)}
+  .faq-q{width:100%;background:none;border:none;text-align:left;padding:16px 0;font-size:14px;font-weight:700;color:var(--navy,#0a1628);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;font-family:"Inter",sans-serif;line-height:1.4}
+  .faq-q:hover{color:var(--gold,#c9a84c)}
+  .faq-icon{flex-shrink:0;font-size:18px;font-weight:300;transition:transform .2s;color:var(--gold,#c9a84c)}
+  .faq-a{display:none;padding:0 0 16px;font-size:13px;color:#4a5568;line-height:1.7}
+  .faq-item.open .faq-a{display:block}
+  .faq-item.open .faq-icon{transform:rotate(45deg)}
+  @media(max-width:768px){.faq-section{padding:0 16px}}
+
+  </style>
 
 <!-- SCHEMA START -->
 <script type="application/ld+json">
@@ -129,6 +141,9 @@ footer{background:var(--navy);padding:24px 40px;margin-top:0;border-top:3px soli
 }
 </script>
 <!-- SCHEMA END -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is flag football an Olympic sport?","acceptedAnswer":{"@type":"Answer","text":"Yes — flag football will make its Olympic debut at the 2028 Los Angeles Olympics. This is driving major growth in youth flag football participation across Long Island and nationally."}},{"@type":"Question","name":"What age can my child start flag football on Long Island?","acceptedAnswer":{"@type":"Answer","text":"NFL Flag and independent leagues start as young as age 5. Some programs have 3–4 year old introductory formats. Most organized flag football leagues on Long Island start at 5U or 6U divisions."}},{"@type":"Question","name":"What is the difference between flag football and tackle football?","acceptedAnswer":{"@type":"Answer","text":"In flag football, players pull a belt flag to stop ball carriers instead of tackling. It develops football skills — throwing, catching, running routes, reading defenses — with significantly lower injury risk. The NFL recommends flag football until at least age 14."}},{"@type":"Question","name":"How much does flag football cost on Long Island?","acceptedAnswer":{"@type":"Answer","text":"Flag football is one of the most affordable youth sports. Registration typically costs $50–$150 per season. NFL Flag provides jerseys. Equipment needed is minimal: cleats and the flag belt (usually provided by the league)."}},{"@type":"Question","name":"Where can I find NFL Flag football leagues on Long Island?","acceptedAnswer":{"@type":"Answer","text":"NFL Flag affiliates operate across Nassau and Suffolk County. Search NFL Flag's official site at nflflag.com to find registered programs near you. YouthSportsConnect also lists Long Island flag football programs across both counties."}}]}
+</script>
 </head>
 <body>
 <nav>
@@ -170,6 +185,42 @@ footer{background:var(--navy);padding:24px 40px;margin-top:0;border-top:3px soli
   <p>Browse leagues, clubs, academies, and coaches across Nassau and Suffolk County.</p>
   <a href="flag-football.html">Browse Flag Football Listings →</a>
 </div></div>
+
+<!-- GUIDE FAQ -->
+<div class="faq-section" style="margin-bottom:40px">
+  <div class="faq-section-title">❓ Frequently Asked Questions</div>
+  <div class="faq-item" id="gfaq-long-island--0">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>Is flag football an Olympic sport?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Yes — flag football will make its Olympic debut at the 2028 Los Angeles Olympics. This is driving major growth in youth flag football participation across Long Island and nationally.</div>
+  </div>
+  <div class="faq-item" id="gfaq-long-island--1">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What age can my child start flag football on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">NFL Flag and independent leagues start as young as age 5. Some programs have 3–4 year old introductory formats. Most organized flag football leagues on Long Island start at 5U or 6U divisions.</div>
+  </div>
+  <div class="faq-item" id="gfaq-long-island--2">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What is the difference between flag football and tackle football?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">In flag football, players pull a belt flag to stop ball carriers instead of tackling. It develops football skills — throwing, catching, running routes, reading defenses — with significantly lower injury risk. The NFL recommends flag football until at least age 14.</div>
+  </div>
+  <div class="faq-item" id="gfaq-long-island--3">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>How much does flag football cost on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Flag football is one of the most affordable youth sports. Registration typically costs $50–$150 per season. NFL Flag provides jerseys. Equipment needed is minimal: cleats and the flag belt (usually provided by the league).</div>
+  </div>
+  <div class="faq-item" id="gfaq-long-island--4">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>Where can I find NFL Flag football leagues on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">NFL Flag affiliates operate across Nassau and Suffolk County. Search NFL Flag's official site at nflflag.com to find registered programs near you. YouthSportsConnect also lists Long Island flag football programs across both counties.</div>
+  </div>
+</div>
+
 <footer>
   <div class="footer-inner">
     <div class="footer-logo">Youth<span>Sports</span>Connect</div>

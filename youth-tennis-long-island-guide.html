@@ -44,7 +44,19 @@ footer{background:var(--navy);padding:24px 40px;margin-top:0;border-top:3px soli
 .footer-logo{font-family:'Bebas Neue',sans-serif;font-size:20px;color:#fff;letter-spacing:1px}.footer-logo span{color:var(--gold)}
 .footer-links{display:flex;gap:14px;flex-wrap:wrap}.footer-links a{font-size:11px;color:rgba(255,255,255,.4)}.footer-links a:hover{color:var(--gold)}
 @media(max-width:700px){.article-hero,.article-body{padding-left:20px;padding-right:20px}nav{padding:0 20px}}
-</style>
+
+  .faq-section{max-width:860px;margin:40px auto 0;padding:0 40px}
+  .faq-section-title{font-family:"Bebas Neue",sans-serif;font-size:22px;letter-spacing:1px;color:var(--navy,#0a1628);margin-bottom:16px;padding-top:24px;border-top:2px solid var(--gold,#c9a84c)}
+  .faq-item{border-bottom:1px solid var(--border,#e2e6ed)}
+  .faq-q{width:100%;background:none;border:none;text-align:left;padding:16px 0;font-size:14px;font-weight:700;color:var(--navy,#0a1628);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;font-family:"Inter",sans-serif;line-height:1.4}
+  .faq-q:hover{color:var(--gold,#c9a84c)}
+  .faq-icon{flex-shrink:0;font-size:18px;font-weight:300;transition:transform .2s;color:var(--gold,#c9a84c)}
+  .faq-a{display:none;padding:0 0 16px;font-size:13px;color:#4a5568;line-height:1.7}
+  .faq-item.open .faq-a{display:block}
+  .faq-item.open .faq-icon{transform:rotate(45deg)}
+  @media(max-width:768px){.faq-section{padding:0 16px}}
+
+  </style>
 
 <!-- SCHEMA START -->
 <script type="application/ld+json">
@@ -129,6 +141,9 @@ footer{background:var(--navy);padding:24px 40px;margin-top:0;border-top:3px soli
 }
 </script>
 <!-- SCHEMA END -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What USTA junior programs are available on Long Island?","acceptedAnswer":{"@type":"Answer","text":"USTA Eastern runs junior development programs through Sportime USA facilities across Long Island. Port Washington Tennis Academy (PWTA) is the most prestigious, having trained John McEnroe. Local parks offer USTA 10-and-Under Quick Start programs."}},{"@type":"Question","name":"How do I start my child in tennis on Long Island?","acceptedAnswer":{"@type":"Answer","text":"Start with group lessons at a local public park or tennis facility. USTA 10-and-Under Tennis uses modified equipment (red, orange, and green balls on smaller courts) making it ideal for beginners ages 5–10."}},{"@type":"Question","name":"How much does junior tennis cost on Long Island?","acceptedAnswer":{"@type":"Answer","text":"Group lessons run $15–$40/hour. Private lessons at established academies cost $60–$150/hour. USTA team tennis and tournament play adds $200–$500+ per season. Full academy programs with intensive training cost significantly more."}},{"@type":"Question","name":"What age should my child start competitive tennis on Long Island?","acceptedAnswer":{"@type":"Answer","text":"USTA junior tournaments start at age 8. Most Long Island academies recommend starting instruction at age 5–7 and entering competition at 9–10. Early specialization before age 10 is not recommended."}},{"@type":"Question","name":"What is the USTA Eastern ranking system for juniors on Long Island?","acceptedAnswer":{"@type":"Answer","text":"USTA Eastern uses a computer ranking system based on tournament results. Players earn points at sanctioned tournaments. Rankings are used for seeding in larger events. Long Island players compete in USTA Eastern sectional and national junior tournaments."}}]}
+</script>
 </head>
 <body>
 <nav>
@@ -169,6 +184,42 @@ footer{background:var(--navy);padding:24px 40px;margin-top:0;border-top:3px soli
   <p>Browse leagues, clubs, academies, and coaches across Nassau and Suffolk County.</p>
   <a href="tennis.html">Browse Tennis Listings →</a>
 </div></div>
+
+<!-- GUIDE FAQ -->
+<div class="faq-section" style="margin-bottom:40px">
+  <div class="faq-section-title">❓ Frequently Asked Questions</div>
+  <div class="faq-item" id="gfaq-youth-tennis-0">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What USTA junior programs are available on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">USTA Eastern runs junior development programs through Sportime USA facilities across Long Island. Port Washington Tennis Academy (PWTA) is the most prestigious, having trained John McEnroe. Local parks offer USTA 10-and-Under Quick Start programs.</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-tennis-1">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>How do I start my child in tennis on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Start with group lessons at a local public park or tennis facility. USTA 10-and-Under Tennis uses modified equipment (red, orange, and green balls on smaller courts) making it ideal for beginners ages 5–10.</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-tennis-2">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>How much does junior tennis cost on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Group lessons run $15–$40/hour. Private lessons at established academies cost $60–$150/hour. USTA team tennis and tournament play adds $200–$500+ per season. Full academy programs with intensive training cost significantly more.</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-tennis-3">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What age should my child start competitive tennis on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">USTA junior tournaments start at age 8. Most Long Island academies recommend starting instruction at age 5–7 and entering competition at 9–10. Early specialization before age 10 is not recommended.</div>
+  </div>
+  <div class="faq-item" id="gfaq-youth-tennis-4">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What is the USTA Eastern ranking system for juniors on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">USTA Eastern uses a computer ranking system based on tournament results. Players earn points at sanctioned tournaments. Rankings are used for seeding in larger events. Long Island players compete in USTA Eastern sectional and national junior tournaments.</div>
+  </div>
+</div>
+
 <footer>
   <div class="footer-inner">
     <div class="footer-logo">Youth<span>Sports</span>Connect</div>

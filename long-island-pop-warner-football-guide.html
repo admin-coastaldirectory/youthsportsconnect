@@ -44,7 +44,19 @@ footer{background:var(--navy);padding:24px 40px;margin-top:0;border-top:3px soli
 .footer-logo{font-family:'Bebas Neue',sans-serif;font-size:20px;color:#fff;letter-spacing:1px}.footer-logo span{color:var(--gold)}
 .footer-links{display:flex;gap:14px;flex-wrap:wrap}.footer-links a{font-size:11px;color:rgba(255,255,255,.4)}.footer-links a:hover{color:var(--gold)}
 @media(max-width:700px){.article-hero,.article-body{padding-left:20px;padding-right:20px}nav{padding:0 20px}}
-</style>
+
+  .faq-section{max-width:860px;margin:40px auto 0;padding:0 40px}
+  .faq-section-title{font-family:"Bebas Neue",sans-serif;font-size:22px;letter-spacing:1px;color:var(--navy,#0a1628);margin-bottom:16px;padding-top:24px;border-top:2px solid var(--gold,#c9a84c)}
+  .faq-item{border-bottom:1px solid var(--border,#e2e6ed)}
+  .faq-q{width:100%;background:none;border:none;text-align:left;padding:16px 0;font-size:14px;font-weight:700;color:var(--navy,#0a1628);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;font-family:"Inter",sans-serif;line-height:1.4}
+  .faq-q:hover{color:var(--gold,#c9a84c)}
+  .faq-icon{flex-shrink:0;font-size:18px;font-weight:300;transition:transform .2s;color:var(--gold,#c9a84c)}
+  .faq-a{display:none;padding:0 0 16px;font-size:13px;color:#4a5568;line-height:1.7}
+  .faq-item.open .faq-a{display:block}
+  .faq-item.open .faq-icon{transform:rotate(45deg)}
+  @media(max-width:768px){.faq-section{padding:0 16px}}
+
+  </style>
 
 <!-- SCHEMA START -->
 <script type="application/ld+json">
@@ -129,6 +141,9 @@ footer{background:var(--navy);padding:24px 40px;margin-top:0;border-top:3px soli
 }
 </script>
 <!-- SCHEMA END -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What age does Pop Warner football start on Long Island?","acceptedAnswer":{"@type":"Answer","text":"Pop Warner starts at age 5 with the Tiny Mite division (ages 5–7). Divisions progress: Tiny Mite, Mitey Mite, Junior Pee Wee, Pee Wee, Junior Varsity, and Varsity covering ages 5–15."}},{"@type":"Question","name":"How are Pop Warner weight limits enforced on Long Island?","acceptedAnswer":{"@type":"Answer","text":"Every Pop Warner player is weighed at the start of the season and before each game. Players who exceed division weight limits cannot play at skill positions (running back, receiver, quarterback, linebacker, cornerback, safety). This is strictly enforced to protect smaller players."}},{"@type":"Question","name":"How much does Pop Warner football cost on Long Island?","acceptedAnswer":{"@type":"Answer","text":"Pop Warner registration typically costs $150–$350 per season. Programs provide pads and helmets. Families purchase cleats, mouthguards, and practice gear separately."}},{"@type":"Question","name":"Is Pop Warner tackle football safe for kids?","acceptedAnswer":{"@type":"Answer","text":"Long Island Pop Warner programs follow USA Football's Heads Up Tackling methodology and strict weight rules. All coaches complete mandatory safety certification. The American Academy of Pediatrics recommends flag football until age 14 to minimize head impact."}},{"@type":"Question","name":"What is the difference between Pop Warner and PAL tackle football on Long Island?","acceptedAnswer":{"@type":"Answer","text":"Pop Warner is a national organization with strict weight rules, divisions, and a National Championship pathway. PAL (Police Athletic League) also runs youth tackle programs in Nassau and Suffolk with slightly different structures. Both are well-organized community programs."}}]}
+</script>
 </head>
 <body>
 <nav>
@@ -168,6 +183,42 @@ footer{background:var(--navy);padding:24px 40px;margin-top:0;border-top:3px soli
   <p>Browse leagues, clubs, academies, and coaches across Nassau and Suffolk County.</p>
   <a href="tackle-football.html">Browse Tackle Football Listings →</a>
 </div></div>
+
+<!-- GUIDE FAQ -->
+<div class="faq-section" style="margin-bottom:40px">
+  <div class="faq-section-title">❓ Frequently Asked Questions</div>
+  <div class="faq-item" id="gfaq-long-island--0">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What age does Pop Warner football start on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Pop Warner starts at age 5 with the Tiny Mite division (ages 5–7). Divisions progress: Tiny Mite, Mitey Mite, Junior Pee Wee, Pee Wee, Junior Varsity, and Varsity covering ages 5–15.</div>
+  </div>
+  <div class="faq-item" id="gfaq-long-island--1">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>How are Pop Warner weight limits enforced on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Every Pop Warner player is weighed at the start of the season and before each game. Players who exceed division weight limits cannot play at skill positions (running back, receiver, quarterback, linebacker, cornerback, safety). This is strictly enforced to protect smaller players.</div>
+  </div>
+  <div class="faq-item" id="gfaq-long-island--2">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>How much does Pop Warner football cost on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Pop Warner registration typically costs $150–$350 per season. Programs provide pads and helmets. Families purchase cleats, mouthguards, and practice gear separately.</div>
+  </div>
+  <div class="faq-item" id="gfaq-long-island--3">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>Is Pop Warner tackle football safe for kids?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Long Island Pop Warner programs follow USA Football's Heads Up Tackling methodology and strict weight rules. All coaches complete mandatory safety certification. The American Academy of Pediatrics recommends flag football until age 14 to minimize head impact.</div>
+  </div>
+  <div class="faq-item" id="gfaq-long-island--4">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What is the difference between Pop Warner and PAL tackle football on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Pop Warner is a national organization with strict weight rules, divisions, and a National Championship pathway. PAL (Police Athletic League) also runs youth tackle programs in Nassau and Suffolk with slightly different structures. Both are well-organized community programs.</div>
+  </div>
+</div>
+
 <footer>
   <div class="footer-inner">
     <div class="footer-logo">Youth<span>Sports</span>Connect</div>

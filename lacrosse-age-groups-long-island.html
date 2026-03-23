@@ -113,7 +113,19 @@
     .hero,.top-bar{padding-left:20px;padding-right:20px}
     nav{padding:0 20px}
   }
-</style>
+
+  .faq-section{max-width:860px;margin:40px auto 0;padding:0 40px}
+  .faq-section-title{font-family:"Bebas Neue",sans-serif;font-size:22px;letter-spacing:1px;color:var(--navy,#0a1628);margin-bottom:16px;padding-top:24px;border-top:2px solid var(--gold,#c9a84c)}
+  .faq-item{border-bottom:1px solid var(--border,#e2e6ed)}
+  .faq-q{width:100%;background:none;border:none;text-align:left;padding:16px 0;font-size:14px;font-weight:700;color:var(--navy,#0a1628);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;font-family:"Inter",sans-serif;line-height:1.4}
+  .faq-q:hover{color:var(--gold,#c9a84c)}
+  .faq-icon{flex-shrink:0;font-size:18px;font-weight:300;transition:transform .2s;color:var(--gold,#c9a84c)}
+  .faq-a{display:none;padding:0 0 16px;font-size:13px;color:#4a5568;line-height:1.7}
+  .faq-item.open .faq-a{display:block}
+  .faq-item.open .faq-icon{transform:rotate(45deg)}
+  @media(max-width:768px){.faq-section{padding:0 16px}}
+
+  </style>
 
 <!-- SCHEMA START -->
 <script type="application/ld+json">
@@ -198,6 +210,9 @@
 }
 </script>
 <!-- SCHEMA END -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What are the youth lacrosse age groups on Long Island?","acceptedAnswer":{"@type":"Answer","text":"Long Island youth lacrosse divisions typically run U7, U9, U10, U12, U13, U14, U15, and U16. PAL recreational leagues use similar age groupings. Travel clubs align with US Lacrosse age divisions based on the player's age on August 31st of the current year."}},{"@type":"Question","name":"At what age should my child start lacrosse on Long Island?","acceptedAnswer":{"@type":"Answer","text":"Introductory lacrosse programs like Lil Athletes LAXTots start at age 3. PAL recreational leagues typically start at U7 (age 6–7). Competitive travel lacrosse begins at U9 (age 8–9). Most coaches recommend starting at age 5–7 to build fundamentals."}},{"@type":"Question","name":"What is the difference between boys and girls lacrosse age groups?","acceptedAnswer":{"@type":"Answer","text":"Boys and girls lacrosse follow similar age groupings but have different equipment requirements and rules. Girls lacrosse is less physical with minimal contact allowed. Boys lacrosse requires helmets, shoulder pads, and full protective gear starting at U9."}},{"@type":"Question","name":"When does travel lacrosse tryout season happen on Long Island?","acceptedAnswer":{"@type":"Answer","text":"Most Long Island travel lacrosse clubs hold tryouts in spring (March–May) for summer and fall seasons. Some programs hold fall tryouts for spring teams. Check individual club websites for specific tryout dates and locations."}},{"@type":"Question","name":"What equipment does my child need to start lacrosse on Long Island?","acceptedAnswer":{"@type":"Answer","text":"Boys need a helmet, shoulder pads, arm pads, gloves, stick, mouthguard, and cleats. Girls need goggles, a stick, mouthguard, and cleats. Lacrosse Unlimited in Nassau County is the go-to local gear shop for Long Island families."}}]}
+</script>
 </head>
 <body>
 
@@ -374,6 +389,42 @@
         <a class="related-link" href="lacrosse.html">Browse Lacrosse Directory →</a>
       </div>
     </div>
+  </div>
+</div>
+
+
+<!-- GUIDE FAQ -->
+<div class="faq-section" style="margin-bottom:40px">
+  <div class="faq-section-title">❓ Frequently Asked Questions</div>
+  <div class="faq-item" id="gfaq-lacrosse-age-0">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What are the youth lacrosse age groups on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Long Island youth lacrosse divisions typically run U7, U9, U10, U12, U13, U14, U15, and U16. PAL recreational leagues use similar age groupings. Travel clubs align with US Lacrosse age divisions based on the player's age on August 31st of the current year.</div>
+  </div>
+  <div class="faq-item" id="gfaq-lacrosse-age-1">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>At what age should my child start lacrosse on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Introductory lacrosse programs like Lil Athletes LAXTots start at age 3. PAL recreational leagues typically start at U7 (age 6–7). Competitive travel lacrosse begins at U9 (age 8–9). Most coaches recommend starting at age 5–7 to build fundamentals.</div>
+  </div>
+  <div class="faq-item" id="gfaq-lacrosse-age-2">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What is the difference between boys and girls lacrosse age groups?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Boys and girls lacrosse follow similar age groupings but have different equipment requirements and rules. Girls lacrosse is less physical with minimal contact allowed. Boys lacrosse requires helmets, shoulder pads, and full protective gear starting at U9.</div>
+  </div>
+  <div class="faq-item" id="gfaq-lacrosse-age-3">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>When does travel lacrosse tryout season happen on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Most Long Island travel lacrosse clubs hold tryouts in spring (March–May) for summer and fall seasons. Some programs hold fall tryouts for spring teams. Check individual club websites for specific tryout dates and locations.</div>
+  </div>
+  <div class="faq-item" id="gfaq-lacrosse-age-4">
+    <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>What equipment does my child need to start lacrosse on Long Island?</span><span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">Boys need a helmet, shoulder pads, arm pads, gloves, stick, mouthguard, and cleats. Girls need goggles, a stick, mouthguard, and cleats. Lacrosse Unlimited in Nassau County is the go-to local gear shop for Long Island families.</div>
   </div>
 </div>
 
