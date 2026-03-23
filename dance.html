@@ -85,7 +85,30 @@ footer{background:var(--navy);padding:24px 40px;margin-top:40px;border-top:3px s
     .sport-nav a{font-size:11px;font-weight:600;color:rgba(255,255,255,.5);padding:9px 13px;white-space:nowrap;text-decoration:none;text-transform:uppercase;letter-spacing:.3px;transition:all .15s;border-bottom:2px solid transparent}
     .sport-nav a:hover{color:var(--gold);border-bottom-color:var(--gold)}
     .sport-nav a.active{color:var(--gold);border-bottom-color:var(--gold)}
-</style>
+
+  /* SPORT CONTENT HUB */
+  .sport-hub{max-width:1200px;margin:40px auto 0;padding:0 40px 0}
+  .hub-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;margin-bottom:48px}
+  .hub-card{background:var(--white);border-radius:10px;border:1px solid var(--border);overflow:hidden;transition:all .15s}
+  .hub-card:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.08);border-color:var(--gold)}
+  .hub-card-head{background:var(--navy);padding:14px 18px;display:flex;align-items:center;gap:10px}
+  .hub-card-icon{font-size:20px}
+  .hub-card-title{font-family:"Bebas Neue",sans-serif;font-size:16px;letter-spacing:.8px;color:var(--white)}
+  .hub-card-title span{color:var(--gold)}
+  .hub-card-body{padding:16px 18px}
+  .hub-link{display:flex;align-items:center;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--border);font-size:13px;color:var(--text-mid);text-decoration:none;transition:color .12s}
+  .hub-link:last-child{border-bottom:none}
+  .hub-link:hover{color:var(--sport)}
+  .hub-link-arrow{color:var(--text-muted);font-size:11px}
+  .hub-gear-btn{display:block;margin-top:14px;background:var(--gold);color:var(--navy);text-align:center;padding:10px;border-radius:6px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;text-decoration:none;transition:background .15s}
+  .hub-gear-btn:hover{background:var(--gold-light)}
+  .hub-gear-item{display:flex;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid var(--border);font-size:13px;color:var(--text-mid);text-decoration:none;transition:color .12s}
+  .hub-gear-item:last-of-type{border-bottom:none}
+  .hub-gear-item:hover{color:var(--sport)}
+  .hub-section-label{font-family:"Bebas Neue",sans-serif;font-size:22px;letter-spacing:1px;color:var(--navy);margin-bottom:14px;padding-bottom:8px;border-top:2px solid var(--gold);padding-top:32px}
+  @media(max-width:900px){.sport-hub{padding:0 16px}.hub-grid{grid-template-columns:1fr}}
+
+  </style>
 </head>
 <body>
 <nav>
@@ -192,6 +215,54 @@ footer{background:var(--navy);padding:24px 40px;margin-top:40px;border-top:3px s
     </div>
   </div>
 </div>
+
+<!-- SPORT CONTENT HUB -->
+<div class="sport-hub">
+  <div class="hub-section-label">💃 More Dance Resources</div>
+  <div class="hub-grid">
+
+    <div class="hub-card">
+      <div class="hub-card-head">
+        <span class="hub-card-icon">📋</span>
+        <div class="hub-card-title">Parent <span>Guides</span></div>
+      </div>
+      <div class="hub-card-body">
+        <a href="long-island-youth-sports.html" class="hub-link">Youth Dance on Long Island <span class="hub-link-arrow">→</span></a>
+        <a href="long-island-youth-sports.html" class="hub-link">All LI Youth Sports <span class="hub-link-arrow">→</span></a>
+        <a href="blog.html" class="hub-link">All Guides & Articles <span class="hub-link-arrow">→</span></a>
+        <a href="blog.html" class="hub-link">All Guides &amp; Articles <span class="hub-link-arrow">→</span></a>
+      </div>
+    </div>
+
+    <div class="hub-card">
+      <div class="hub-card-head">
+        <span class="hub-card-icon">📰</span>
+        <div class="hub-card-title">Latest <span>Articles</span></div>
+      </div>
+      <div class="hub-card-body">
+        <a href="long-island-youth-sports.html" class="hub-link">Competitive vs Recreational Dance — Which Studio Is Right? <span class="hub-link-arrow">→</span></a>
+        <a href="blog.html?sport=dance" class="hub-link">More Dance Articles <span class="hub-link-arrow">→</span></a>
+        <a href="blog.html" class="hub-link">All Sports Articles <span class="hub-link-arrow">→</span></a>
+      </div>
+    </div>
+
+    <div class="hub-card">
+      <div class="hub-card-head">
+        <span class="hub-card-icon">🛒</span>
+        <div class="hub-card-title">Dance <span>Gear</span></div>
+      </div>
+      <div class="hub-card-body">
+        <a href="https://amazon.com/s?k=girls+ballet+shoes+youth&tag=youthsportsconnect-20" target="_blank" class="hub-gear-item">🛒 Ballet Shoes <span class="hub-link-arrow">→</span></a>
+        <a href="https://gkelite.com/dance-leotards" target="_blank" class="hub-gear-item">🛒 Leotards <span class="hub-link-arrow">→</span></a>
+        <a href="https://amazon.com/s?k=youth+tap+shoes+girls&tag=youthsportsconnect-20" target="_blank" class="hub-gear-item">🛒 Tap Shoes <span class="hub-link-arrow">→</span></a>
+        <a href="https://amazon.com/s?k=dance+bag+girls+youth&tag=youthsportsconnect-20" target="_blank" class="hub-gear-item">🛒 Dance Bags <span class="hub-link-arrow">→</span></a>
+        <a href="gear.html" class="hub-gear-btn">All Dance Gear →</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 <footer>
   <div class="footer-inner">
     <div class="footer-logo">Youth<span>Sports</span>Connect</div>
