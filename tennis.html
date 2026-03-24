@@ -175,6 +175,34 @@ footer{background:var(--navy);padding:24px 40px;margin-top:40px}
   .faq-item.open .faq-icon{transform:rotate(45deg)}
   @media(max-width:768px){.faq-section{padding:0 16px}}
 
+  
+  /* SPORT GEAR SECTION */
+  .sport-gear-section{max-width:1200px;margin:40px auto 0;padding:0 40px}
+  .sport-gear-title{font-family:"Bebas Neue",sans-serif;font-size:22px;letter-spacing:1px;color:var(--navy,#0a1628);margin-bottom:8px;padding-top:24px;border-top:2px solid var(--gold,#c9a84c);display:flex;align-items:center;gap:10px}
+  .sport-gear-intro{font-size:13px;color:var(--text-muted,#718096);margin-bottom:20px;line-height:1.6}
+  .sport-gear-top-pick{background:var(--gold-pale,#fdf6e3);border:1.5px solid var(--gold,#c9a84c);border-radius:8px;padding:12px 16px;margin-bottom:20px;display:flex;align-items:center;gap:12px;text-decoration:none}
+  .sport-gear-top-pick:hover{background:#fef9e7}
+  .top-pick-label{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--gold,#c9a84c)}
+  .top-pick-name{font-size:13px;font-weight:700;color:var(--navy,#0a1628)}
+  .top-pick-arrow{margin-left:auto;color:var(--gold,#c9a84c);font-size:16px}
+  .gear-items-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px}
+  .gear-item-card{display:flex;align-items:flex-start;gap:10px;padding:12px;background:#fff;border:1px solid var(--border,#e2e6ed);border-radius:8px;text-decoration:none;transition:all .15s}
+  .gear-item-card:hover{border-color:var(--gold,#c9a84c);transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,0,0,.06)}
+  .gear-item-icon{font-size:22px;flex-shrink:0;width:36px;text-align:center}
+  .gear-item-name{font-size:13px;font-weight:700;color:var(--navy,#0a1628);margin-bottom:2px}
+  .gear-item-desc{font-size:11px;color:var(--text-muted,#718096);line-height:1.5}
+  .gear-item-arrow{margin-left:auto;color:var(--text-muted,#718096);font-size:11px;flex-shrink:0;align-self:center}
+  .gear-view-all{display:block;text-align:center;margin-top:16px;background:var(--navy,#0a1628);color:#fff;padding:12px;border-radius:7px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;text-decoration:none;transition:background .15s}
+  .gear-view-all:hover{background:var(--gold,#c9a84c);color:var(--navy,#0a1628)}
+  @media(max-width:768px){.sport-gear-section{padding:0 16px}.gear-items-grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:480px){.gear-items-grid{grid-template-columns:1fr}}
+
+  
+  .ftab-gear { background:var(--gold-pale,#fdf6e3); border-color:var(--gold,#c9a84c) !important; color:var(--navy,#0a1628) !important; text-decoration:none; }
+  .ftab-gear:hover { background:var(--gold,#c9a84c); color:var(--navy,#0a1628) !important; }
+
+    .quick-link-gear{color:var(--gold,#c9a84c) !important;border-bottom-color:var(--gold,#c9a84c) !important;text-decoration:none}
+  .quick-link-gear:hover{color:var(--gold-light,#e8c96d) !important}
   </style>
 
 <!-- SCHEMA START -->
@@ -339,6 +367,7 @@ footer{background:var(--navy);padding:24px 40px;margin-top:40px}
     <div class="quick-link" onclick="setType('academy',this)">Academies</div>
     <div class="quick-link" onclick="setType('facility',this)">Facilities</div>
     <div class="quick-link" onclick="setType('summer_camp',this)">Summer Camps</div>
+    <a class="quick-link quick-link-gear" href="#sport-gear-section">🛒 Gear</a>
   </div>
 </div>
 <div class="main">
@@ -355,6 +384,7 @@ footer{background:var(--navy);padding:24px 40px;margin-top:40px}
       <button class="ftab" onclick="setType('academy',this)">Academies</button>
       <button class="ftab" onclick="setType('facility',this)">Facilities</button>
       <button class="ftab" onclick="setType('summer_camp',this)">Summer Camps</button>
+      <a class="ftab ftab-gear" href="#sport-gear-section">🛒 Gear</a>
       <span class="results-meta" id="results-meta"></span>
     </div>
     <div class="listings-card">
@@ -438,6 +468,32 @@ footer{background:var(--navy);padding:24px 40px;margin-top:40px}
   </div>
 </div>
 
+
+
+<div id="sport-gear-section"></div>
+<!-- SPORT GEAR SECTION -->
+<div class="sport-gear-section">
+  <div class="sport-gear-title">🎾 Tennis Gear &amp; Equipment</div>
+  <p class="sport-gear-intro">Junior tennis uses smaller rackets and modified balls to make the game developmentally appropriate. USTA Quick Start uses red, orange, and green balls on progressively larger courts.</p>
+  <a href="https://amazon.com/s?k=wilson+burn+25+junior+tennis+racket&tag=youthsportsconnect-20" target="_blank" class="sport-gear-top-pick">
+    <span style="font-size:20px">⭐</span>
+    <div><div class="top-pick-label">Top Pick</div><div class="top-pick-name">Wilson Burn 25" Junior Racket</div></div>
+    <span class="top-pick-arrow">→</span>
+  </a>
+  <div class="gear-items-grid">
+      <a href="https://amazon.com/s?k=junior+tennis+racket+19+inch&tag=youthsportsconnect-20" target="_blank" class="gear-item-card"><span class="gear-item-icon">🎾</span><div><div class="gear-item-name">Junior Racket 19" (Ages 4-6)</div><div class="gear-item-desc">21-23" for ages 5-8. Start small — oversized rackets hurt development.</div></div><span class="gear-item-arrow">→</span></a>
+      <a href="https://amazon.com/s?k=junior+tennis+racket+23+inch&tag=youthsportsconnect-20" target="_blank" class="gear-item-card"><span class="gear-item-icon">🎾</span><div><div class="gear-item-name">Junior Racket 23" (Ages 6-8)</div><div class="gear-item-desc">Proper size racket is the most important factor for beginners.</div></div><span class="gear-item-arrow">→</span></a>
+      <a href="https://amazon.com/s?k=junior+tennis+racket+25+inch&tag=youthsportsconnect-20" target="_blank" class="gear-item-card"><span class="gear-item-icon">🎾</span><div><div class="gear-item-name">Junior Racket 25" (Ages 8-10)</div><div class="gear-item-desc">Most 8-10 year olds use 25" racket. Check with coach before buying.</div></div><span class="gear-item-arrow">→</span></a>
+      <a href="https://amazon.com/s?k=red+tennis+balls+youth+foam&tag=youthsportsconnect-20" target="_blank" class="gear-item-card"><span class="gear-item-icon">🔴</span><div><div class="gear-item-name">Red Felt Balls (Ages 5-8)</div><div class="gear-item-desc">Slower bounce, USTA Quick Start 10-and-Under. Used on short courts.</div></div><span class="gear-item-arrow">→</span></a>
+      <a href="https://amazon.com/s?k=orange+tennis+balls+youth&tag=youthsportsconnect-20" target="_blank" class="gear-item-card"><span class="gear-item-icon">🟠</span><div><div class="gear-item-name">Orange Balls (Ages 8-10)</div><div class="gear-item-desc">Medium bounce. USTA Quick Start for 10U players on 60-foot courts.</div></div><span class="gear-item-arrow">→</span></a>
+      <a href="https://amazon.com/s?k=green+dot+tennis+balls+youth&tag=youthsportsconnect-20" target="_blank" class="gear-item-card"><span class="gear-item-icon">🟢</span><div><div class="gear-item-name">Green Dot Balls (Ages 10-12)</div><div class="gear-item-desc">25% slower than regular balls. Transition ball before full yellow.</div></div><span class="gear-item-arrow">→</span></a>
+      <a href="https://amazon.com/s?k=youth+tennis+shoes+court&tag=youthsportsconnect-20" target="_blank" class="gear-item-card"><span class="gear-item-icon">👟</span><div><div class="gear-item-name">Tennis Court Shoes</div><div class="gear-item-desc">Court-specific sole for lateral support and traction on hard courts. Important.</div></div><span class="gear-item-arrow">→</span></a>
+      <a href="https://amazon.com/s?k=youth+tennis+racket+backpack&tag=youthsportsconnect-20" target="_blank" class="gear-item-card"><span class="gear-item-icon">🎒</span><div><div class="gear-item-name">Tennis Backpack</div><div class="gear-item-desc">Holds 2 rackets, balls, water bottle, and change of clothes.</div></div><span class="gear-item-arrow">→</span></a>
+      <a href="https://amazon.com/s?k=tennis+visor+youth+sun&tag=youthsportsconnect-20" target="_blank" class="gear-item-card"><span class="gear-item-icon">🌂</span><div><div class="gear-item-name">Tennis Visor or Hat</div><div class="gear-item-desc">Sun protection for outdoor tournament play. Essential for summer events.</div></div><span class="gear-item-arrow">→</span></a>
+      <a href="https://amazon.com/s?k=tennis+overgrip+youth+replacement&tag=youthsportsconnect-20" target="_blank" class="gear-item-card"><span class="gear-item-icon">💪</span><div><div class="gear-item-name">Tennis Overgrip</div><div class="gear-item-desc">Fresh grip prevents slipping and improves control. Replace monthly.</div></div><span class="gear-item-arrow">→</span></a>
+  </div>
+  <a href="gear.html" class="gear-view-all">Browse All Tennis Gear →</a>
+</div>
 
 <!-- FAQ SECTION -->
 <div class="faq-section">

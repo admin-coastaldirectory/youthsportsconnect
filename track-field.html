@@ -175,6 +175,34 @@ footer{background:var(--navy);padding:24px 40px;margin-top:40px}
   .faq-item.open .faq-icon{transform:rotate(45deg)}
   @media(max-width:768px){.faq-section{padding:0 16px}}
 
+  
+  /* SPORT GEAR SECTION */
+  .sport-gear-section{max-width:1200px;margin:40px auto 0;padding:0 40px}
+  .sport-gear-title{font-family:"Bebas Neue",sans-serif;font-size:22px;letter-spacing:1px;color:var(--navy,#0a1628);margin-bottom:8px;padding-top:24px;border-top:2px solid var(--gold,#c9a84c);display:flex;align-items:center;gap:10px}
+  .sport-gear-intro{font-size:13px;color:var(--text-muted,#718096);margin-bottom:20px;line-height:1.6}
+  .sport-gear-top-pick{background:var(--gold-pale,#fdf6e3);border:1.5px solid var(--gold,#c9a84c);border-radius:8px;padding:12px 16px;margin-bottom:20px;display:flex;align-items:center;gap:12px;text-decoration:none}
+  .sport-gear-top-pick:hover{background:#fef9e7}
+  .top-pick-label{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--gold,#c9a84c)}
+  .top-pick-name{font-size:13px;font-weight:700;color:var(--navy,#0a1628)}
+  .top-pick-arrow{margin-left:auto;color:var(--gold,#c9a84c);font-size:16px}
+  .gear-items-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px}
+  .gear-item-card{display:flex;align-items:flex-start;gap:10px;padding:12px;background:#fff;border:1px solid var(--border,#e2e6ed);border-radius:8px;text-decoration:none;transition:all .15s}
+  .gear-item-card:hover{border-color:var(--gold,#c9a84c);transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,0,0,.06)}
+  .gear-item-icon{font-size:22px;flex-shrink:0;width:36px;text-align:center}
+  .gear-item-name{font-size:13px;font-weight:700;color:var(--navy,#0a1628);margin-bottom:2px}
+  .gear-item-desc{font-size:11px;color:var(--text-muted,#718096);line-height:1.5}
+  .gear-item-arrow{margin-left:auto;color:var(--text-muted,#718096);font-size:11px;flex-shrink:0;align-self:center}
+  .gear-view-all{display:block;text-align:center;margin-top:16px;background:var(--navy,#0a1628);color:#fff;padding:12px;border-radius:7px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;text-decoration:none;transition:background .15s}
+  .gear-view-all:hover{background:var(--gold,#c9a84c);color:var(--navy,#0a1628)}
+  @media(max-width:768px){.sport-gear-section{padding:0 16px}.gear-items-grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:480px){.gear-items-grid{grid-template-columns:1fr}}
+
+  
+  .ftab-gear { background:var(--gold-pale,#fdf6e3); border-color:var(--gold,#c9a84c) !important; color:var(--navy,#0a1628) !important; text-decoration:none; }
+  .ftab-gear:hover { background:var(--gold,#c9a84c); color:var(--navy,#0a1628) !important; }
+
+    .quick-link-gear{color:var(--gold,#c9a84c) !important;border-bottom-color:var(--gold,#c9a84c) !important;text-decoration:none}
+  .quick-link-gear:hover{color:var(--gold-light,#e8c96d) !important}
   </style>
 
 <!-- SCHEMA START -->
@@ -339,6 +367,7 @@ footer{background:var(--navy);padding:24px 40px;margin-top:40px}
     <div class="quick-link" onclick="setType('academy',this)">Academies</div>
     <div class="quick-link" onclick="setType('facility',this)">Facilities</div>
     <div class="quick-link" onclick="setType('summer_camp',this)">Summer Camps</div>
+    <a class="quick-link quick-link-gear" href="#sport-gear-section">🛒 Gear</a>
   </div>
 </div>
 <div class="main">
@@ -355,6 +384,7 @@ footer{background:var(--navy);padding:24px 40px;margin-top:40px}
       <button class="ftab" onclick="setType('academy',this)">Academies</button>
       <button class="ftab" onclick="setType('facility',this)">Facilities</button>
       <button class="ftab" onclick="setType('summer_camp',this)">Summer Camps</button>
+      <a class="ftab ftab-gear" href="#sport-gear-section">🛒 Gear</a>
       <span class="results-meta" id="results-meta"></span>
     </div>
     <div class="listings-card">
@@ -438,6 +468,32 @@ footer{background:var(--navy);padding:24px 40px;margin-top:40px}
   </div>
 </div>
 
+
+
+<div id="sport-gear-section"></div>
+<!-- SPORT GEAR SECTION -->
+<div class="sport-gear-section">
+  <div class="sport-gear-title">🏃 Track Field Gear &amp; Equipment</div>
+  <p class="sport-gear-intro">Track gear needs vary by event — sprinters, distance runners, and field athletes all have different requirements. Start simple and add event-specific gear as your athlete develops.</p>
+  <a href="https://amazon.com/s?k=nike+zoom+rival+youth+track+spikes&tag=youthsportsconnect-20" target="_blank" class="sport-gear-top-pick">
+    <span style="font-size:20px">⭐</span>
+    <div><div class="top-pick-label">Top Pick</div><div class="top-pick-name">Nike Zoom Rival Sprint Spikes (Youth)</div></div>
+    <span class="top-pick-arrow">→</span>
+  </a>
+  <div class="gear-items-grid">
+      <a href="https://amazon.com/s?k=youth+track+sprint+spikes&tag=youthsportsconnect-20" target="_blank" class="gear-item-card"><span class="gear-item-icon">👟</span><div><div class="gear-item-name">Track Spikes (Sprint)</div><div class="gear-item-desc">Sprint spikes for 100m-400m. Stiff plate, no heel. Nike, Adidas, and New Balance are top brands.</div></div><span class="gear-item-arrow">→</span></a>
+      <a href="https://amazon.com/s?k=youth+distance+running+shoes+track&tag=youthsportsconnect-20" target="_blank" class="gear-item-card"><span class="gear-item-icon">👟</span><div><div class="gear-item-name">Distance Running Shoes</div><div class="gear-item-desc">Cushioned road/track shoe for 800m+. Many distance runners skip spikes initially.</div></div><span class="gear-item-arrow">→</span></a>
+      <a href="https://amazon.com/s?k=youth+cross+country+spikes&tag=youthsportsconnect-20" target="_blank" class="gear-item-card"><span class="gear-item-icon">🏃</span><div><div class="gear-item-name">Cross Country Spikes</div><div class="gear-item-desc">Flexible upper, short spikes for grass and dirt. Needed for cross country season.</div></div><span class="gear-item-arrow">→</span></a>
+      <a href="https://amazon.com/s?k=youth+compression+socks+running&tag=youthsportsconnect-20" target="_blank" class="gear-item-card"><span class="gear-item-icon">🩺</span><div><div class="gear-item-name">Compression Socks</div><div class="gear-item-desc">Improves circulation during and after races. Reduces muscle soreness.</div></div><span class="gear-item-arrow">→</span></a>
+      <a href="https://amazon.com/s?k=shot+put+4+pound+youth&tag=youthsportsconnect-20" target="_blank" class="gear-item-card"><span class="gear-item-icon">🎯</span><div><div class="gear-item-name">Shot Put (4lb Youth)</div><div class="gear-item-desc">4lb shot put for youth throwers. USATF standard for Bantam through Midget divisions.</div></div><span class="gear-item-arrow">→</span></a>
+      <a href="https://amazon.com/s?k=youth+discus+rubber+1kg&tag=youthsportsconnect-20" target="_blank" class="gear-item-card"><span class="gear-item-icon">🏋️</span><div><div class="gear-item-name">Youth Discus</div><div class="gear-item-desc">1kg rubber discus for youth throwers. Required for USATF Intermediate and above.</div></div><span class="gear-item-arrow">→</span></a>
+      <a href="https://amazon.com/s?k=hurdles+adjustable+youth+track&tag=youthsportsconnect-20" target="_blank" class="gear-item-card"><span class="gear-item-icon">🦵</span><div><div class="gear-item-name">Hurdles (Adjustable Youth)</div><div class="gear-item-desc">Practice hurdles for home training. Adjustable from 24"-42".</div></div><span class="gear-item-arrow">→</span></a>
+      <a href="https://amazon.com/s?k=youth+sports+gps+running+watch&tag=youthsportsconnect-20" target="_blank" class="gear-item-card"><span class="gear-item-icon">⏱️</span><div><div class="gear-item-name">Sports Watch/GPS Watch</div><div class="gear-item-desc">Track pace and distance for distance runners. Garmin and Polar make great youth options.</div></div><span class="gear-item-arrow">→</span></a>
+      <a href="https://amazon.com/s?k=agility+ladder+track+youth&tag=youthsportsconnect-20" target="_blank" class="gear-item-card"><span class="gear-item-icon">🏃</span><div><div class="gear-item-name">Agility Ladder</div><div class="gear-item-desc">Speed and footwork development for sprinters. 15-20 rungs is ideal.</div></div><span class="gear-item-arrow">→</span></a>
+      <a href="https://amazon.com/s?k=running+hydration+belt+youth&tag=youthsportsconnect-20" target="_blank" class="gear-item-card"><span class="gear-item-icon">💧</span><div><div class="gear-item-name">Running Hydration Belt</div><div class="gear-item-desc">For long cross country runs and summer training. Hands-free hydration.</div></div><span class="gear-item-arrow">→</span></a>
+  </div>
+  <a href="gear.html" class="gear-view-all">Browse All Track Field Gear →</a>
+</div>
 
 <!-- FAQ SECTION -->
 <div class="faq-section">

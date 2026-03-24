@@ -278,6 +278,12 @@
   @media(max-width:768px){.sport-gear-section{padding:0 16px}.gear-items-grid{grid-template-columns:1fr 1fr}}
   @media(max-width:480px){.gear-items-grid{grid-template-columns:1fr}}
 
+  
+  .ftab-gear { background:var(--gold-pale,#fdf6e3); border-color:var(--gold,#c9a84c) !important; color:var(--navy,#0a1628) !important; text-decoration:none; }
+  .ftab-gear:hover { background:var(--gold,#c9a84c); color:var(--navy,#0a1628) !important; }
+
+    .quick-link-gear{color:var(--gold,#c9a84c) !important;border-bottom-color:var(--gold,#c9a84c) !important;text-decoration:none}
+  .quick-link-gear:hover{color:var(--gold-light,#e8c96d) !important}
   </style>
 
 <!-- SCHEMA START -->
@@ -473,6 +479,7 @@
     <div class="quick-link" onclick="setType('coach',this)">Coaches</div>
     <div class="quick-link" onclick="setType('facility',this)">Facilities</div>
     <div class="quick-link" onclick="setType('summer_camp',this)">Summer Camps</div>
+    <a class="quick-link quick-link-gear" href="#sport-gear-section">🛒 Gear</a>
   </div>
 </div>
 
@@ -501,6 +508,7 @@
       <button class="ftab" onclick="setType('coach',this)">Coaches</button>
       <button class="ftab" onclick="setType('facility',this)">Facilities</button>
       <button class="ftab" onclick="setType('summer_camp',this)">Summer Camps</button>
+      <a class="ftab ftab-gear" href="#sport-gear-section">🛒 Gear</a>
       <span class="results-meta" id="results-meta"></span>
     </div>
 
@@ -646,6 +654,7 @@
 
 
 
+<div id="sport-gear-section"></div>
 <!-- SPORT GEAR SECTION -->
 <div class="sport-gear-section">
   <div class="sport-gear-title">⚾ Baseball Gear &amp; Equipment</div>

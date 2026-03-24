@@ -256,6 +256,34 @@
   .faq-item.open .faq-icon{transform:rotate(45deg)}
   @media(max-width:768px){.faq-section{padding:0 16px}}
 
+  
+  /* SPORT GEAR SECTION */
+  .sport-gear-section{max-width:1200px;margin:40px auto 0;padding:0 40px}
+  .sport-gear-title{font-family:"Bebas Neue",sans-serif;font-size:22px;letter-spacing:1px;color:var(--navy,#0a1628);margin-bottom:8px;padding-top:24px;border-top:2px solid var(--gold,#c9a84c);display:flex;align-items:center;gap:10px}
+  .sport-gear-intro{font-size:13px;color:var(--text-muted,#718096);margin-bottom:20px;line-height:1.6}
+  .sport-gear-top-pick{background:var(--gold-pale,#fdf6e3);border:1.5px solid var(--gold,#c9a84c);border-radius:8px;padding:12px 16px;margin-bottom:20px;display:flex;align-items:center;gap:12px;text-decoration:none}
+  .sport-gear-top-pick:hover{background:#fef9e7}
+  .top-pick-label{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--gold,#c9a84c)}
+  .top-pick-name{font-size:13px;font-weight:700;color:var(--navy,#0a1628)}
+  .top-pick-arrow{margin-left:auto;color:var(--gold,#c9a84c);font-size:16px}
+  .gear-items-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px}
+  .gear-item-card{display:flex;align-items:flex-start;gap:10px;padding:12px;background:#fff;border:1px solid var(--border,#e2e6ed);border-radius:8px;text-decoration:none;transition:all .15s}
+  .gear-item-card:hover{border-color:var(--gold,#c9a84c);transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,0,0,.06)}
+  .gear-item-icon{font-size:22px;flex-shrink:0;width:36px;text-align:center}
+  .gear-item-name{font-size:13px;font-weight:700;color:var(--navy,#0a1628);margin-bottom:2px}
+  .gear-item-desc{font-size:11px;color:var(--text-muted,#718096);line-height:1.5}
+  .gear-item-arrow{margin-left:auto;color:var(--text-muted,#718096);font-size:11px;flex-shrink:0;align-self:center}
+  .gear-view-all{display:block;text-align:center;margin-top:16px;background:var(--navy,#0a1628);color:#fff;padding:12px;border-radius:7px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;text-decoration:none;transition:background .15s}
+  .gear-view-all:hover{background:var(--gold,#c9a84c);color:var(--navy,#0a1628)}
+  @media(max-width:768px){.sport-gear-section{padding:0 16px}.gear-items-grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:480px){.gear-items-grid{grid-template-columns:1fr}}
+
+  
+  .ftab-gear { background:var(--gold-pale,#fdf6e3); border-color:var(--gold,#c9a84c) !important; color:var(--navy,#0a1628) !important; text-decoration:none; }
+  .ftab-gear:hover { background:var(--gold,#c9a84c); color:var(--navy,#0a1628) !important; }
+
+    .quick-link-gear{color:var(--gold,#c9a84c) !important;border-bottom-color:var(--gold,#c9a84c) !important;text-decoration:none}
+  .quick-link-gear:hover{color:var(--gold-light,#e8c96d) !important}
   </style>
 
 <!-- SCHEMA START -->
@@ -459,6 +487,7 @@
     <div class="quick-link" onclick="setType('coach',this)">Coaches</div>
     <div class="quick-link" onclick="setType('facility',this)">Facilities</div>
     <div class="quick-link" onclick="setType('summer_camp',this)">Summer Camps</div>
+    <a class="quick-link quick-link-gear" href="#sport-gear-section">🛒 Gear</a>
   </div>
 </div>
 
@@ -487,6 +516,7 @@
       <button class="ftab" onclick="setType('coach',this)">Coaches</button>
       <button class="ftab" onclick="setType('facility',this)">Facilities</button>
       <button class="ftab" onclick="setType('summer_camp',this)">Summer Camps</button>
+      <a class="ftab ftab-gear" href="#sport-gear-section">🛒 Gear</a>
       <span class="results-meta" id="results-meta"></span>
     </div>
 
@@ -630,6 +660,32 @@
   </div>
 </div>
 
+
+
+<div id="sport-gear-section"></div>
+<!-- SPORT GEAR SECTION -->
+<div class="sport-gear-section">
+  <div class="sport-gear-title">⚽ Soccer Gear &amp; Equipment</div>
+  <p class="sport-gear-intro">Everything your young soccer player needs — from first cleats to goalkeeper gloves. All links use our Amazon affiliate tag to support YouthSportsConnect.</p>
+  <a href="https://amazon.com/s?k=adidas+predator+youth+cleats&tag=youthsportsconnect-20" target="_blank" class="sport-gear-top-pick">
+    <span style="font-size:20px">⭐</span>
+    <div><div class="top-pick-label">Top Pick</div><div class="top-pick-name">Adidas Predator Cleats (Youth)</div></div>
+    <span class="top-pick-arrow">→</span>
+  </a>
+  <div class="gear-items-grid">
+      <a href="https://amazon.com/s?k=youth+soccer+cleats&tag=youthsportsconnect-20" target="_blank" class="gear-item-card"><span class="gear-item-icon">⚽</span><div><div class="gear-item-name">Youth Soccer Cleats</div><div class="gear-item-desc">The most important piece of gear. Firm ground cleats for grass, turf shoes for turf fields.</div></div><span class="gear-item-arrow">→</span></a>
+      <a href="https://amazon.com/s?k=youth+soccer+shin+guards&tag=youthsportsconnect-20" target="_blank" class="gear-item-card"><span class="gear-item-icon">🦵</span><div><div class="gear-item-name">Shin Guards</div><div class="gear-item-desc">Required for all leagues. Slip-in or ankle shin guards depending on age.</div></div><span class="gear-item-arrow">→</span></a>
+      <a href="https://amazon.com/s?k=youth+soccer+ball+size+3+4+5&tag=youthsportsconnect-20" target="_blank" class="gear-item-card"><span class="gear-item-icon">⚽</span><div><div class="gear-item-name">Youth Soccer Balls</div><div class="gear-item-desc">Size 3 (U8 and under), Size 4 (U8-U12), Size 5 (U13+). Match ball vs training ball.</div></div><span class="gear-item-arrow">→</span></a>
+      <a href="https://amazon.com/s?k=youth+goalkeeper+gloves&tag=youthsportsconnect-20" target="_blank" class="gear-item-card"><span class="gear-item-icon">🥅</span><div><div class="gear-item-name">Goalkeeper Gloves</div><div class="gear-item-desc">Essential for goalkeepers. Latex palm for grip, finger protection for safety.</div></div><span class="gear-item-arrow">→</span></a>
+      <a href="https://amazon.com/s?k=youth+soccer+socks&tag=youthsportsconnect-20" target="_blank" class="gear-item-card"><span class="gear-item-icon">🧤</span><div><div class="gear-item-name">Soccer Socks</div><div class="gear-item-desc">Long knee-high socks worn over shin guards. Buy extra — they disappear.</div></div><span class="gear-item-arrow">→</span></a>
+      <a href="https://amazon.com/s?k=soccer+pinnies+youth+training&tag=youthsportsconnect-20" target="_blank" class="gear-item-card"><span class="gear-item-icon">👕</span><div><div class="gear-item-name">Soccer Pinnies/Bibs</div><div class="gear-item-desc">Practice jerseys for scrimmages and pickup games.</div></div><span class="gear-item-arrow">→</span></a>
+      <a href="https://amazon.com/s?k=portable+soccer+goal+youth+backyard&tag=youthsportsconnect-20" target="_blank" class="gear-item-card"><span class="gear-item-icon">🥅</span><div><div class="gear-item-name">Portable Soccer Goal</div><div class="gear-item-desc">Backyard practice goals. Pop-up styles are easy to set up and store.</div></div><span class="gear-item-arrow">→</span></a>
+      <a href="https://amazon.com/s?k=soccer+training+cones+agility+ladder&tag=youthsportsconnect-20" target="_blank" class="gear-item-card"><span class="gear-item-icon">🎯</span><div><div class="gear-item-name">Agility Cones & Ladders</div><div class="gear-item-desc">Speed and agility training for home practice between sessions.</div></div><span class="gear-item-arrow">→</span></a>
+      <a href="https://amazon.com/s?k=youth+sports+water+bottle+32oz&tag=youthsportsconnect-20" target="_blank" class="gear-item-card"><span class="gear-item-icon">💧</span><div><div class="gear-item-name">Water Bottle</div><div class="gear-item-desc">Insulated 32oz bottle. Hydration is critical especially in summer tournaments.</div></div><span class="gear-item-arrow">→</span></a>
+      <a href="https://amazon.com/s?k=youth+soccer+backpack+with+ball+holder&tag=youthsportsconnect-20" target="_blank" class="gear-item-card"><span class="gear-item-icon">👜</span><div><div class="gear-item-name">Soccer Backpack</div><div class="gear-item-desc">Ball holder on outside, separate cleats compartment. Great for travel teams.</div></div><span class="gear-item-arrow">→</span></a>
+  </div>
+  <a href="gear.html" class="gear-view-all">Browse All Soccer Gear →</a>
+</div>
 
 <!-- FAQ SECTION -->
 <div class="faq-section">

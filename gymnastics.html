@@ -124,6 +124,34 @@ footer{background:var(--navy);padding:24px 40px;margin-top:40px}
   .faq-item.open .faq-icon{transform:rotate(45deg)}
   @media(max-width:768px){.faq-section{padding:0 16px}}
 
+  
+  /* SPORT GEAR SECTION */
+  .sport-gear-section{max-width:1200px;margin:40px auto 0;padding:0 40px}
+  .sport-gear-title{font-family:"Bebas Neue",sans-serif;font-size:22px;letter-spacing:1px;color:var(--navy,#0a1628);margin-bottom:8px;padding-top:24px;border-top:2px solid var(--gold,#c9a84c);display:flex;align-items:center;gap:10px}
+  .sport-gear-intro{font-size:13px;color:var(--text-muted,#718096);margin-bottom:20px;line-height:1.6}
+  .sport-gear-top-pick{background:var(--gold-pale,#fdf6e3);border:1.5px solid var(--gold,#c9a84c);border-radius:8px;padding:12px 16px;margin-bottom:20px;display:flex;align-items:center;gap:12px;text-decoration:none}
+  .sport-gear-top-pick:hover{background:#fef9e7}
+  .top-pick-label{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--gold,#c9a84c)}
+  .top-pick-name{font-size:13px;font-weight:700;color:var(--navy,#0a1628)}
+  .top-pick-arrow{margin-left:auto;color:var(--gold,#c9a84c);font-size:16px}
+  .gear-items-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px}
+  .gear-item-card{display:flex;align-items:flex-start;gap:10px;padding:12px;background:#fff;border:1px solid var(--border,#e2e6ed);border-radius:8px;text-decoration:none;transition:all .15s}
+  .gear-item-card:hover{border-color:var(--gold,#c9a84c);transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,0,0,.06)}
+  .gear-item-icon{font-size:22px;flex-shrink:0;width:36px;text-align:center}
+  .gear-item-name{font-size:13px;font-weight:700;color:var(--navy,#0a1628);margin-bottom:2px}
+  .gear-item-desc{font-size:11px;color:var(--text-muted,#718096);line-height:1.5}
+  .gear-item-arrow{margin-left:auto;color:var(--text-muted,#718096);font-size:11px;flex-shrink:0;align-self:center}
+  .gear-view-all{display:block;text-align:center;margin-top:16px;background:var(--navy,#0a1628);color:#fff;padding:12px;border-radius:7px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;text-decoration:none;transition:background .15s}
+  .gear-view-all:hover{background:var(--gold,#c9a84c);color:var(--navy,#0a1628)}
+  @media(max-width:768px){.sport-gear-section{padding:0 16px}.gear-items-grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:480px){.gear-items-grid{grid-template-columns:1fr}}
+
+  
+  .ftab-gear { background:var(--gold-pale,#fdf6e3); border-color:var(--gold,#c9a84c) !important; color:var(--navy,#0a1628) !important; text-decoration:none; }
+  .ftab-gear:hover { background:var(--gold,#c9a84c); color:var(--navy,#0a1628) !important; }
+
+    .quick-link-gear{color:var(--gold,#c9a84c) !important;border-bottom-color:var(--gold,#c9a84c) !important;text-decoration:none}
+  .quick-link-gear:hover{color:var(--gold-light,#e8c96d) !important}
   </style>
 
 <!-- SCHEMA START -->
@@ -296,6 +324,7 @@ footer{background:var(--navy);padding:24px 40px;margin-top:40px}
     <div class="quick-link" onclick="setType('academy',this)">Academies</div>
     <div class="quick-link" onclick="setType('facility',this)">Facilities</div>
     <div class="quick-link" onclick="setType('summer_camp',this)">Summer Camps</div>
+    <a class="quick-link quick-link-gear" href="#sport-gear-section">🛒 Gear</a>
   </div>
 </div>
 <div class="main">
@@ -311,6 +340,7 @@ footer{background:var(--navy);padding:24px 40px;margin-top:40px}
       <button class="ftab" onclick="setType('academy',this)">Academies</button>
       <button class="ftab" onclick="setType('facility',this)">Facilities</button>
       <button class="ftab" onclick="setType('summer_camp',this)">Summer Camps</button>
+      <a class="ftab ftab-gear" href="#sport-gear-section">🛒 Gear</a>
       <span class="results-meta" id="results-meta"></span>
     </div>
     <div class="listings-card">
@@ -393,6 +423,32 @@ footer{background:var(--navy);padding:24px 40px;margin-top:40px}
   </div>
 </div>
 
+
+
+<div id="sport-gear-section"></div>
+<!-- SPORT GEAR SECTION -->
+<div class="sport-gear-section">
+  <div class="sport-gear-title">🤸 Gymnastics Gear &amp; Equipment</div>
+  <p class="sport-gear-intro">Gymnastics gear is minimal for beginners. As athletes advance to competitive levels, more equipment is needed. GK Elite is the premier brand for competitive leotards.</p>
+  <a href="https://gkelite.com/leotards" target="_blank" class="sport-gear-top-pick">
+    <span style="font-size:20px">⭐</span>
+    <div><div class="top-pick-label">Top Pick</div><div class="top-pick-name">GK Elite Gymnastics Leotard</div></div>
+    <span class="top-pick-arrow">→</span>
+  </a>
+  <div class="gear-items-grid">
+      <a href="https://gkelite.com/leotards" target="_blank" class="gear-item-card"><span class="gear-item-icon">🩱</span><div><div class="gear-item-name">Gymnastics Leotard</div><div class="gear-item-desc">Required for all gymnastics classes and competitions. GK Elite is the standard in competitive gymnastics.</div></div><span class="gear-item-arrow">→</span></a>
+      <a href="https://amazon.com/s?k=gymnastics+grips+youth+dowel&tag=youthsportsconnect-20" target="_blank" class="gear-item-card"><span class="gear-item-icon">🖐️</span><div><div class="gear-item-name">Gymnastics Hand Grips</div><div class="gear-item-desc">Required for bars once athlete reaches Level 3-4. Dowel grips for higher levels.</div></div><span class="gear-item-arrow">→</span></a>
+      <a href="https://amazon.com/s?k=gymnastics+shorts+girls+youth&tag=youthsportsconnect-20" target="_blank" class="gear-item-card"><span class="gear-item-icon">🤸</span><div><div class="gear-item-name">Gymnastics Shorts/Shorts Over Leo</div><div class="gear-item-desc">Worn over leotard in classes. Many gyms require modesty shorts for younger ages.</div></div><span class="gear-item-arrow">→</span></a>
+      <a href="https://amazon.com/s?k=gymnastics+beam+home+folding&tag=youthsportsconnect-20" target="_blank" class="gear-item-card"><span class="gear-item-icon">🏋️</span><div><div class="gear-item-name">Home Balance Beam (Folding)</div><div class="gear-item-desc">At-home practice beam. 4 inches wide. Great for beam routine repetition between practices.</div></div><span class="gear-item-arrow">→</span></a>
+      <a href="https://amazon.com/s?k=gymnastics+bar+kip+bar+adjustable+youth&tag=youthsportsconnect-20" target="_blank" class="gear-item-card"><span class="gear-item-icon">🤸</span><div><div class="gear-item-name">Kip Bar / Gymnastics Bar</div><div class="gear-item-desc">At-home practice bar. Adjustable height. Essential for developing bar skills at home.</div></div><span class="gear-item-arrow">→</span></a>
+      <a href="https://amazon.com/s?k=gymnastics+mat+folding+home&tag=youthsportsconnect-20" target="_blank" class="gear-item-card"><span class="gear-item-icon">🛡️</span><div><div class="gear-item-name">Gymnastics Mat (Folding)</div><div class="gear-item-desc">4x8ft or 4x10ft folding mat for at-home tumbling practice.</div></div><span class="gear-item-arrow">→</span></a>
+      <a href="https://amazon.com/s?k=gymnastics+slippers+shoes+youth&tag=youthsportsconnect-20" target="_blank" class="gear-item-card"><span class="gear-item-icon">🩰</span><div><div class="gear-item-name">Gymnastics Slippers/Shoes</div><div class="gear-item-desc">Optional for floor and beam. Many gymnasts go barefoot.</div></div><span class="gear-item-arrow">→</span></a>
+      <a href="https://amazon.com/s?k=resistance+bands+gymnastics+flexibility&tag=youthsportsconnect-20" target="_blank" class="gear-item-card"><span class="gear-item-icon">💪</span><div><div class="gear-item-name">Resistance Bands (Gymnastics)</div><div class="gear-item-desc">Flexibility and strength development. Used for conditioning and flexibility training.</div></div><span class="gear-item-arrow">→</span></a>
+      <a href="https://amazon.com/s?k=gymnastics+chalk+block+magnesium&tag=youthsportsconnect-20" target="_blank" class="gear-item-card"><span class="gear-item-icon">🧴</span><div><div class="gear-item-name">Chalk (Block or Liquid)</div><div class="gear-item-desc">Improves grip on bars. Block chalk for gym use; liquid chalk less messy for home bars.</div></div><span class="gear-item-arrow">→</span></a>
+      <a href="https://amazon.com/s?k=gymnastics+bag+girls+youth&tag=youthsportsconnect-20" target="_blank" class="gear-item-card"><span class="gear-item-icon">🎒</span><div><div class="gear-item-name">Gymnastics Bag</div><div class="gear-item-desc">Fits leotard, grips, chalk, water bottle, and competition accessories.</div></div><span class="gear-item-arrow">→</span></a>
+  </div>
+  <a href="gear.html" class="gear-view-all">Browse All Gymnastics Gear →</a>
+</div>
 
 <!-- FAQ SECTION -->
 <div class="faq-section">
