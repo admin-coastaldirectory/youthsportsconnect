@@ -303,12 +303,69 @@ footer a{color:var(--gold)}
 <nav>
   <a href="/westchester/" class="nav-logo">YOUTH<span>SPORTS</span>CONNECT<small>Westchester County</small></a>
   <div class="nav-links">
-    <a href="/" class="nav-link">LI Directory</a>
+    
     <a href="/westchester/" class="nav-link">Westchester</a>
     <a href="/westchester/blog.html" class="nav-link">Guides</a>
     <a href="/gear.html" class="nav-link">🛒 Gear</a>
     <a href="/submit.html" class="nav-link cta">+ Submit</a>
   </div>
+
+  <style>
+.yscr-btn{display:flex;align-items:center;gap:6px;background:rgba(201,168,76,.15);border:1.5px solid rgba(201,168,76,.35);border-radius:6px;padding:5px 11px;cursor:pointer;position:relative;flex-shrink:0;font-family:inherit}
+.yscr-label{font-size:10px;font-weight:600;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.5px;line-height:1}
+.yscr-region{font-size:13px;font-weight:700;color:#c9a84c;line-height:1;margin-top:2px}
+.yscr-chevron{font-size:10px;color:#c9a84c;transition:transform .2s;flex-shrink:0}
+.yscr-menu{display:none;position:absolute;top:calc(100% + 8px);right:0;background:#1a2f52;border:1px solid rgba(201,168,76,.25);border-radius:9px;width:230px;overflow:hidden;z-index:9999;box-shadow:0 8px 28px rgba(0,0,0,.45)}
+.yscr-menu.open{display:block}
+.yscr-group-label{font-size:10px;font-weight:700;color:rgba(255,255,255,.3);text-transform:uppercase;letter-spacing:.6px;padding:10px 14px 4px}
+.yscr-item{display:flex;align-items:center;justify-content:space-between;padding:9px 14px;cursor:pointer;transition:background .12s;text-decoration:none}
+.yscr-item:hover{background:rgba(255,255,255,.07)}
+.yscr-item.active{background:rgba(201,168,76,.12)}
+.yscr-item-name{font-size:13px;font-weight:600;color:rgba(255,255,255,.85)}
+.yscr-item.active .yscr-item-name{color:#c9a84c}
+.yscr-item-sub{font-size:11px;color:rgba(255,255,255,.4);margin-top:1px}
+.yscr-check{font-size:12px;color:#c9a84c;flex-shrink:0}
+.yscr-soon{font-size:10px;font-weight:700;color:rgba(255,255,255,.35);background:rgba(255,255,255,.08);padding:2px 7px;border-radius:3px;text-transform:uppercase;letter-spacing:.3px;flex-shrink:0}
+.yscr-item.soon{opacity:.45;cursor:default;pointer-events:none}
+.yscr-divider{height:1px;background:rgba(255,255,255,.07);margin:4px 0}
+</style><div class="yscr-btn" id="yscr-btn" onclick="yscToggle(event)">
+  <div>
+    <div class="yscr-label">Region</div>
+    <div class="yscr-region" id="yscr-active">Westchester County</div>
+  </div>
+  <span class="yscr-chevron" id="yscr-chev">▾</span>
+  <div class="yscr-menu" id="yscr-menu">
+    <div class="yscr-group-label">New York</div>
+    <a href="/" class="yscr-item">
+      <div><div class="yscr-item-name">Long Island</div><div class="yscr-item-sub">Nassau &amp; Suffolk County</div></div>
+      
+    </a>
+    <a href="/westchester/" class="yscr-item active">
+      <div><div class="yscr-item-name">Westchester County</div><div class="yscr-item-sub">White Plains, Scarsdale &amp; more</div></div>
+      <span class="yscr-check">✓</span>
+    </a>
+    <div class="yscr-item soon">
+      <div><div class="yscr-item-name">New York City</div><div class="yscr-item-sub">Brooklyn, Queens, Bronx...</div></div>
+      <span class="yscr-soon">Soon</span>
+    </div>
+    <div class="yscr-divider"></div>
+    <div class="yscr-group-label">New Jersey</div>
+    <div class="yscr-item soon">
+      <div><div class="yscr-item-name">North Jersey</div><div class="yscr-item-sub">Bergen, Essex, Morris...</div></div>
+      <span class="yscr-soon">Soon</span>
+    </div>
+    <div class="yscr-divider"></div>
+    <div class="yscr-group-label">Connecticut</div>
+    <div class="yscr-item soon">
+      <div><div class="yscr-item-name">Fairfield County</div><div class="yscr-item-sub">Greenwich, Stamford, Darien...</div></div>
+      <span class="yscr-soon">Soon</span>
+    </div>
+  </div>
+</div>
+<script>
+function yscToggle(e){e.stopPropagation();var m=document.getElementById('yscr-menu'),c=document.getElementById('yscr-chev');var o=m.classList.toggle('open');c.style.transform=o?'rotate(180deg)':'';}
+document.addEventListener('click',function(){var m=document.getElementById('yscr-menu');if(m){m.classList.remove('open');document.getElementById('yscr-chev').style.transform='';}});
+</script>
 </nav>
 <div class="sport-bar"><div class="sport-bar-inner"><button class="sport-pill active" onclick="setSportPill('all',this)">All Sports</button><button class="sport-pill" onclick="setSportPill('soccer',this)">⚽ Soccer</button><button class="sport-pill" onclick="setSportPill('lacrosse',this)">🥍 Lacrosse</button><button class="sport-pill" onclick="setSportPill('baseball',this)">⚾ Baseball</button><button class="sport-pill" onclick="setSportPill('softball',this)">🥎 Softball</button><button class="sport-pill" onclick="setSportPill('basketball',this)">🏀 Basketball</button><button class="sport-pill" onclick="setSportPill('tackle-football',this)">🏈 Tackle Football</button><button class="sport-pill" onclick="setSportPill('flag-football',this)">🏈 Flag Football</button><button class="sport-pill" onclick="setSportPill('tennis',this)">🎾 Tennis</button><button class="sport-pill" onclick="setSportPill('hockey',this)">🏒 Ice Hockey</button><button class="sport-pill" onclick="setSportPill('volleyball',this)">🏐 Volleyball</button><button class="sport-pill" onclick="setSportPill('wrestling',this)">🤼 Wrestling</button><button class="sport-pill" onclick="setSportPill('swimming',this)">🏊 Swimming</button><button class="sport-pill" onclick="setSportPill('gymnastics',this)">🤸 Gymnastics</button><button class="sport-pill" onclick="setSportPill('cheerleading',this)">📣 Cheerleading</button><button class="sport-pill" onclick="setSportPill('golf',this)">⛳ Golf</button><button class="sport-pill" onclick="setSportPill('field-hockey',this)">🏑 Field Hockey</button><button class="sport-pill" onclick="setSportPill('track-field',this)">🏃 Track & Field</button><button class="sport-pill" onclick="setSportPill('rugby',this)">🏉 Rugby</button><button class="sport-pill" onclick="setSportPill('dance',this)">💃 Dance</button><button class="sport-pill" onclick="setSportPill('martial-arts',this)">🥋 Martial Arts</button></div></div>
 <div class="breadcrumb"><div class="breadcrumb-inner">
@@ -424,10 +481,10 @@ footer a{color:var(--gold)}
   <a href="/gear.html">🛒 Gear Store</a> ·
   <a href="/submit.html">Submit a Listing</a> ·
   <a href="/affiliate-disclosure.html">Affiliate Disclosure</a><br>
-  © 2025 Coastal Directory, LLC · <a href="mailto:hello@coastaldirectoryllc.com">hello@coastaldirectoryllc.com</a>
+  © 2025 Coastal Directory, LLC · <a href="/cdn-cgi/l/email-protection#1b737e7777745b78747a686f7a777f72697e786f74696277777835787476"><span class="__cf_email__" data-cfemail="a2cac7cececde2c1cdc3d1d6c3cec6cbd0c7c1d6cdd0dbcecec18cc1cdcf">[email&#160;protected]</span></a>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const SUPABASE_URL = 'https://iognzfpzipwemrbcltcu.supabase.co';
 const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlvZ256ZnB6aXB3ZW1yYmNsdGN1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQwNjY5NzcsImV4cCI6MjA4OTY0Mjk3N30.or4FEjl3tyVAR7_0t9TH74-0Ds1S4oE2eF6LdYXZO4k';
 const TOWN_NAME = 'White Plains';
@@ -559,10 +616,4 @@ function toggleRow(id) {
 }
 function setSportPill(sport,el){activeSport=sport;document.querySelectorAll('.sport-pill').forEach(b=>b.classList.remove('active'));if(el)el.classList.add('active');render();}
 function setType(type,el){activeType=type;document.querySelectorAll('.ftab').forEach(b=>b.classList.remove('active'));if(el)el.classList.add('active');render();}
-function setSort(val){sortBy=val;document.querySelectorAll('.sort-opt').forEach(o=>o.classList.toggle('active',o.dataset.sort===val));render();}
-function handleSearch(val){searchTerm=val||'';render();}
-function toggleFaq(el){el.closest('.faq-item').classList.toggle('open');}
-fetchListings();
-</script>
-</body>
-</html>
+function setSort(val){sortBy=val;document.querySelector
