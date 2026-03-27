@@ -1,0 +1,12 @@
+<!-- Long-tail keyword pages — add to sitemap.xml -->
+  <url><loc>https://youthsportsconnect.co/u6-youth-sports-long-island.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://youthsportsconnect.co/u8-youth-sports-long-island.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://youthsportsconnect.co/u10-travel-soccer-nassau-county.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://youthsportsconnect.co/u12-lacrosse-long-island.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://youthsportsconnect.co/boys-lacrosse-tryouts-nassau-county-2026.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://youthsportsconnect.co/girls-lacrosse-tryouts-long-island-2026.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://youthsportsconnect.co/travel-baseball-long-island-age-groups.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://youthsportsconnect.co/rec-vs-travel-sports-long-island.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://youthsportsconnect.co/youth-hockey-nassau-county.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://youthsportsconnect.co/youth-basketball-nassau-county.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://youthsportsconnect.co/youth-sports-summer-camps-long-island.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
