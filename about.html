@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="robots" content="index,follow">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>About | YouthSportsConnect — Long Island Youth Sports Directory</title>
 <meta name="description" content="YouthSportsConnect is the most complete directory of youth sports on Long Island — leagues, clubs, coaches, and summer camps across Nassau and Suffolk County. Built by a Long Island sports family.">
@@ -126,6 +127,62 @@
     <a href="baseball.html">⚾ Baseball</a>
     <a href="about.html" class="active">About</a>
   </div>
+  <style>
+.yscr-btn{display:flex;align-items:center;gap:6px;background:rgba(201,168,76,.15);border:1.5px solid rgba(201,168,76,.35);border-radius:6px;padding:5px 11px;cursor:pointer;position:relative;flex-shrink:0;font-family:inherit}
+.yscr-label{font-size:10px;font-weight:600;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.5px;line-height:1}
+.yscr-region{font-size:13px;font-weight:700;color:#c9a84c;line-height:1;margin-top:2px}
+.yscr-chevron{font-size:10px;color:#c9a84c;transition:transform .2s;flex-shrink:0}
+.yscr-menu{display:none;position:absolute;top:calc(100% + 8px);right:0;background:#1a2f52;border:1px solid rgba(201,168,76,.25);border-radius:9px;width:230px;overflow:hidden;z-index:9999;box-shadow:0 8px 28px rgba(0,0,0,.45)}
+.yscr-menu.open{display:block}
+.yscr-group-label{font-size:10px;font-weight:700;color:rgba(255,255,255,.3);text-transform:uppercase;letter-spacing:.6px;padding:10px 14px 4px}
+.yscr-item{display:flex;align-items:center;justify-content:space-between;padding:9px 14px;cursor:pointer;transition:background .12s;text-decoration:none}
+.yscr-item:hover{background:rgba(255,255,255,.07)}
+.yscr-item.active{background:rgba(201,168,76,.12)}
+.yscr-item-name{font-size:13px;font-weight:600;color:rgba(255,255,255,.85)}
+.yscr-item.active .yscr-item-name{color:#c9a84c}
+.yscr-item-sub{font-size:11px;color:rgba(255,255,255,.4);margin-top:1px}
+.yscr-check{font-size:12px;color:#c9a84c;flex-shrink:0}
+.yscr-soon{font-size:10px;font-weight:700;color:rgba(255,255,255,.35);background:rgba(255,255,255,.08);padding:2px 7px;border-radius:3px;text-transform:uppercase;letter-spacing:.3px;flex-shrink:0}
+.yscr-item.soon{opacity:.45;cursor:default;pointer-events:none}
+.yscr-divider{height:1px;background:rgba(255,255,255,.07);margin:4px 0}
+</style><div class="yscr-btn" id="yscr-btn" onclick="yscToggle(event)">
+  <div>
+    <div class="yscr-label">Region</div>
+    <div class="yscr-region" id="yscr-active">Long Island</div>
+  </div>
+  <span class="yscr-chevron" id="yscr-chev">▾</span>
+  <div class="yscr-menu" id="yscr-menu">
+    <div class="yscr-group-label">New York</div>
+    <a href="/" class="yscr-item active">
+      <div><div class="yscr-item-name">Long Island</div><div class="yscr-item-sub">Nassau &amp; Suffolk County</div></div>
+      <span class="yscr-check">✓</span>
+    </a>
+    <a href="/westchester/" class="yscr-item">
+      <div><div class="yscr-item-name">Westchester County</div><div class="yscr-item-sub">White Plains, Scarsdale &amp; more</div></div>
+      
+    </a>
+    <div class="yscr-item soon">
+      <div><div class="yscr-item-name">New York City</div><div class="yscr-item-sub">Brooklyn, Queens, Bronx...</div></div>
+      <span class="yscr-soon">Soon</span>
+    </div>
+    <div class="yscr-divider"></div>
+    <div class="yscr-group-label">New Jersey</div>
+    <div class="yscr-item soon">
+      <div><div class="yscr-item-name">North Jersey</div><div class="yscr-item-sub">Bergen, Essex, Morris...</div></div>
+      <span class="yscr-soon">Soon</span>
+    </div>
+    <div class="yscr-divider"></div>
+    <div class="yscr-group-label">Connecticut</div>
+    <div class="yscr-item soon">
+      <div><div class="yscr-item-name">Fairfield County</div><div class="yscr-item-sub">Greenwich, Stamford, Darien...</div></div>
+      <span class="yscr-soon">Soon</span>
+    </div>
+  </div>
+</div>
+<script>
+function yscToggle(e){e.stopPropagation();var m=document.getElementById('yscr-menu'),c=document.getElementById('yscr-chev');var o=m.classList.toggle('open');c.style.transform=o?'rotate(180deg)':'';}
+document.addEventListener('click',function(){var m=document.getElementById('yscr-menu');if(m){m.classList.remove('open');document.getElementById('yscr-chev').style.transform='';}});
+</script>
 </nav>
 
 <div class="hero">
